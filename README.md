@@ -1,4 +1,17 @@
-Dépôt dédié à l'atelier d'initiation à Git
-====
+=================================
+Dépôt dédié au projet SMART
+================================
 
-Ce dépôt est dédié à l'atelier technique d'initiation à Git, dans le cadre des projets de deuxième année SPID à l'ENSTA Bretagne.
+
+=======
+Auteurs:
+-Michael Rigaud
+-Antoine D'Acremont
+-Kevin Legay
+-Guillaume Cotten
+-Aya Kennan
+-Mohammed Shehade
+
+======
+Ecole:
+ENSTA Bretagne
