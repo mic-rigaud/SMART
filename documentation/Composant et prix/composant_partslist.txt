@@ -1,0 +1,92 @@
+
+     Components list  MONTREAL DOPPLER3V2  March 8,06
+
+       ******** DOPPLER3V2 MAIN BOARD *************
+ 
+C11,C20,C21,C22,C50,C33,C51,C52,C53,C55,C56,C57,C58,C59,C60,
+   C61,C62,C63,C70,C71,C74,C100,C101,C102,C103,C104, = 0.1uF CER
+C23 = 10uF EL 16 Volts
+C30 = 1uF EL 16 Volts
+C31,C34,C65 = 0.470uF CER
+C32 = 220uF EL 25 Volts
+C35 = .001uF CER
+C54 = 0.01uF CER
+C72,C73	= 22pF CER
+
+R20,R21,R102= 4K7 1/4W
+R22 = 33 OHMS  1/4W
+R30 = 10 OHMS  1/4W
+R50 = 27 OHMS 1/2W
+R51,R56,R70,R71,R100 = 10K  1/4W
+R52,R58 = 1K0  1/4W
+R53 = 5K6  1/4W
+R55 = 820K 1/4W
+R57 = 1M0  1/4W
+R72,R73,R74,R75,R76,R77,R78,R79 = OPT, for switcher.
+       100 OHMS  1/4W to replace the FBs when switching logic
+
+R80,R101 = 27K
+ 
+F21,F22 = 1/2 A 
+
+FB1 < FB8 = 101
+
+IC30 = LM386N-4   THE "-4" IS NECESSARY FOR 12v USE AND HIGHER POWER
+IC50 = MAX267BCNG 
+IC51 = PIC12F675-I/P 
+IC52 = 74HC4051N buy from DK for good quality chip
+IC53 = MAX492CPA 
+IC70 = PIC18F4520-I/P
+IC100 = MAX232ACPE
+
+Q100 = 2N2222 TO-92 optionnal
+VR20 = 7805 TO-220
+X70 = 20 mHz  HC49   DK #300-6042-nd
+D20 = 1N4004 RECTIFIER DIODE
+D50 = 1N5819 Schottky Diode
+
+LCD20 = lcd 2X16, HD44780 intelligent controller
+ 
+P20 = 10k LINEAR TAPER pot
+P30 = 10k AUDIO TAPER pot
+P50 = 10k LINEAR TAPER pot
+P70 = 10k LINEAR TAPER pot 
+
+S20 = SP-ST Miniature Toggle
+S70 = NO Miniature Push-Button
+ 
+SP = Speaker
+
+     ******** 36 LEDs DISPLAY BOARD *************
+
+C1 = .1uF CER
+IC1 = PIC16F628A-I/P
+
+LED1 < LED36 = 3mm size, RED and/or GREEN
+LED37 = 3 or 5mm Bi-Co red/green 3 leads, common cathode
+
+R1,R2,R3,R4,R5,R6,R8 = 150 OHMS 1/4W
+R7 = 100 OHMS 1/4W
+
+    ************* EXPERIMENTAL SWITCHER BOARD *************
+
+D1 < D8 = HSMP389b pin diode AGILENT Surface Mount, OR YOUR PREFERED PIN DIODE
+C1 < C8 = 470 pF CER SM
+C11 < C15 = .1 uF CER SM
+L1 < L4 = 0.47 uH inductor SM
+R1 < R4 = 560 Ohms SM
+IC1 = MAX204CWE SM, RS232 interface, 4 circuits TTL to RS232
+T1 < T4 = TV 2 holes balun cores taken from 75 Ohms to 300 Ohms adapter
+Misc = PCB  material, fiberglass rods or white PVC tubes,#26 enamel wire
+       Antennas dimentions from Joe Moell's Homing In web site
+
+    ************* MISC *****************
+
+BOX
+CONNECTORS
+PLUGS
+FUSE HOLDERS
+
+----------------------------------------------------------------------
+ 
+
