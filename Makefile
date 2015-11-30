@@ -3,7 +3,11 @@ LDFLAG=https://github.com/magichal/SMART.git
 LPFLAG=-a
 
 
-all: commit
+all: envoie
+
+envoie:
+	@make commit
+	@make push
 
 commit: 
 	@$(CC) add --all ./*
