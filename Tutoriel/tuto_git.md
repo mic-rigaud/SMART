@@ -16,9 +16,9 @@ Sous Linux:
 git clone
 ```
 
-========
-# 2) Avant chaque utilisation
-========
+
+2) Avant chaque utilisation
+------
 
 Avant chaque utilisation, il faut pull le répertoire.
 Pull permet de mettre à jour son répertoire.
