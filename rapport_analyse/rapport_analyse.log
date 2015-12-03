@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.8.25)  3 DEC 2015 11:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.8.25)  3 DEC 2015 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,7 +1310,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 118.
 
-<logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=127, 236.15828pt x 284.52798pt>
+<logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=131, 236.15828pt x 284.52798pt>
 File: logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 
 <use logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
@@ -1369,53 +1369,54 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 2.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \newpage
-               [1
+l.38 ... {chapter}{Bibliographie}{25}{section*.16}
+                                                   [1
 
-] [2] [3
+]) [2] [3
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 141.
  [4
 
-] (./Partie_Contexte.tex
+]
+(./Partie_Contexte.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 10.
  [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-<./images/radar.png, id=242, 1284.8pt x 568.1225pt>
+<./images/radar.png, id=248, 1284.8pt x 568.1225pt>
 File: ./images/radar.png Graphic file (type png)
  <use ./images/radar.png>
-Package pdftex.def Info: ./images/radar.png used on input line 52.
+Package pdftex.def Info: ./images/radar.png used on input line 36.
 (pdftex.def)             Requested size: 418.25368pt x 184.94102pt.
 
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 53.
+(caption)                outside box or environment on input line 37.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 53.
+(caption)                particular \caption on input line 37.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 52--53
+Overfull \hbox (17.0pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
-[6]) (./Partie_AnalyseFonctionnelle.tex [7 <./images/radar.png>]
-<./images/interview.pdf, id=259, 325.215pt x 223.3143pt>
+[6 <./images/radar.png>]) (./Partie_AnalyseFonctionnelle.tex [7]
+<./images/interview.pdf, id=265, 325.215pt x 223.3143pt>
 File: ./images/interview.pdf Graphic file (type pdf)
 
 <use ./images/interview.pdf>
@@ -1424,7 +1425,7 @@ Package pdftex.def Info: ./images/interview.pdf used on input line 7.
  [8
 
  <./images/interview.pdf>]
-<./images/tableauSpe.pdf, id=273, page=1, 611.40419pt x 690.17848pt>
+<./images/tableauSpe.pdf, id=279, page=1, 611.40419pt x 690.17848pt>
 File: ./images/tableauSpe.pdf Graphic file (type pdf)
 
 <use ./images/tableauSpe.pdf, page 1>
@@ -1449,7 +1450,7 @@ File: ./images/tableauSpe.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/tableauSpe.pdf, page1 used on input line 14.
 (pdftex.def)             Requested size: 597.89389pt x 674.92752pt.
  [9 <./images/tableauSpe.pdf>]
-<./images/Diagramme_pieuvre.pdf, id=285, 845.1575pt x 597.23125pt>
+<./images/Diagramme_pieuvre.pdf, id=291, 845.1575pt x 597.23125pt>
 File: ./images/Diagramme_pieuvre.pdf Graphic file (type pdf)
 
 <use ./images/Diagramme_pieuvre.pdf>
@@ -1466,7 +1467,7 @@ Overfull \hbox (20.4576pt too wide) in paragraph at lines 22--24
 []  [] 
  []
 
-<./images/SADT_A-0.pdf, id=286, 845.1575pt x 597.23125pt>
+<./images/SADT_A-0.pdf, id=292, 845.1575pt x 597.23125pt>
 File: ./images/SADT_A-0.pdf Graphic file (type pdf)
 
 <use ./images/SADT_A-0.pdf>
@@ -1479,7 +1480,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [10 <./images/Diagramme_pieuvre.pdf>]
-<./images/SADT_A0.pdf, id=307, 845.1575pt x 597.23125pt>
+<./images/SADT_A0.pdf, id=313, 845.1575pt x 597.23125pt>
 File: ./images/SADT_A0.pdf Graphic file (type pdf)
 
 <use ./images/SADT_A0.pdf>
@@ -1497,14 +1498,68 @@ pdfTeX warning: pdflatex (file ./images/SADT_A0.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]) [12] [13
 
-] (./Partie_Radiogonio.tex) [14
+] (./Partie_Radiogonio.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
-] [15
+ []
 
-] [16
 
-]
-(./Partie_Organisation.tex
+! Package inputenc Error: Unicode char \u8:◦ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...lisé pour lever l’ambiguïté de 180◦
+                                                   en formant un diagramme e...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[14
+
+] <./images/cardioide.PNG, id=356, 289.08pt x 166.37157pt>
+File: ./images/cardioide.PNG Graphic file (type png)
+
+<use ./images/cardioide.PNG>
+Package pdftex.def Info: ./images/cardioide.PNG used on input line 46.
+(pdftex.def)             Requested size: 418.25368pt x 240.72737pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 47.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 46--47
+[][] 
+ []
+
+[15 <./images/cardioide.PNG>]
+<./images/tableauTechnologies.PNG, id=367, 406.51875pt x 225.09094pt>
+File: ./images/tableauTechnologies.PNG Graphic file (type png)
+
+<use ./images/tableauTechnologies.PNG>
+Package pdftex.def Info: ./images/tableauTechnologies.PNG used on input line 71
+.
+(pdftex.def)             Requested size: 418.25368pt x 231.59552pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 72.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 71--72
+[][] 
+ []
+
+) [16 <./images/tableauTechnologies.PNG>] [17
+
+] [18
+
+] (./Partie_Organisation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
@@ -1524,7 +1579,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-<./images/framaboard.jpg, id=363, 1272.755pt x 818.05624pt>
+<./images/framaboard.jpg, id=386, 1272.755pt x 818.05624pt>
 File: ./images/framaboard.jpg Graphic file (type jpg)
 
 <use ./images/framaboard.jpg>
@@ -1536,9 +1591,9 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 39.
 See the caption package documentation for explanation.
 
-[17
+[19
 
-] <./images/github.png, id=369, 1002.74625pt x 857.2025pt>
+] <./images/github.png, id=392, 1002.74625pt x 857.2025pt>
 File: ./images/github.png Graphic file (type png)
 
 <use ./images/github.png>
@@ -1550,8 +1605,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 46.
 See the caption package documentation for explanation.
 
-) (./Partie_Montreal.tex [18 <./images/framaboard.jpg> <./images/github.png>]
-<./images/evolution.png, id=383, 831.105pt x 534.99875pt>
+) (./Partie_Montreal.tex [20 <./images/framaboard.jpg> <./images/github.png>]
+<./images/evolution.png, id=404, 831.105pt x 534.99875pt>
 File: ./images/evolution.png Graphic file (type png)
 
 <use ./images/evolution.png>
@@ -1568,7 +1623,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
-<./images/montreal.png, id=384, 1167.36125pt x 814.04124pt>
+<./images/montreal.png, id=405, 1167.36125pt x 814.04124pt>
 File: ./images/montreal.png Graphic file (type png)
 
 <use ./images/montreal.png>
@@ -1580,15 +1635,15 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 16.
 See the caption package documentation for explanation.
 
-[19
+[21
 
  <./images/evolution.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-[20 <./images/montreal.png>]
-<./images/schemaBloc.png, id=401, 898.35625pt x 717.68124pt>
+[22 <./images/montreal.png>]
+<./images/schemaBloc.png, id=422, 898.35625pt x 717.68124pt>
 File: ./images/schemaBloc.png Graphic file (type png)
 
 <use ./images/schemaBloc.png>
@@ -1605,9 +1660,9 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 61--62
 [][] 
  []
 
-) [21 <./images/schemaBloc.png>] (./rapport_analyse.lof)
+) [23 <./images/schemaBloc.png>] (./rapport_analyse.lof)
 No file rapport_analyse.ind.
-(./rapport_analyse.bbl [22]
+(./rapport_analyse.bbl [24]
 bibitemlist
 
 Underfull \hbox (badness 5771) in paragraph at lines 4--9
@@ -1621,7 +1676,7 @@ Underfull \hbox (badness 1292) in paragraph at lines 33--37
 ur go-nio(ou in-di-ca-teur de champ) vhf\T1/ppl/m/n/10.95 (+20) .  http ://ph-
  []
 
-) [23
+) [25
 
 ]
 \tf@toc=\write7
@@ -1636,15 +1691,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `rapport_analyse.out' has not changed.
-(rerunfilecheck)             Checksum: B31650568E1B0733444C30E269E05BD5;1829.
+(rerunfilecheck)             Checksum: 84045D6DEFBEBDC61B631B72E92681DB;1917.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 22337 strings out of 495063
- 377753 string characters out of 3182201
+ 22369 strings out of 495063
+ 378216 string characters out of 3182201
  512740 words of memory out of 3000000
- 24845 multiletter control sequences out of 15000+200000
- 75654 words of font info for 177 fonts, out of 3000000 for 9000
+ 24855 multiletter control sequences out of 15000+200000
+ 76131 words of font info for 183 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,18n,57p,974b,930s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
@@ -1660,10 +1715,10 @@ t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on rapport_analyse.pdf (24 pages, 2353966 bytes).
+Output written on rapport_analyse.pdf (26 pages, 2393399 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 500000)
- 39747 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 39765 words of extra memory for PDF output out of 42996 (max. 10000000)
 

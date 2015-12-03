@@ -3,29 +3,37 @@
 
 
 Dans cette partie, nous allons nous attacher à étudier les différents types de goniométrie existant afin de retenir la solution la plus pertinente pour notre système. Cette étude redéfinira dans un premier temps le cadre de l’étude, puis suivra une explication de chaque technologie existante afin de conclure sur le choix que nous aurons retenu.
+~\\
 
+Généralement, un système de radiogoniométrie est composé de  :
 
-Généralement, un système de radiogoniométrie est composé de  :
-
-. Un réseau de N capteurs avec ou sans processus de mise en forme des signaux d’antennes.
-	. Un commutateur d’antenne
-	. Un récepteur à plusieurs voies
-	. Une unité de traitement du signal
-
-De plus, la composition du système d’acquisition et les techniques de traitement du signal dépendent :
-	.  Des caractéristiques de l’onde à étudier
-	.  Du type d’acquisition de l’information
-
+\begin{itemize}
+\item Un réseau de N capteurs avec ou sans processus de mise en forme des signaux d’antennes.
+  \begin{itemize}	
+  \item Un commutateur d’antenne
+  \item Un récepteur à plusieurs voies
+  \item Une unité de traitement du signal
+  \end{itemize}
+\end{itemize}
+~\\
+De plus, la composition du système d’acquisition et les techniques de traitement du signal dépendent :
+\begin{itemize}
+\item  Des caractéristiques de l’onde à étudier
+\item  Du type d’acquisition de l’information
+\end{itemize}
+~\\
 Dans notre application, le système devra détecter une onde émise dans la gamme de fréquence UHF (2,4 GHz). Bien qu’existant dans le domaine de réalisation des radiogoniomètres, il n’est pas commun qu’un radiogoniomètre travail sur cette gamme de fréquence.
 
-Les caractéristiques principales qui interviennent principalement dans le choix d’un radiogoniomètre sont :
-	. La précision de mesure angulaire (précision de la position obtenue)
-	. La sensibilité (portée maximale du système) 
-	. La vitesse de mesure
-	. Le comportement en présence de plusieurs ondes dans la bande d’analyse
-	. La susceptibilité du système
+Les caractéristiques principales qui interviennent principalement dans le choix d’un radiogoniomètre sont:
 
-
+\begin{itemize}
+\item La précision de mesure angulaire (précision de la position obtenue)
+\item La sensibilité (portée maximale du système) 
+\item La vitesse de mesure
+\item Le comportement en présence de plusieurs ondes dans la bande d’analyse
+\item La susceptibilité du système
+\end{itemize}
+~\\
 La spécificité de notre système est la cible à localisé. En effet, la source peut ne pas émettre en  continue et sur de très courtes période (inférieure à 1 seconde). Il nous faut donc un radiogoniomètre capable de réalisé la mesure en une fraction de seconde. La gestion de conservation de la donnée mesurée en attendant une valeur ultérieure sera gérée par l’ordinateur.
 
 
@@ -35,8 +43,10 @@ La spécificité de notre système est la cible à localisé. En effet, la sourc
 
 	La mesure se fait par repérage d’un maximum d’amplitude, d’un minimum d’amplitude, ou par comparaison de d’amplitude en sortie de deux diagrammes se recouvrant partiellement. La recherche du minimum d’amplitude à partir d’une antenne à cadre tournante est l’approche la plus ancienne. Un dipôle électrique est utilisé pour lever l’ambiguïté de 180◦ en formant un diagramme en cardioïde par sommation.
 	
-	IMAGE
-	
+\includegraphics[width=\textwidth]{cardioide}
+\captionof{figure}{diagramme en cardioide d’une antenne à cadre}
+\parindent=15pt
+
 	La formation de faisceaux est une technique plus récente issue des traitements radar. Elle utilise un ensemble de capteurs spatialement répartis. Les sorties d’antennes sont pondérées en phase puis sommées. Cette pondération est fonction du déphasage progressif d’une antenne à une autre, qui dépend de la direction d’arrivée et de la distance entre capteurs. Les pondérations permettent ainsi de remettre en phase les signaux et d’obtenir un diagramme avec un maximum dans la direction d’arrivée.
  Cette technologie est la plus ancienne. L’antenne utilisée était une antenne cadre et la gamme de fréquence étudiée était la HF et la VHF.
 
@@ -58,8 +68,11 @@ Afin d'éviter de devoir faire tourner mécaniquement l'antenne, on peut en disp
 
 	Après étude des différentes technologies existantes, nous nous baserons sur une étude comparative menée par le site F1LVT.
 	
-	IMAGE
-	
+	\includegraphics[width=\textwidth]{tableauTechnologies}
+	\captionof{figure}{Radiogoniométrie VHF-UHF pour les bandes aviation et les bandes RA}
+\parindent=15pt
+
+
 	Ce tableau compare plusieurs technologies ainsi que leurs caractéristiques. Dans le cadre d’un système devant opéré en extérieur sur zone (environ de zone industriel ou de central électrique ) nous retenons le goniomètre Doppler.
 
 
