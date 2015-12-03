@@ -29,7 +29,8 @@
 \contentsline {section}{\numberline {B.1}\IeC {\'E}volution du Montr\IeC {\'e}al}{19}{section.B.1}
 \contentsline {section}{\numberline {B.2}Avantages du Montr\IeC {\'e}al 3v2}{20}{section.B.2}
 \contentsline {section}{\numberline {B.3}Caract\IeC {\'e}ristiques}{20}{section.B.3}
-\contentsline {section}{\numberline {B.4}Sch\IeC {\'e}ma bloc}{21}{section.B.4}
-\contentsline {section}{\numberline {B.5}Liste des composants}{21}{section.B.5}
+\contentsline {section}{\numberline {B.4}Fonctionnement}{20}{section.B.4}
+\contentsline {section}{\numberline {B.5}Sch\IeC {\'e}ma bloc}{21}{section.B.5}
+\contentsline {section}{\numberline {B.6}Liste des composants}{21}{section.B.6}
 \contentsline {chapter}{Table des figures}{22}{section*.13}
 \contentsline {chapter}{Bibliographie}{23}{section*.15}
