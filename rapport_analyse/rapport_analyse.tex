@@ -34,8 +34,9 @@
 % \usepackage{fancybox}			% permet de realiser les cadres
 %\usepackage{titletoc}			% permet de modifier les titres
 \usepackage{caption}
-% \usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 \usepackage[final]{pdfpages} 
+\usepackage{eurosym}
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -143,7 +144,7 @@ Compte tenu du temps imparti, nous avons choisi de nous concentrer sur la détec
 
 \part{État de l'art}
 \input{Partie_Radiogonio}
-\input{Partie_Montreal}
+
 
 %%%% CONCLUSION %%%%%%%%%
 
@@ -157,11 +158,12 @@ Nous allons donc, dès à présent, nous attacher à la compréhension de la rad
 
 %%%% ANNEXE %%%%%%%%%%%%
 
- \part{Annexe}
+\part*{Annexe}
 \appendix
 \nocite{*}
 \input{Partie_Organisation}
-% \input{annexe_}
+\input{Partie_Montreal}
+
 \newpage
 \listoffigures
 \printindex
