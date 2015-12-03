@@ -28,12 +28,25 @@ En mode passif, \emph{des caméras thermiques d'observation savent repérer un d
 En mode actif, on peut éclairer une scène à $360^{\circ}$ avec un laser. \emph{Les photons, les particules de lumière, se réfléchissent sur l'appareil, le signal est récupéré et analysé.} D'une portée similaire à celle de la caméra, le laser a l'avantage de \emph{décamoufler} (observation à travers brouillard, pluie ou filet de camouflage), de livrer la distance précise de l'objet, et de le reconstituer en imagerie 3D.Une fois le drone suffisamment proche, une caméra \textit{classique} avec un opérateur humain peuvent prendre le relai pour vérifier visuellement la nature de l'intrus et éventuellement passer à la phase de neutralisation.
 
 
+\section{Radar}
+Le radar (de l'anglais RAdio Detection And Ranging) est un système qui utilise les ondes électromagnétiques pour détecter la présence d'objets. Le radar émet des ondes, elles rebondissent sur les objets rencontrés et il est possible de mesurer leur distance, la direction, l'altitude ainsi que la vitesse en analysant le signal renvoyé. Les modèles Doppler peuvent ainsi détecter les objets en mouvement : avion, hélicoptère et certains modèles de drones, même « légers ». C'est le cas du radar Squire de Thales Air Systems. 
+
+~\\
+
+\includegraphics[width=\textwidth]{radar}
+\captionof{figure}{Le radar portable Squire de Thales Air Systems}
+
+Il existe néanmoins certains drones construits en carbone pouvant être perméables à certaines ondes radars et ainsi indétectable par cette technologie. Cependant le "radar passif", radar exploitant les variations d'ondes électromagnétiques en milieu urbain, telles que les ondes de la TNT, pourrait être exploité en milieu urbain.
+
+
 
 \section{Radiogoniométrie}
 
-Parmis les méthodes pour détecter un drone on peut citer la radiogoniométrie. Le principe de la radiogoniométrie est de mesurer la direction d'arrivée d'une onde électromagnétique par rapport à une direction de référence. Les radio-goniomètres sont donc des détecteurs passifs. 
+Parmis les méthodes pour détecter un drone on peut citer la radiogoniométrie. Le principe de la radiogoniométrie est de mesurer la direction d'arrivée d'une onde électromagnétique polarisée incidente sur un réseau de capteur, par rapport à une direction de référence. Les radio-goniomètres sont donc des détecteurs passifs. 
 
-On distingue deux types de goniomètres: les goniomètres à une dimension qui n'estiment que le gisement ou l'azimut, et les goniomètres à deux dimensions qui estiment le gisement ou azimut ainsi que l'élévation. Ainsi grâce à un réseau d'au moins 2 goniomètres il est possible de déterminer la position de l'émission de l'onde.
+La radiogoniométrie possède de nombreuses applications. Cependant, en interception, la radiogoniométrie permet de localiser un émetteur inconnu soit en employant plusieur récepteurs en des positions différentes, soit par calcul en fonction de la cinématique preopre du récepteur. 
+
+On distingue deux types de goniomètres: les goniomètres à une dimension qui n'estiment que le gisement ou l'azimut, et les goniomètres à deux dimensions qui estiment le gisement ou azimut ainsi que l'élévation. 
 
 
 Dans le cas d'une détection de drones, le radio-goniomètre réalise une écoute de l'environnement avec un balayage de fréquences. Lorsque le drone émettra avec la personne qui le guide on pourra ainsi le localiser précisément.
@@ -44,15 +57,6 @@ Mais cette technique possède aussi ses avantages. C'est une technique passive e
 
 
 
-\section{Radar}
-Le radar (de l'anglais RAdio Detection And Ranging) est un système qui utilise les ondes électromagnétiques pour détecter la présence d'objets. Le radar émet des ondes, elles rebondissent sur les objets rencontrés et il est possible de mesurer leur distance, la direction, l'altitude ainsi que la vitesse en analysant le signal renvoyé. Les modèles Doppler peuvent ainsi détecter les objets en mouvement : avion, hélicoptère et certains modèles de drones, même « légers ». C'est le cas du radar Squire de Thales Air Systems. 
-
-~\\
-
-\includegraphics[width=\textwidth]{radar}
-\captionof{figure}{Le radar portable Squire de Thales Air Systems}
-
-Il existe néanmoins certains drones construits en carbone pouvant être perméables à certaines ondes radars et ainsi indétectable par cette technologie. Cependant le "radar passif", radar exploitant les variations d'ondes électromagnétiques en milieu urbain, telles que les ondes de la TNT, pourrait être exploité en milieu urbain.
 
 \section{Synthèse}
 
