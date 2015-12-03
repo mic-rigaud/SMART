@@ -34,8 +34,9 @@
 % \usepackage{fancybox}			% permet de realiser les cadres
 %\usepackage{titletoc}			% permet de modifier les titres
 \usepackage{caption}
-% \usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 \usepackage[final]{pdfpages} 
+\usepackage{eurosym}
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -137,10 +138,13 @@ Compte tenu du temps imparti, nous avons choisi de nous concentrer sur la détec
 
 %%%%%%%%%%%%%%%%%%%%%%%% 
 
-\input{Partie0}
-\input{Partie1}
-\input{Partie2}
-%\input{Partie3}
+\part{Analyse fonctionnelle}
+\input{Partie_Contexte}
+\input{Partie_AnalyseFonctionnelle}
+
+\part{État de l'art}
+\input{Partie_Radiogonio}
+
 
 %%%% CONCLUSION %%%%%%%%%
 
@@ -154,10 +158,12 @@ Nous allons donc, dès à présent, nous attacher à la compréhension de la rad
 
 %%%% ANNEXE %%%%%%%%%%%%
 
-% \part{Annexe}
+\part*{Annexe}
 \appendix
 \nocite{*}
-% \input{annexe_}
+\input{Partie_Organisation}
+\input{Partie_Montreal}
+
 \newpage
 \listoffigures
 \printindex

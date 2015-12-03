@@ -1,0 +1,51 @@
+
+\chapter{Organisation du travail}
+
+
+\section{Méthode de travail}
+
+Nous avons cherché au mieux à répartir notre travail. Pour cela nous avons défini 3 grands axes de travail à l'issue de cette étude fonctionnelle.
+\begin{itemize}
+\item Dans un premier temps nous allons réaliser l'état de l'art.
+\item Dans un deuxième temps nous étudierons la phase de réalisation.
+\item Enfin nous testerons notre projet dans des conditions réelles.
+\end{itemize}
+~\\
+
+Tout au long de ce projet nous avons choisi de réaliser notre travail en divisant notre équipe en 3 groupes de travail distincts formés respectivement de D'Acremont - Cotten, Legay - Rigaud, et Kenaan - Shehade. Notamment lors de l'état de l'art, ces groupes vont réaliser des recherches par binômes pour ensuite redistribuer les informations grâce aux outils mis à notre disposition (nous avons détaillé ces outils plus loin).
+~\\
+
+De plus, nous avons décidé lors de la phase de conception de diviser ce travail en plusieurs sous ensembles que nous définirons plus tard et qui seront chacun d'eux testés indépendemment, à l'image de tests unitaires en programmation.
+
+
+
+\section{Outils utilisés}
+
+Lors de notre projet nous avons choisi d'utiliser plusieurs outils de travail en collaboration.
+
+\begin{itemize}
+\item Nous utilisons Office 365. Nous avons créé un groupe de travail où nous partageons des fichiers et envoyons des mails de manière centralisée.
+\item Nous utilisons également \LaTeX~pour la rédaction de nos rapports.
+\item Nous pensons finalement utiliser Git et GitHub lors de notre phase de conception. Nous avons pour cela crée un projet sur GitHub.
+\item Après plusieurs difficultés, nous avons réussi à utiliser Framaboard du groupe Framasoft pour gérer notre projet.
+\end{itemize}
+
+~\\
+~\\
+
+\includegraphics[width=\textwidth]{framaboard}
+\captionof{figure}{Impression d'écran de notre Framaboard}
+Il est possible d'avoir accès en lecture à notre page Framaboard en cliquant  \textit{\href{https://smart.framaboard.org/?controller=board&action=readonly&token=ab1e20bb26472df067dc24cbd84d9b28eea71bfd68bdea07ab5a9b555ce0}{ici}}
+
+
+
+
+
+
+  
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "rapport_analyse"
+%%% End: 

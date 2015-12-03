@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.8.25)  30 NOV 2015 11:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.8.25)  3 DEC 2015 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -843,6 +843,21 @@ Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count157
+\Gm@cntv=\count158
+\c@Gm@tempcnt=\count159
+\Gm@bindingoffset=\dimen164
+\Gm@wd@mp=\dimen165
+\Gm@odd@mp=\dimen166
+\Gm@even@mp=\dimen167
+\Gm@layoutwidth=\dimen168
+\Gm@layoutheight=\dimen169
+\Gm@layouthoffset=\dimen170
+\Gm@layoutvoffset=\dimen171
+\Gm@dimlist=\toks28
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
 
@@ -851,15 +866,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count157
-\calc@Bcount=\count158
-\calc@Adimen=\dimen164
-\calc@Bdimen=\dimen165
+\calc@Acount=\count160
+\calc@Bcount=\count161
+\calc@Adimen=\dimen172
+\calc@Bdimen=\dimen173
 \calc@Askip=\skip187
 \calc@Bskip=\skip188
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count159
+\calc@Ccount=\count162
 \calc@Cskip=\skip189
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -869,19 +884,23 @@ Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
 File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box31
-\AM@toc@title=\toks28
-\c@AM@survey=\count160
+\AM@toc@title=\toks29
+\c@AM@survey=\count163
 \AM@templatesizebox=\box32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box33
 )
 (./pageGardeEnsta.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks30
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box33
+\pgfutil@abb=\box34
 
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -897,27 +916,27 @@ Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen166
-\pgf@y=\dimen167
-\pgf@xa=\dimen168
-\pgf@ya=\dimen169
-\pgf@xb=\dimen170
-\pgf@yb=\dimen171
-\pgf@xc=\dimen172
-\pgf@yc=\dimen173
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count161
-\c@pgf@countb=\count162
-\c@pgf@countc=\count163
-\c@pgf@countd=\count164
+\c@pgf@counta=\count164
+\c@pgf@countb=\count165
+\c@pgf@countc=\count166
+\c@pgf@countd=\count167
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -933,8 +952,8 @@ File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count165
-\pgfsyssoftpath@bigbuffer@items=\count166
+\pgfsyssoftpath@smallbuffer@items=\count168
+\pgfsyssoftpath@bigbuffer@items=\count169
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -947,12 +966,12 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen174
-\pgfmath@count=\count167
-\pgfmath@box=\box34
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@dimen=\dimen182
+\pgfmath@count=\count170
+\pgfmath@box=\box35
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -970,57 +989,57 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
 tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count168
+\c@pgfmathroundto@lastzeros=\count171
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen175
-\pgf@picmaxx=\dimen176
-\pgf@picminy=\dimen177
-\pgf@picmaxy=\dimen178
-\pgf@pathminx=\dimen179
-\pgf@pathmaxx=\dimen180
-\pgf@pathminy=\dimen181
-\pgf@pathmaxy=\dimen182
-\pgf@xx=\dimen183
-\pgf@xy=\dimen184
-\pgf@yx=\dimen185
-\pgf@yy=\dimen186
-\pgf@zx=\dimen187
-\pgf@zy=\dimen188
+\pgf@picminx=\dimen183
+\pgf@picmaxx=\dimen184
+\pgf@picminy=\dimen185
+\pgf@picmaxy=\dimen186
+\pgf@pathminx=\dimen187
+\pgf@pathmaxx=\dimen188
+\pgf@pathminy=\dimen189
+\pgf@pathmaxy=\dimen190
+\pgf@xx=\dimen191
+\pgf@xy=\dimen192
+\pgf@yx=\dimen193
+\pgf@yy=\dimen194
+\pgf@zx=\dimen195
+\pgf@zy=\dimen196
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen189
-\pgf@path@lasty=\dimen190
+\pgf@path@lastx=\dimen197
+\pgf@path@lasty=\dimen198
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen191
-\pgf@shorten@start@additional=\dimen192
+\pgf@shorten@end@additional=\dimen199
+\pgf@shorten@start@additional=\dimen200
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box35
-\pgf@hbox=\box36
-\pgf@layerbox@main=\box37
-\pgf@picture@serial@count=\count169
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count172
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen193
+\pgflinewidth=\dimen201
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen194
-\pgf@pt@y=\dimen195
-\pgf@pt@temp=\dimen196
+\pgf@pt@x=\dimen202
+\pgf@pt@y=\dimen203
+\pgf@pt@temp=\dimen204
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1039,8 +1058,8 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen197
-\pgf@sys@shading@range@num=\count170
+\pgf@max=\dimen205
+\pgf@sys@shading@range@num=\count173
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
@@ -1048,7 +1067,7 @@ File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box38
+\pgfexternal@startupbox=\box39
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1064,15 +1083,15 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box39
+\pgfnodeparttextbox=\box40
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen198
-\pgf@nodesepend=\dimen199
+\pgf@nodesepstart=\dimen206
+\pgf@nodesepend=\dimen207
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1082,10 +1101,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen200
-\pgffor@skip=\dimen201
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@iter=\dimen208
+\pgffor@skip=\dimen209
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
@@ -1093,36 +1112,36 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count171
-\pgfplotmarksize=\dimen202
+\pgf@plot@mark@count=\count174
+\pgfplotmarksize=\dimen210
 )
-\tikz@lastx=\dimen203
-\tikz@lasty=\dimen204
-\tikz@lastxsaved=\dimen205
-\tikz@lastysaved=\dimen206
-\tikzleveldistance=\dimen207
-\tikzsiblingdistance=\dimen208
-\tikz@figbox=\box40
-\tikz@tempbox=\box41
-\tikztreelevel=\count172
-\tikznumberofchildren=\count173
-\tikznumberofcurrentchild=\count174
-\tikz@fig@count=\count175
+\tikz@lastx=\dimen211
+\tikz@lasty=\dimen212
+\tikz@lastxsaved=\dimen213
+\tikz@lastysaved=\dimen214
+\tikzleveldistance=\dimen215
+\tikzsiblingdistance=\dimen216
+\tikz@figbox=\box41
+\tikz@tempbox=\box42
+\tikztreelevel=\count175
+\tikznumberofchildren=\count176
+\tikznumberofcurrentchild=\count177
+\tikz@fig@count=\count178
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count176
-\pgfmatrixcurrentcolumn=\count177
-\pgf@matrix@numberofcolumns=\count178
+\pgfmatrixcurrentrow=\count179
+\pgfmatrixcurrentcolumn=\count180
+\pgf@matrix@numberofcolumns=\count181
 )
-\tikz@expandcount=\count179
+\tikz@expandcount=\count182
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 ))))
-\c@rem=\count180
-\c@th=\count181
+\c@rem=\count183
+\c@th=\count184
 \rapport_analyse@idxfile=\write5
 \openout5 = `rapport_analyse.idx'.
 
@@ -1131,30 +1150,30 @@ Writing index file rapport_analyse.idx
 (./rapport_analyse.aux)
 \openout1 = `rapport_analyse.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \degres on input line 115.
-LaTeX Info: Redefining \dots on input line 115.
-LaTeX Info: Redefining \up on input line 115.
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 115.
+LaTeX Info: Redefining \degres on input line 116.
+LaTeX Info: Redefining \dots on input line 116.
+LaTeX Info: Redefining \up on input line 116.
+\AtBeginShipoutBox=\box43
+Package hyperref Info: Link coloring OFF on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1162,19 +1181,19 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count185
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 115.
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 (./rapport_analyse.out) (./rapport_analyse.out)
 \@outlinefile=\write6
 \openout6 = `rapport_analyse.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 115.
+LaTeX Info: Redefining \microtypecontext on input line 116.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1190,17 +1209,17 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count183
-\scratchdimen=\dimen209
-\scratchbox=\box43
-\nofMPsegments=\count184
-\nofMParguments=\count185
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count186
-\MPscratchDim=\dimen210
-\MPnumerator=\count187
-\makeMPintoPDFobject=\count188
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count186
+\scratchdimen=\dimen217
+\scratchbox=\box44
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen218
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1219,10 +1238,44 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=731.23584pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-48.83829pt
+* \headheight=13.6pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=49.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 117.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 117.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 118.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 118.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1232,39 +1285,39 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: mt-cmr.cfg 2011/04/09 v2.1 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 117.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 118.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 117
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 118
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 117
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 118
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 117.
+(Font)              <12> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 117.
+(Font)              <8> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 117.
+(Font)              <6> on input line 118.
 
-<logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=87, 236.15828pt x 284.52798pt>
+<logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=123, 236.15828pt x 284.52798pt>
 File: logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 
 <use logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
 Package pdftex.def Info: logo_ENSTA_Bretagne_Vertical_CMJN.pdf used on input li
-ne 117.
+ne 118.
 (pdftex.def)             Requested size: 99.18579pt x 119.50148pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 117.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1274,42 +1327,42 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 117.
+(Font)              <10> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 117.
+(Font)              <7> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 117.
+(Font)              <5> on input line 118.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []$\T1/pcr/m/n/10 www . ensta-[]bretagne .
  []
 
 
-Overfull \hbox (138.22037pt too wide) in paragraph at lines 117--117
+Overfull \hbox (138.1816pt too wide) in paragraph at lines 118--118
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 117.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 118.
 [1
 
 {/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo_ENSTA
 _Bretagne_Vertical_CMJN.pdf>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 122.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 122.
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 123.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 123.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 123.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 123.
 
 (./rapport_analyse.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
@@ -1320,26 +1373,31 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \newpage
+l.124 \newpage
                [1
 
-] [2
+] [2] [3
 
-] (./Partie0.tex
+]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 141.
+ [4
+
+] (./Partie_Contexte.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
- [3
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 10.
+ [5
 
-] [4]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<./images/radar.png, id=181, 1284.8pt x 568.1225pt>
+<./images/radar.png, id=236, 1284.8pt x 568.1225pt>
 File: ./images/radar.png Graphic file (type png)
  <use ./images/radar.png>
 Package pdftex.def Info: ./images/radar.png used on input line 52.
-(pdftex.def)             Requested size: 369.0pt x 163.1649pt.
+(pdftex.def)             Requested size: 418.25368pt x 184.94102pt.
 
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
@@ -1356,17 +1414,17 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 52--53
 [][] 
  []
 
-[5 <./images/radar.png>]) (./Partie1.tex [6]
-<./images/interview.pdf, id=194, 325.215pt x 223.3143pt>
+[6]) (./Partie_AnalyseFonctionnelle.tex [7 <./images/radar.png>]
+<./images/interview.pdf, id=253, 325.215pt x 223.3143pt>
 File: ./images/interview.pdf Graphic file (type pdf)
 
 <use ./images/interview.pdf>
 Package pdftex.def Info: ./images/interview.pdf used on input line 7.
-(pdftex.def)             Requested size: 295.20113pt x 202.71881pt.
- [7
+(pdftex.def)             Requested size: 334.60422pt x 229.77776pt.
+ [8
 
  <./images/interview.pdf>]
-<./images/tableauSpe.pdf, id=208, page=1, 611.40419pt x 690.17848pt>
+<./images/tableauSpe.pdf, id=267, page=1, 611.40419pt x 690.17848pt>
 File: ./images/tableauSpe.pdf Graphic file (type pdf)
 
 <use ./images/tableauSpe.pdf, page 1>
@@ -1390,13 +1448,13 @@ File: ./images/tableauSpe.pdf Graphic file (type pdf)
 <use ./images/tableauSpe.pdf, page 1>
 Package pdftex.def Info: ./images/tableauSpe.pdf, page1 used on input line 14.
 (pdftex.def)             Requested size: 597.89389pt x 674.92752pt.
- [8 <./images/tableauSpe.pdf>]
-<./images/Diagramme_pieuvre.pdf, id=220, 845.1575pt x 597.23125pt>
+ [9 <./images/tableauSpe.pdf>]
+<./images/Diagramme_pieuvre.pdf, id=279, 845.1575pt x 597.23125pt>
 File: ./images/Diagramme_pieuvre.pdf Graphic file (type pdf)
 
 <use ./images/Diagramme_pieuvre.pdf>
 Package pdftex.def Info: ./images/Diagramme_pieuvre.pdf used on input line 23.
-(pdftex.def)             Requested size: 435.4173pt x 307.69144pt.
+(pdftex.def)             Requested size: 493.53627pt x 348.76373pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -1404,40 +1462,49 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (11.5923pt too wide) in paragraph at lines 22--24
+Overfull \hbox (20.4576pt too wide) in paragraph at lines 22--24
 []  [] 
  []
 
-<./images/SADT_A-0.pdf, id=221, 845.1575pt x 597.23125pt>
+<./images/SADT_A-0.pdf, id=280, 845.1575pt x 597.23125pt>
 File: ./images/SADT_A-0.pdf Graphic file (type pdf)
 
 <use ./images/SADT_A-0.pdf>
 Package pdftex.def Info: ./images/SADT_A-0.pdf used on input line 30.
-(pdftex.def)             Requested size: 369.0pt x 260.75946pt.
+(pdftex.def)             Requested size: 418.25368pt x 295.56203pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 31.
 See the caption package documentation for explanation.
 
-[9 <./images/Diagramme_pieuvre.pdf>]
-<./images/SADT_A0.pdf, id=241, 845.1575pt x 597.23125pt>
+[10 <./images/Diagramme_pieuvre.pdf>]
+<./images/SADT_A0.pdf, id=300, 845.1575pt x 597.23125pt>
 File: ./images/SADT_A0.pdf Graphic file (type pdf)
 
 <use ./images/SADT_A0.pdf>
 Package pdftex.def Info: ./images/SADT_A0.pdf used on input line 32.
-(pdftex.def)             Requested size: 369.0pt x 260.75946pt.
+(pdftex.def)             Requested size: 418.25368pt x 295.56203pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 33.
 See the caption package documentation for explanation.
 
-[10 <./images/SADT_A-0.pdf> <./images/SADT_A0.pdf
+[11 <./images/SADT_A-0.pdf> <./images/SADT_A0.pdf
 
 pdfTeX warning: pdflatex (file ./images/SADT_A0.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->]) (./Partie2.tex [11]
+>]) [12] [13
+
+] (./Partie_Radiogonio.tex) [14
+
+] [15
+
+] [16
+
+]
+(./Partie_Organisation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
@@ -1447,81 +1514,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-[12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-<./images/framaboard.jpg, id=279, 1272.755pt x 818.05624pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+<./images/framaboard.jpg, id=357, 1272.755pt x 818.05624pt>
 File: ./images/framaboard.jpg Graphic file (type jpg)
 
 <use ./images/framaboard.jpg>
-Package pdftex.def Info: ./images/framaboard.jpg used on input line 36.
-(pdftex.def)             Requested size: 369.0pt x 237.16782pt.
+Package pdftex.def Info: ./images/framaboard.jpg used on input line 38.
+(pdftex.def)             Requested size: 376.42575pt x 241.93614pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 37.
+(caption)                particular \caption on input line 39.
+See the caption package documentation for explanation.
+
+[17
+
+] <./images/github.png, id=363, 1002.74625pt x 857.2025pt>
+File: ./images/github.png Graphic file (type png)
+
+<use ./images/github.png>
+Package pdftex.def Info: ./images/github.png used on input line 45.
+(pdftex.def)             Requested size: 376.42575pt x 321.79022pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 46.
+See the caption package documentation for explanation.
+
+) (./Partie_Montreal.tex [18 <./images/framaboard.jpg> <./images/github.png>]
+<./images/evolution.png, id=377, 831.105pt x 534.99875pt>
+File: ./images/evolution.png Graphic file (type png)
+
+<use ./images/evolution.png>
+Package pdftex.def Info: ./images/evolution.png used on input line 9.
+(pdftex.def)             Requested size: 418.25368pt x 269.23752pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 10.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 36--37
+Overfull \hbox (15.0pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
+<./images/montreal.png, id=378, 1167.36125pt x 814.04124pt>
+File: ./images/montreal.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/ppl/m/sc/10.95 (+20) Figure \T1/ppl/m/n/10.95 (+20) 3.1 ^^U |[][]$\T1/pcr
-/m/n/10.95 https : / / smart . framaboard . org /
+<use ./images/montreal.png>
+Package pdftex.def Info: ./images/montreal.png used on input line 15.
+(pdftex.def)             Requested size: 209.12683pt x 145.8255pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 16.
+See the caption package documentation for explanation.
+
+[19
+
+ <./images/evolution.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
  []
 
+<./images/schemaBloc.png, id=387, 898.35625pt x 717.68124pt>
+File: ./images/schemaBloc.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/pcr/m/n/10.95 ?controller = board&action = readonly&token =
- []
-
-
-Overfull \hbox (25.19952pt too wide) in paragraph at lines 37--37
-\T1/pcr/m/n/10.95 ab1e20bb26472df067dc24cbd84d9b28eea71bfd68bdea07ab5a9b555ce0$
-[]| 
- []
-
-) [13 <./images/framaboard.jpg>] [14
-
-] (./rapport_analyse.lof
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
- [][] [][][]$\T1/pcr/m/n/10.95 https : / / smart . framaboard . org / 
- []
+<use ./images/schemaBloc.png>
+Package pdftex.def Info: ./images/schemaBloc.png used on input line 44.
+(pdftex.def)             Requested size: 418.25368pt x 334.13446pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
- \T1/pcr/m/n/10.95 ?controller = board&action = readonly&token = 
- []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 45.
+See the caption package documentation for explanation.
 
-
-Overfull \hbox (67.35713pt too wide) in paragraph at lines 9--9
- \T1/pcr/m/n/10.95 ab1e20bb26472df067dc24cbd84d9b28eea71bfd68bdea07ab5a9b555ce0
-$[][] []  
- []
-
-)
+[20 <./images/montreal.png>]) [21 <./images/schemaBloc.png>]
+(./rapport_analyse.lof)
 No file rapport_analyse.ind.
-(./rapport_analyse.bbl [15]
+(./rapport_analyse.bbl [22]
 bibitemlist
 
-Underfull \hbox (badness 2790) in paragraph at lines 4--9
+Underfull \hbox (badness 5771) in paragraph at lines 4--9
 []\T1/ppl/m/n/10.95 (+20) Juliette De-mey.  Com-ment dé-tecter les drones.  \T1
-/ppl/m/it/10.95 (+20) JDD\T1/ppl/m/n/10.95 (+20) , 1 mars
+/ppl/m/it/10.95 (+20) JDD\T1/ppl/m/n/10.95 (+20) , 1 mars 2015.
  []
 
-) [16
+
+Underfull \hbox (badness 1292) in paragraph at lines 33--37
+[]\T1/ppl/m/n/10.95 (+20) Philippe Mar-tin.  \T1/ppl/m/it/10.95 (+20) Re-cep-te
+ur go-nio(ou in-di-ca-teur de champ) vhf\T1/ppl/m/n/10.95 (+20) .  http ://ph-
+ []
+
+) [23
 
 ]
 \tf@toc=\write7
@@ -1530,36 +1625,44 @@ Underfull \hbox (badness 2790) in paragraph at lines 4--9
 \tf@lof=\write8
 \openout8 = `rapport_analyse.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./rapport_analyse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `rapport_analyse.out' has not changed.
-(rerunfilecheck)             Checksum: F96BCF162639B29B8E32A916804081B5;1152.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+(rerunfilecheck)             Checksum: C95A2D55A99CDFBAF15B2832A5217A66;1767.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 21740 strings out of 495063
- 368913 string characters out of 3182201
- 498837 words of memory out of 3000000
- 24311 multiletter control sequences out of 15000+200000
- 71847 words of font info for 169 fonts, out of 3000000 for 9000
+ 22321 strings out of 495063
+ 377610 string characters out of 3182201
+ 512740 words of memory out of 3000000
+ 24842 multiletter control sequences out of 15000+200000
+ 75018 words of font info for 169 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 69i,18n,57p,966b,930s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/f
-onts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm
-/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
-o/uplri8a.pfb>
-Output written on rapport_analyse.pdf (17 pages, 1207304 bytes).
+ 69i,18n,57p,974b,930s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/tex
+live/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/euro
+sym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
+no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
+fb>
+Output written on rapport_analyse.pdf (24 pages, 2351955 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 35039 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 39739 words of extra memory for PDF output out of 42996 (max. 10000000)
 
