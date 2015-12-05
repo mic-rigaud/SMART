@@ -16,8 +16,12 @@
      "st")
     (TeX-run-style-hooks
      "pageGardeEnsta"
+     "eurosym"
      "pdfpages"
      "final"
+     "geometry"
+     "bottom=2cm"
+     "top=2cm"
      "caption"
      "xcolor"
      "svgnames"
@@ -45,6 +49,7 @@
      "Partie_Contexte"
      "Partie_AnalyseFonctionnelle"
      "Partie_Radiogonio"
-     "Partie_Montreal"
-     "Partie_Organisation")))
+     "Partie_EtatArt"
+     "Partie_Organisation"
+     "Partie_Montreal")))
 
