@@ -50,7 +50,6 @@
      "Partie_AnalyseFonctionnelle"
      "Partie_Radiogonio"
      "Partie_EtatArt"
-     "Partie_Fonctionnement"
      "Partie_Organisation"
      "Partie_Montreal")))
 
