@@ -54,6 +54,14 @@ Un système à LED permet de visualiser la composante continue qui passe dans le
 Trois microcontrôleurs Pics sont utilisés un 16F628A pour l'affichage, un 16F877A pour le circuit principal et un 12F675 comme diviseur de fréquence.
 
 Ce Doppler est la version la plus récente et la plus performante de la série. Il commute les antennes et il affiche la direction mesurée sur la boussole à 36 LED. 
+~\\
+
+Une présentation plus détaillé du fonctionnement interne des PIC est fournie dans la figure suivante:
+
+
+\includegraphics[width=\textwidth]{Presentation1}
+\captionof{figure}{Présentation détaillé du système}
+
 
 
 \section{Schéma bloc}
@@ -83,7 +91,7 @@ FB1 - FB8&                   Ferrites\footnote{+ composants passifs : Résistanc
 IC100&        = MAX232ACPE&        en option\\
 Q100 &        = 2N2222 TO-92&\\
 \end{tabular}
-
+\captionof{figure}{Liste des composants}
 
 
 %%% Local Variables: 
