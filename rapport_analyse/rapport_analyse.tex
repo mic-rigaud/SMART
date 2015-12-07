@@ -114,6 +114,8 @@
 
 %%%%%%%%%%%%%%%%%% DEBUT DU DOCUMENT
 \begin{document}
+\nocite{*}
+\bibliographystyle{plain}
 
 \maketitle
 \thispagestyle{empty}
@@ -167,14 +169,13 @@ Après avoir réalisé l'état de l'art, nous envisageons de réaliser un radio-
 \part*{Annexe}
 \addcontentsline{toc}{part}{Annexe}
 \appendix
-\nocite{*}
+
 \input{Partie_Organisation}
 
 
 \newpage
 \listoffigures
 \printindex
-\bibliographystyle{plain}
 \bibliography{biblio}
 
 \end{document}
