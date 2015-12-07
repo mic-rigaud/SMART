@@ -34,14 +34,14 @@ Les caractéristiques principales qui interviennent principalement dans le choix
 \item La susceptibilité du système
 \end{itemize}
 ~\\
-La spécificité de notre système est la cible à localisé. En effet, la source peut ne pas émettre en  continue et sur de très courtes période (inférieure à 1 seconde). Il nous faut donc un radiogoniomètre capable de réalisé la mesure en une fraction de seconde. La gestion de conservation de la donnée mesurée en attendant une valeur ultérieure sera gérée par l’ordinateur.
+La spécificité de notre système est la cible à localiser. En effet, la source peut ne pas émettre en  continue et sur de très courtes périodes (inférieure à 1 seconde). Il nous faut donc un radiogoniomètre capable de réaliser la mesure en une fraction de seconde. La gestion de conservation de la donnée mesurée en attendant une valeur ultérieure sera gérée par l’ordinateur.
 
 
 \section{Type de goniométrie}
 
 \subsection{Goniométrie d'amplitude}
 
-	La mesure se fait par repérage d’un maximum d’amplitude, d’un minimum d’amplitude, ou par comparaison de d’amplitude en sortie de deux diagrammes se recouvrant partiellement. La recherche du minimum d’amplitude à partir d’une antenne à cadre tournante est l’approche la plus ancienne. Un dipôle électrique est utilisé pour lever l’ambiguïté de 180\up{o} en formant un diagramme en cardioïde par sommation.
+	La mesure se fait par repérage d’un maximum d’amplitude, d’un minimum d’amplitude, ou par comparaison de l’amplitude en sortie de deux diagrammes se recouvrant partiellement. La recherche du minimum d’amplitude à partir d’une antenne à cadre tournante est l’approche la plus ancienne. Un dipôle électrique est utilisé pour lever l’ambiguïté de 180\up{o} en formant un diagramme en cardioïde par sommation.
 	
 \includegraphics[width=\textwidth]{cardioide}
 \captionof{figure}{diagramme en cardioide d’une antenne à cadre}
@@ -53,7 +53,7 @@ La spécificité de notre système est la cible à localisé. En effet, la sourc
 \subsection{Goniométrie Watson-Watt}
 \label{Watson-Watt}
 
-	Un radiogoniomètre Watson-Watt est un radiogoniomètre automatique. L’onde électromagnétique du système à localisé est reçue par deux antennes perpendiculaires dont le rapport des amplitudes est très proche de tan (l’une en sin et l’autre en cos). Les premières antennes utilisées pour cette technique étaient des antennes cadres orthogonales. Depuis, d'autres antennes telles que l'antenne Adcock ont été utilisées.
+	Un radiogoniomètre Watson-Watt est un radiogoniomètre automatique. L’onde électromagnétique du système à localiser est reçue par deux antennes perpendiculaires dont le rapport des amplitudes est très proche de tan (l’une en sin et l’autre en cos). Les premières antennes utilisées pour cette technique étaient des antennes cadres orthogonales. Depuis, d'autres antennes telles que l'antenne Adcock ont été utilisées.
 
 \subsection{Goniométrie par interférométrie}
 
@@ -62,7 +62,7 @@ L’interférométrie utilise la mesure de la différence de phase de signaux d�
 
 \subsection{Goniométrie par effet Doppler}
 
-	Une antenne tournant autour d'un axe est placé dans le champ d'émission d'un émetteur de porteuse pure. A cause du mouvement de l'antenne, le signal reçu subit un effet Doppler qui se traduit par une modulation FM du signal reçu. La fréquence instantanée du signal augmente quand l’antenne se rapproche de la direction d’arrivée du signal et décroît lorsqu’elle s’en éloigne. En effectuant une démodulation FM, on peut détecter la direction de provenance des ondes en comparant la phase du signal obtenu et celle de la rotation angulaire de l’antenne. 
+	Une antenne tournant autour d'un axe est placée dans le champ d'émission d'un émetteur de porteuse pure. A cause du mouvement de l'antenne, le signal reçu subit un effet Doppler qui se traduit par une modulation FM du signal reçu. La fréquence instantanée du signal augmente quand l’antenne se rapproche de la direction d’arrivée du signal et décroît lorsqu’elle s’en éloigne. En effectuant une démodulation FM, on peut détecter la direction de provenance des ondes en comparant la phase du signal obtenu et celle de la rotation angulaire de l’antenne. 
 Afin d'éviter de devoir faire tourner mécaniquement l'antenne, on peut en disposer plusieurs en cercle et les commuter successivement.
 
 \section{Selection de la technologie}
@@ -75,15 +75,15 @@ Afin d'éviter de devoir faire tourner mécaniquement l'antenne, on peut en disp
 \parindent=15pt
 ~\\
 
-	Ce tableau compare plusieurs technologies ainsi que leurs caractéristiques. Dans le cadre d’un système devant opéré en extérieur sur zone (environ de zone industriel ou de central électrique ) nous retenons le goniomètre Doppler.
+	Ce tableau compare plusieurs technologies ainsi que leurs caractéristiques. Dans le cadre d’un système devant opéré en extérieur sur zone (environs de zone industrielle ou de central électrique ) nous retenons le goniomètre Doppler.
 
 ~\\
 
 
 %Suite à cette étude comparative, 
-Il reste ensuite à déterminer le modèle précis de radiogoniomètre à effet Doppler pouvant être utilisé pour notre démonstrateur. Ce modèle devra correspondre aux exigence énoncées précédemment ou, à défaut, être modifiable ou adaptable à notre problématique.
+Il reste ensuite à déterminer le modèle précis de radiogoniomètre à effet Doppler pouvant être utilisé pour notre démonstrateur. Ce modèle devra correspondre aux exigences énoncées précédemment ou, à défaut, être modifiable ou adaptable à notre problématique.
 
-Cependant il apparait très rapidement que les radiogoniomètres en vente sur le marché ne correspondent pas à notre domaine de fréquence, sont beaucoup trop cher, ou appartiennent au marché de la défense et ne sont donc pas en vente au public. Malgré tout, de nombreux sites proposent des plans de montages, des tutoriels et des solutions techniques pour réaliser soit même son radiogoniomètre pour un prix raisonnable. Le site F1LVT, site sur lequel est paru l'étude comparative précédente, publie d'ailleurs un article pour construire le radiogoniomètre Montréal 3v2 correspondant à bon nombre de nos critères et adaptable à notre gamme de fréquence pour un prix raisonnable estimé à 50\euro. Nous partirons donc sur ce modèle dont une étude approfondie est proposée par la suite\footnote{voir page \pageref{montreal}}.
+Cependant il apparait très rapidement que les radiogoniomètres en vente sur le marché ne correspondent pas à notre domaine de fréquence, sont beaucoup trop chers, ou appartiennent au marché de la défense et ne sont donc pas en vente au public. Malgré tout, de nombreux sites proposent des plans de montages, des tutoriels et des solutions techniques pour réaliser soit même son radiogoniomètre pour un prix raisonnable. Le site F1LVT, site sur lequel est paru l'étude comparative précédente, publie d'ailleurs un article pour construire le radiogoniomètre Montréal 3v2 correspondant à bon nombre de nos critères et adaptable à notre gamme de fréquence pour un prix raisonnable estimé à 50\euro. Nous partirons donc sur ce modèle dont une étude approfondie est proposée par la suite\footnote{voir page \pageref{montreal}}.
 
 
 %%% Local Variables: 
