@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+
+\bibitem{jdd}
+Juliette Demey.
+\newblock Comment détecter les drones.
+\newblock {\em JDD}, 1 mars 2015.
+\newblock
+  http://www.lejdd.fr/Societe/Faits-divers/Comment-detecter-les-drones-720496.
+
+\bibitem{montreal}
+F1LVT.
+\newblock F1lvt: comment créer un radio-goniomètre doppler le montréal 3v2.
+\newblock http://f1lvt.com/.
+
+\bibitem{optique}
+Société Flir.
+\newblock L'imagerie thermique: Une technologie prête à conquérir le reste
+  du monde.
+\newblock http://www.flir.fr/cs/display/?id=51839.
+
+\bibitem{acoustique2}
+Peter Hausmann.
+\newblock {\em UAV Sound Source Localization}, 2014.
+
+\bibitem{acoustique3}
+Jason Koebler.
+\newblock Tiny device will detect domestic drones.
+\newblock {\em US.news}, May 1 2013.
+\newblock
+  http://www.usnews.com/news/articles/2013/05/01/tiny-device-will-detect-domestic-drones.
+
+\bibitem{gonio}
+Philippe Martin.
+\newblock {\em Recepteur gonio(ou indicateur de champ) vhf}.
+\newblock
+  http://ph-martin.pagesperso-orange.fr/f6eti/realisations/9901rxvhf/index.htm.
+
+\bibitem{dronedetector}
+Société Orelia.
+\newblock Drone detector.
+\newblock http://www.drone-detector.com/fr/.
+
+\bibitem{acoustique}
+H.~Lissek P.~Marmaroli, X.~Falourd.
+\newblock {\em A UAV motor denoising technique to improve localization of
+  surrounding noisy aircrafts: proof of concept for anti-collision systems},
+  2012.
+
+\end{thebibliography}
