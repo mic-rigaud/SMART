@@ -61,13 +61,14 @@ Une présentation plus détaillée du fonctionnement interne des PIC est fournie
 
 \includegraphics[width=\textwidth]{Presentation1}
 \captionof{figure}{Présentation détaillée du système}
-
+\parindent=15pt
 
 
 \section{Schéma bloc}
 
 \includegraphics[width=\textwidth]{schemaBloc}
 \captionof{figure}{Schéma bloc du Montréal 3v2}
+\parindent=15pt
 
 \section{Liste des composants}
 Voici la liste des composants pour la construction du Montréal 3v2:
@@ -92,11 +93,13 @@ IC100&        = MAX232ACPE&        en option\\
 Q100 &        = 2N2222 TO-92&\\
 \end{tabular}
 \captionof{figure}{Liste des composants}
+\parindent=15pt
 
 \section{Modification à apporter}
 
 	Le Montréal ne correspond qu'en partie à nos critères. Il est donc impératif de le modifier.
 	Le premier problème concerne la gamme de fréquence du système. En effet, notre démonstrateur doit pouvoir localiser un drone émettant en 2,4 Ghz. Il faut donc à la fois modifier le bloc antenne mais également la partie de comutation d'antenne permettant de réaliser l'effet Doppler. L'étude des antennes à déjà été réalisée ci-dessus.
+
 	De plus, pour pouvoir réaliser la localisation de la cible, il faut pouvoir réaliser le relevé de mesure en sortie du système afin d'en interpréter l'azimut de la cible par rapport au radiogoniomètre.
 
 %%% Local Variables: 

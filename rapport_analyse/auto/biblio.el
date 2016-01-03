@@ -8,5 +8,6 @@
      "acoustique3"
      "dronedetector"
      "optique"
-     "montreal")))
+     "montreal"
+     "futura")))
 

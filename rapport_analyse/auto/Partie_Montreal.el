@@ -1,6 +1,5 @@
-(TeX-add-style-hook
- "Partie_Montreal"
+(TeX-add-style-hook "Partie_Montreal"
  (lambda ()
-   (LaTeX-add-labels
-    "montreal")))
+    (LaTeX-add-labels
+     "montreal")))
 

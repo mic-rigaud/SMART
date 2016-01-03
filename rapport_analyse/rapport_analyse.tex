@@ -1,5 +1,4 @@
-
-\documentclass[a4paper, 11pt, oneside]{memoir}
+\documentclass[a4paper, 11pt, oneside, oldfontcommands]{memoir}
 
 %%%%% Packages %%%%%
 \usepackage{lmodern}
@@ -37,6 +36,8 @@
 \usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 \usepackage[final]{pdfpages} 
 \usepackage{eurosym}
+\usepackage{frbib}
+\usepackage[babel=true]{csquotes}
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -115,7 +116,7 @@
 %%%%%%%%%%%%%%%%%% DEBUT DU DOCUMENT
 \begin{document}
 \nocite{*}
-\bibliographystyle{plain}
+\bibliographystyle{frplain}
 
 \maketitle
 \thispagestyle{empty}
@@ -170,6 +171,7 @@ Après avoir réalisé l'état de l'art, nous envisageons de réaliser un radio-
 \addcontentsline{toc}{part}{Annexe}
 \appendix
 
+\input{Annexe_drones}
 \input{Partie_Organisation}
 
 

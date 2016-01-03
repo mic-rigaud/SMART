@@ -1,3 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: rapport_analyse.aux
-The style file: plain.bst
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: rapport_analyse.aux
+The style file: frplain.bst
 Database file #1: biblio.bib
+Warning--to sort, need author or key in futura
+Warning--empty author in futura
+You've used 9 entries,
+            2159 wiz_defined-function locations,
+            548 strings with 5266 characters,
+and the built_in function-call counts, 1799 in all, are:
+= -- 164
+> -- 57
+< -- 0
++ -- 26
+- -- 16
+* -- 85
+:= -- 310
+add.period$ -- 25
+call.type$ -- 9
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 78
+empty$ -- 173
+format.name$ -- 16
+if$ -- 368
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 3
+newline$ -- 46
+num.names$ -- 16
+pop$ -- 60
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 59
+stack$ -- 0
+substring$ -- 46
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 2
+while$ -- 16
+width$ -- 10
+write$ -- 84
+(There were 2 warnings)
