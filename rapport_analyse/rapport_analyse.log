@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.7)  4 JAN 2016 09:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.7)  4 JAN 2016 10:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1609,12 +1609,12 @@ Overfull \hbox (58.05083pt too wide) in paragraph at lines 54--56
 []  [] 
  []
 
-<./images/3axes2.pdf, id=420, 450.74342pt x 241.09532pt>
-File: ./images/3axes2.pdf Graphic file (type pdf)
+<./images/3axes.pdf, id=420, 399.8289pt x 197.66821pt>
+File: ./images/3axes.pdf Graphic file (type pdf)
 
-<use ./images/3axes2.pdf>
-Package pdftex.def Info: ./images/3axes2.pdf used on input line 62.
-(pdftex.def)             Requested size: 501.90312pt x 268.47244pt.
+<use ./images/3axes.pdf>
+Package pdftex.def Info: ./images/3axes.pdf used on input line 62.
+(pdftex.def)             Requested size: 501.90312pt x 248.1403pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -1627,7 +1627,12 @@ Overfull \hbox (43.05083pt too wide) in paragraph at lines 61--63
  []
 
 [12 <./images/FAST.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
@@ -1635,19 +1640,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 File: ./images/SMART_logic.pdf Graphic file (type pdf)
 
 <use ./images/SMART_logic.pdf>
-Package pdftex.def Info: ./images/SMART_logic.pdf used on input line 72.
+Package pdftex.def Info: ./images/SMART_logic.pdf used on input line 78.
 (pdftex.def)             Requested size: 334.60422pt x 324.8569pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 73.
+(caption)                particular \caption on input line 79.
 See the caption package documentation for explanation.
 
-[13 <./images/3axes2.pdf>]) [14 <./images/SMART_logic.pdf>] [15
+[13 <./images/3axes.pdf>]) [14 <./images/SMART_logic.pdf>] [15
 
 ]
 (./Partie_Radiogonio.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
@@ -1657,35 +1677,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
 File: ./images/cardioide.PNG Graphic file (type png)
 
 <use ./images/cardioide.PNG>
-Package pdftex.def Info: ./images/cardioide.PNG used on input line 46.
+Package pdftex.def Info: ./images/cardioide.PNG used on input line 49.
 (pdftex.def)             Requested size: 418.25368pt x 240.72737pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 47.
+(caption)                particular \caption on input line 50.
 See the caption package documentation for explanation.
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 49--50
+[][] 
+ []
 
 [17 <./images/cardioide.PNG>]
 <./images/tableauTechnologies.PNG, id=502, 406.51875pt x 225.09094pt>
 File: ./images/tableauTechnologies.PNG Graphic file (type png)
 
 <use ./images/tableauTechnologies.PNG>
-Package pdftex.def Info: ./images/tableauTechnologies.PNG used on input line 73
+Package pdftex.def Info: ./images/tableauTechnologies.PNG used on input line 76
 .
 (pdftex.def)             Requested size: 418.25368pt x 231.59552pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 74.
+(caption)                particular \caption on input line 77.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
@@ -2036,7 +2061,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
  25387 strings out of 494930
- 442752 string characters out of 6178885
+ 442747 string characters out of 6178885
  581602 words of memory out of 5000000
  27795 multiletter control sequences out of 15000+600000
  80947 words of font info for 219 fonts, out of 8000000 for 9000
@@ -2056,7 +2081,7 @@ mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
 alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rapport_analyse.pdf (39 pages, 2980135 bytes).
+Output written on rapport_analyse.pdf (39 pages, 2934661 bytes).
 PDF statistics:
  826 PDF objects out of 1000 (max. 8388607)
  673 compressed objects within 7 object streams
