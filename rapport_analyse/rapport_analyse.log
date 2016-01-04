@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.7)  4 JAN 2016 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.7)  4 JAN 2016 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1690,7 +1690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 [18 <./images/tableauTechnologies.PNG>]) (./Partie_EtatArt.tex [19]
-<./images/antennes.png, id=520, 721.19438pt x 416.30531pt>
+<./images/antennes.png, id=523, 721.19438pt x 416.30531pt>
 File: ./images/antennes.png Graphic file (type png)
 
 <use ./images/antennes.png>
@@ -1705,7 +1705,7 @@ See the caption package documentation for explanation.
 [20
 
  <./images/antennes.png>]) (./Partie_Montreal.tex [21]
-<./images/evolution.png, id=544, 831.105pt x 534.99875pt>
+<./images/evolution.png, id=547, 831.105pt x 534.99875pt>
 File: ./images/evolution.png Graphic file (type png)
 
 <use ./images/evolution.png>
@@ -1722,7 +1722,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
-<./images/montreal.png, id=545, 1167.36125pt x 814.04124pt>
+<./images/montreal.png, id=548, 1167.36125pt x 814.04124pt>
 File: ./images/montreal.png Graphic file (type png)
 
 <use ./images/montreal.png>
@@ -1747,7 +1747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
  []
 
 [23 <./images/montreal.png>]
-<./images/Presentation1.pdf, id=560, 963.35912pt x 542.025pt>
+<./images/Presentation1.pdf, id=563, 963.35912pt x 542.025pt>
 File: ./images/Presentation1.pdf Graphic file (type pdf)
 
 <use ./images/Presentation1.pdf>
@@ -1764,7 +1764,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 62--63
 [][] 
  []
 
-<./images/schemaBloc.png, id=561, 898.35625pt x 717.68124pt>
+<./images/schemaBloc.png, id=564, 898.35625pt x 717.68124pt>
 File: ./images/schemaBloc.png Graphic file (type png)
 
 <use ./images/schemaBloc.png>
@@ -1828,7 +1828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<./images/modulation.jpg, id=608, 192.72pt x 150.5625pt>
+<./images/modulation.jpg, id=611, 192.72pt x 150.5625pt>
 File: ./images/modulation.jpg Graphic file (type jpg)
 
 <use ./images/modulation.jpg>
@@ -1858,7 +1858,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-[29] <./images/signal.png, id=619, 322.20375pt x 102.98476pt>
+[29] <./images/signal.png, id=622, 322.20375pt x 102.98476pt>
 File: ./images/signal.png Graphic file (type png)
 
 <use ./images/signal.png>
@@ -1904,7 +1904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-<./images/framaboard.jpg, id=634, 1272.755pt x 818.05624pt>
+<./images/framaboard.jpg, id=637, 1272.755pt x 818.05624pt>
 File: ./images/framaboard.jpg Graphic file (type jpg)
 
 <use ./images/framaboard.jpg>
@@ -1918,7 +1918,7 @@ See the caption package documentation for explanation.
 
 [32
 
-] <./images/github.png, id=640, 1002.74625pt x 857.2025pt>
+] <./images/github.png, id=643, 1002.74625pt x 857.2025pt>
 File: ./images/github.png Graphic file (type png)
 
 <use ./images/github.png>
@@ -1931,7 +1931,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 ) [33 <./images/framaboard.jpg> <./images/github.png>]
-<./images/mail.pdf, id=651, 614.295pt x 794.97pt>
+<./images/mail.pdf, id=654, 614.295pt x 794.97pt>
 File: ./images/mail.pdf Graphic file (type pdf)
  <use ./images/mail.pdf>
 Package pdftex.def Info: ./images/mail.pdf used on input line 178.
@@ -1946,7 +1946,7 @@ File: ./images/mail.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/mail.pdf used on input line 178.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<./images/mail.pdf, id=655, page=1, 614.295pt x 794.97pt>
+<./images/mail.pdf, id=658, page=1, 614.295pt x 794.97pt>
 File: ./images/mail.pdf Graphic file (type pdf)
 
 <use ./images/mail.pdf, page 1>
@@ -1968,7 +1968,7 @@ Package pdftex.def Info: ./images/mail.pdf, page1 used on input line 178.
  [34
 
 ]
-<./images/mail.pdf, id=660, page=2, 614.295pt x 794.97pt>
+<./images/mail.pdf, id=663, page=2, 614.295pt x 794.97pt>
 File: ./images/mail.pdf Graphic file (type pdf)
 
 <use ./images/mail.pdf, page 2>
@@ -2035,14 +2035,14 @@ Package rerunfilecheck Info: File `rapport_analyse.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 25386 strings out of 494930
- 442741 string characters out of 6178885
+ 25387 strings out of 494930
+ 442752 string characters out of 6178885
  581602 words of memory out of 5000000
  27795 multiletter control sequences out of 15000+600000
  80947 words of font info for 219 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,18n,56p,1286b,980s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
 st, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fo
@@ -2056,10 +2056,10 @@ mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
 alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rapport_analyse.pdf (39 pages, 2979834 bytes).
+Output written on rapport_analyse.pdf (39 pages, 2980135 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 669 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 826 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
  40971 words of extra memory for PDF output out of 42996 (max. 10000000)
 
