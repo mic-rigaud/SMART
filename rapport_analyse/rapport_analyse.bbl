@@ -1,8 +1,15 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{futura}
 << Drone >>.
 \newblock {\em futura science}, 2014.
+
+\bibitem{gonioloc}
+François \bgroup\sc Delaveau\egroup{} \andname{} Yvon \bgroup\sc
+  Livran\egroup{}.
+\newblock << Radiosurveillance du spectre - Goniométrie et localisation >>.
+\newblock {\em Techniques de l'ingénieur}, 2012.
+\newblock Ref. te6892.
 
 \bibitem{jdd}
 Juliette \bgroup\sc Demey\egroup{}.
@@ -37,6 +44,12 @@ Philippe \bgroup\sc Martin\egroup{}.
 \newblock << {\em Recepteur gonio (ou indicateur de champ) vhf} >>.
 \newblock
   \url{http://ph-martin.pagesperso-orange.fr/f6eti/realisations/9901rxvhf/index.htm}.
+
+\bibitem{radiosur}
+Gilbert \bgroup\sc Multedo\egroup{}.
+\newblock << Radiosurveillance du spectre >>.
+\newblock {\em Techniques de l'ingénieur}, 1994.
+\newblock Ref. e6890.
 
 \bibitem{dronedetector}
 Société \bgroup\sc Orelia\egroup{}.
