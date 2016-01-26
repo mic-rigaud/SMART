@@ -1,0 +1,40 @@
+\documentclass[a4paper, 10pt]{lettre}
+ 
+%\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage{numprint}
+ 
+ 
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+
+\begin{document}
+ 
+\begin{letter}{OVH}
+\NoRule %Permet de supprimer le trait
+ 
+\def\concname{Object :~} % On définit ici la commande 'objet'
+\conc{} % A remplir pour avoir l'obet
+%\nref{Références de la lettre, de votre point de vue}
+%\vref{Références de la lettre, du point de vue de votre interlocuteur} 
+
+\opening{Madame, Monsieur,}
+ 
+
+Contenue 
+ 
+\closing{Je vous prie d'agréer,
+Madame, Monsieur,
+mes salutations distinguées.}
+
+%\ps{PS:~}{post-scriptum}
+%\cc{nom des autres destinataires}
+%\encl{pièces jointes} 
+\end{letter}
+ 
+\end{document}

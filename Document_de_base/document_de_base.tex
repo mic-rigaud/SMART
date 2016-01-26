@@ -1,0 +1,63 @@
+\documentclass[a4paper, 11pt, oneside]{article}
+
+%%%%% Packages %%%%%
+\usepackage{lmodern}
+%\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+
+%%%%%%%%%%%%%%%%%%%%  PACKAGE SECONDAIRE
+
+%\usepackage{amstext,amsmath,amssymb,amsfonts} % package math
+%\usepackage{multirow,colortbl}	% to use multirow and ?
+%\usepackage{xspace,varioref}
+%\usepackage[linktoc=all, hidelinks]{hyperref}			% permet d'utiliser les liens hyper textes
+%\usepackage{float}				% permet d ajouter d autre fonction au floatant
+%\usepackage{caption}			% permet de rajouter les titre au figures		
+%\usepackage{wrapfig}			% permet d avoir des image avec texte coulant a cote
+%\usepackage{fancyhdr}			% permet d inserer des choses en haut et en bas de chaque page
+\usepackage{microtype}			% permet d ameliorer l apparence du texte
+%\usepackage[explicit]{titlesec}	% permet de modifier les titres
+\usepackage{graphicx}			% permet d utiliser les graphiques
+\graphicspath{{./images/}}		% to say where are image
+%\usepackage{eso-pic} 			% to put figure in the background
+%\usepackage[svgnames]{xcolor}	% permet d avoir plus de 300 couleur predefini
+%\usepackage{array}				% permet d ajouter des option dans les tableaux
+%\usepackage{listings}			% permet d ajouter des ligne de code
+%\usepackage{tikz}				% to draw figure
+%\usepackage{appendix}			% permet de faire les index
+%\usepackage{imakeidx}			% permet de creer les index
+%\usepackage{fancyvrb}			% to use Verbatim
+%\usepackage{framed}			% permet de faire des environnement cadre
+%\usepackage{fancybox}			% permet de realiser les cadres
+%\usepackage{titletoc}			% permet de modifier les titres
+
+
+
+%% index generation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeindex
+
+%%%%% Useful macros %%%%%
+\newcommand{\latinloc}[1]{\ifx\undefined\lncs\relax\emph{#1}\else\textrm{#1}\fi\xspace}
+\newcommand{\etc}{\latinloc{etc}}
+\newcommand{\eg}{\latinloc{e.g.}}
+\newcommand{\ie}{\latinloc{i.e.}}
+\newcommand{\cad}{c'est-à-dire }
+\newcommand{\st}{\ensuremath{\text{\xspace s.t.\xspace}}}
+
+
+%%%%%%%%%%%%%%%%%% DEBUT DU DOCUMENT
+\begin{document}
+\title{Promotion de l'ingenieur X}
+\author{IETA RIGAUD\\ IETA CHENEAUX\\ IETA GUIGUE}
+\date{} 
+ 
+ 
+\tableofcontents
+
+coucou
+
+\end{document}
+%%%%%%%%%%%%%%%%% FIN DU DOCUMENT
