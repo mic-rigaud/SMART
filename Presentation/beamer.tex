@@ -1,0 +1,179 @@
+\documentclass[10pt, svgnames, compress, red]{beamer}
+
+
+%%%%%%%%%%%%% PACKAGE ESSENTIEL
+
+\usepackage{lmodern}
+\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+%%%%%%%%%%%%% PACKAGE FACULTATIF
+\usepackage{multimedia}				% to use multimedia
+\usepackage{graphics}				% to use graphics
+\usepackage{subfigure}				% to use figure in figure
+\hypersetup{pdfstartview={Fit}}
+\graphicspath{{./images/}}		% to say where are image
+% \RequirePackage{pageGardeEnsta}
+% \usepackage[svgnames]{xcolor}
+\usepackage{natbib}
+\usepackage{caption}
+\usepackage{frbib}                      %permet d avoir une biblio francaise
+
+%%%%%%%%%%%%% THEME
+\mode<presentation>
+\usetheme{Warsaw}
+\usecolortheme{lily}
+\useoutertheme[subsection=false]{smoothbars}
+\useinnertheme{circles}
+\useoutertheme{shadow}
+\usefonttheme{serif}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% 
+\hypersetup{
+  pdfpagemode = FullScreen,% afficher le pdf en plein écran
+  pdfkeywords = {militaire,formation,humaine},%
+  pdfcreator  = {PDFLaTeX},%
+  pdfproducer = {PDFLaTeX}%
+}
+
+
+
+%%%% Permet affiche en début de chaque section, les noms de sections et
+%%%% noms de sous-sections de la section en cours.
+
+\AtBeginSection[]{
+  \begin{frame}
+    \begin{center}{\Large Sommaire }\end{center}
+    \tableofcontents[currentsection,hideothersubsections]
+    \transdissolve[duration=0.1]
+  \end{frame}
+  
+}
+
+%%%%%%%%%%%%%%% 
+% \titlegraphic{%
+% \begin{center}
+%   
+% \end{center}}
+% 
+% \setbeamertemplate{titlepage}{%
+% \inserttitlegraphic}
+\setbeamercolor{background canvas}{bg=Beige}
+%%%%%%%%%%%%%%%%% 
+
+
+
+\setbeamertemplate{footline}{
+\leavevmode%
+\hbox{\hspace*{-0.06cm}
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+	\usebeamerfont{author in head/foot}\insertshortauthor%~~(\insertshortinstitute)
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+	\usebeamerfont{section in head/foot}\insertshorttitle
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+	\usebeamerfont{section in head/foot}\insertshortdate{}\hspace*{2em}
+	\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+\bibliographystyle{frplain}
+% make bibliography entries smaller
+\renewcommand*{\bibfont}{\footnotesize}
+% If you have more than one page of references, you want to tell beamer
+% to put the continuation section label from the second slide onwards
+\setbeamertemplate{frametitle continuation}[from second]
+% Now get rid of all the colours
+\setbeamercolor*{bibliography entry title}{fg=black}
+\setbeamercolor*{bibliography entry author}{fg=black}
+\setbeamercolor*{bibliography entry location}{fg=black}
+\setbeamercolor*{bibliography entry note}{fg=black}
+% and kill the abominable icon
+\setbeamertemplate{bibliography item}{}
+
+
+
+%%%%%%%%%%%% TITRE
+
+\institute{ENSTA Bretagne}
+\title{Pré-présentation}
+\subtitle{Projet Smart: Détection de drones}
+\subject{}
+\author{\textsc{Équipe Smart:}\\D'Acremont Antoine\\Cotten Guillaume\\Legay Kevin\\Kennan Aya\\Shehade Mohammed\\Rigaud Michaël}
+\logo{\includegraphics[scale=0.1]{logo_ENSTA_Bretagne_Vertical_CMJN}}
+
+%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+
+
+
+\begin{frame}
+  \titlepage
+  % \includegraphics[height=1.2cm]{Image22.png}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}
+  \frametitle{Introduction}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\section{Description de l'organisation de l'équipe de validation et de la logistique}
+\subsection{Description de l'organisation de l'équipe}
+\begin{document}
+\begin{frame}
+  \frametitle{Introduction}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}
+  \frametitle{Introduction}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}
+  \frametitle{Introduction}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\begin{frame}	
+  \frametitle{Conclusion}
+
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+  \frametitle{Bibliographie}
+  \nocite{*}
+  \bibliography{biblio}
+  \transdissolve[duration=0.1] 
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Questions?}		
+  
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{tux_ask}
+  \end{center}
+  \transdissolve[duration=0.1] 
+\end{frame}	
+
+
+\end{document}
