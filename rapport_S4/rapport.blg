@@ -1,13 +1,13 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: rapport_de_base.aux
+The top-level auxiliary file: rapport.aux
 The style file: frplain.bst
 Database file #1: biblio.bib
 Warning--to sort, need author or key in futura
 Warning--empty author in futura
 You've used 11 entries,
             2159 wiz_defined-function locations,
-            559 strings with 5518 characters,
+            559 strings with 5502 characters,
 and the built_in function-call counts, 2276 in all, are:
 = -- 215
 > -- 77

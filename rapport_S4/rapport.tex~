@@ -100,14 +100,17 @@
 
 
 %%%%% Report Title %%%%%
-\title{Arbre Lexicographique}
-\author{\textsc{Rigaud Michaël}}
+\title{Rapport}
+\author{\textsc{Équipe Smart:}\\D'Acremont Antoine\\Cotten Guillaume\\Legay Kevin\\Kennan Aya\\Shehade Mohammed\\Rigaud Michaël}
 \date{\today}
-\doctype{Rapport de stage}
+%\doctype{Rapport}
 \promo{promo 2017}
+\version{2.0}
 \etablissement{\textsc{Ensta} Bretagne\\2, rue François Verny\\
   29806 \textsc{Brest} cedex\\\textsc{France}\\Tel +33 (0)2 98 34 88 00\\ \url{www.ensta-bretagne.fr}}
 \logoEcole{\includegraphics[height=4.2cm]{logo_ENSTA_Bretagne_Vertical_CMJN}}
+\logoun{\includegraphics[height=4.1cm]{drone}}
+\logodeux{\includegraphics[height=4.2cm]{antenne}}
 
 
 
@@ -123,23 +126,25 @@
 
 %%%%%%%%%%%%%%%%% INTRODUCTION
 
-%\chapter*{Introduction}
-%\addcontentsline{toc}{chapter}{Introduction}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 \newpage	  
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-%\input{Partie1}
+\input{Partie/Contexte}
+\input{Partie/Ingenieurie_systeme}
+\input{Partie/Realisation}
 
 
 %%%% CONCLUSION %%%%%%%%%
 
-%\chapter*{Conclusion}
-%\addcontentsline{toc}{chapter}{Conclusion}
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
 \newpage
 
 %%%% ANNEXE %%%%%%%%%%%%
 
-%\part*{Annexe}
+\part*{Annexe}
 \appendix
 \nocite{*}
 %\input{annexe_}
