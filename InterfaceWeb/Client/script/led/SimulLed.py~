@@ -1,0 +1,15 @@
+import time
+
+class Led():
+    def __init__(self):
+
+        
+    def getLed():
+        return "led36" 
+
+
+
+
+
+
+

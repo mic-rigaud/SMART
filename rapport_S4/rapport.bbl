@@ -4,6 +4,11 @@
 << Drone >>.
 \newblock {\em futura science}, 2014.
 
+\bibitem{}
+James \bgroup\sc Adams\egroup{}.
+\newblock << Raspberry Pi Model B+ >>.
+\newblock \technicalreportname{}, raspberrypi.org, 2014.
+
 \bibitem{gonioloc}
 François \bgroup\sc Delaveau\egroup{} \andname{} Yvon \bgroup\sc
   Livran\egroup{}.

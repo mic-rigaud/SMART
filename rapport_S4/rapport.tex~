@@ -32,11 +32,11 @@
 %\usepackage{framed}				% permet de faire des environnement cadre
 %\usepackage{fancybox}			% permet de realiser les cadres
 \usepackage{titletoc}			% permet de modifier les titres
-%\usepackage{caption}
+\usepackage{caption}
 %\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 \usepackage{frbib}                      %permet d avoir une biblio francaise
 \usepackage[babel=true]{csquotes}
-
+\usepackage{eurosym}
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -128,6 +128,8 @@
 
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
+
+
 \newpage	  
 %%%%%%%%%%%%%%%%%%%%%%%%
 
