@@ -60,15 +60,13 @@ def ecriture():
 
 
 DIRECTION = {}
-
 POSITION = {}
 
+# Cette initialisation permet d'initialiser les dictionnaire qui contiennent toute les variables
 initialisation()
 
 DIRECTION = {"led1": 0, "led2": 10,"led3": 20,"led4": 30,"led5": 40,"led6": 50,"led7": 60,"led8": 70,"led9": 80,"led10": 90,"led11": 100,"led12": 110,"led13": 120,"led14": 130,"led15": 140,"led16": 150,"led17": 160,"led18": 170,"led19": 180,"led20": 190,"led21": 200,"led22": 210,"led23": 220,"led24": 230,"led25": 240,"led26": 250,"led27": 260,"led28": 270,"led29": 280,"led30": 290,"led31": 300,"led32": 310,"led33": 320,"led34": 330,"led35": 340,"led36": 350}
 
-print(DIRECTION)
-print(POSITION)
 
 # Initialisation du serveur - Mise en place du socket :
 mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
