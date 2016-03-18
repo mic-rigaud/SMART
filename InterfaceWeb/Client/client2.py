@@ -36,9 +36,11 @@ print(msgServeur)
 
 led = ""
 ledHisto = ""
+sim = SimulLed(NOM)
+
 while 1:
     try:
-        led = SimulLed.getLed()
+        led = sim.getLed2()
         if led!=ledHisto:
             print("la led allume:", led)
             mySocket.send(str.encode(led))

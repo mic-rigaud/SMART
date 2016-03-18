@@ -5,8 +5,36 @@ DIRECTION = ["led1", "led2", "led3", "led4","led5", "led6", "led7","led8","led9"
 class SimulLed():
     def __init__(self, nom):
         self.name = nom
+        self.j = 0
+
+    def getLed(self):
+        time.sleep(2.5)
+        if(self.j==0):
+            self.j =1
+            return DIRECTION[18+self.j]
+        else:
+            
+            self.j += 1
+            if (self.j==18):
+                self.j =0
+            return DIRECTION[18+self.j]
+
         
-    def getLed():
+    def getLed2(self):
+        time.sleep(5)
+        if(self.j==0):
+            self.j =1
+            return DIRECTION[18+self.j]
+        else:
+
+            self.j += 1
+            if (self.j==9):
+                self.j =0
+            return DIRECTION[18+self.j]
+
+        
+        
+    def getLed3():
         time.sleep(5)
         i =random.random()*100
         if (i>64):

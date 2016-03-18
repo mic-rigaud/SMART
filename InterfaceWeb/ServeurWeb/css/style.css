@@ -1,0 +1,69 @@
+/*Projet: Site web de la confrérie des restaurateurs*/
+/*Auteur: Michael RIGAUD */
+/*********************************/
+/*********************************/
+/********************************/
+/* titre non utiliser h1-3-4 */
+/* couleur de base bleu          0195D1 */
+/*                 bordeau       A40808 */
+/*                 beige         fff2db */
+
+
+@charset "utf-8";
+
+
+/* BODY */
+
+body
+{
+    font-family: alter;
+    background-color: #eeeeff;
+}
+
+strong
+{
+    font-weight: normal;
+}
+
+
+/* HEADER et NAVIGATION */
+header
+{
+    display: block;
+    background: repeat-x bottom;
+    background: #90b7ff;	/*Mettre la couleur pour les differents boutons*/
+}
+
+#banniere
+{
+    display: block;   
+    width: 50%;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo
+{
+    max-height: 200px;
+    width: 100%;
+}
+
+
+
+
+
+/* ARTICLE et contenu */
+
+svg
+{
+    display: block;
+    font-family: jsnow;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0195d1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    border:1px solid #000;
+}
