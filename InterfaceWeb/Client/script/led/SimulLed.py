@@ -1,6 +1,9 @@
 import time
 import random
-DIRECTION = ["led1", "led2", "led3", "led4","led5", "led6", "led7","led8","led9", "led10","led11", "led12","led13", "led14", "led15", "led16", "led17", "led18", "led19", "led20", "led21","led22","led23", "led24", "led25", "led26", "led27", "led28", "led29", "led30", "led31", "led32", "led33", "led34", "led35","led36", ]
+DIRECTION = ["led1", "led2", "led3", "led4","led5", "led6", "led7","led8","led9", "led10","led11", "led12","led13", "led14", "led15", "led16", "led17", "led18", "led19", "led20", "led21","led22","led23", "led24", "led25", "led26", "led27", "led28", "led29", "led30", "led31", "led32", "led33", "led34", "led35","led36" ]
+
+P1=[19,20,21,23,24,25,27,28,29,30,31,32,33,33,33,33,34,34,34,34]
+P2=[19,19,19,20,20,20,21,21,21,22,22,23,23,24,25,26,27,29,32,33]
 
 class SimulLed():
     def __init__(self, nom):
@@ -8,29 +11,20 @@ class SimulLed():
         self.j = 0
 
     def getLed(self):
-        time.sleep(2.5)
-        if(self.j==0):
-            self.j =1
-            return DIRECTION[18+self.j]
-        else:
-            
-            self.j += 1
-            if (self.j==18):
-                self.j =0
-            return DIRECTION[18+self.j]
+        time.sleep(4)
+        self.j +=1
+        if (self.j==18):
+            self.j =0
+        return DIRECTION[P1[self.j]]
+
 
         
     def getLed2(self):
-        time.sleep(5)
-        if(self.j==0):
-            self.j =1
-            return DIRECTION[18+self.j]
-        else:
-
-            self.j += 1
-            if (self.j==9):
-                self.j =0
-            return DIRECTION[18+self.j]
+        time.sleep(4)
+        self.j +=1
+        if (self.j==18):
+            self.j =0
+        return DIRECTION[P2[self.j]]
 
         
         
