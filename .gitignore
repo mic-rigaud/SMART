@@ -1,0 +1,10 @@
+*/*/*~
+rapport*/*.lof
+rapport*/*.out
+rapport*/*.log
+rapport*/*.toc
+rapport*/*.blg
+rapport*/*.bbl
+rapport*/*.aux
+rapport*/*.idx
+rapport*/auto

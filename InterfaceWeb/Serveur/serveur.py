@@ -3,7 +3,7 @@
 # Definition d'un serveur reseau gerant un systeme de CHAT simplifie.
 # Utilise les threads pour gerer les connexions clientes en parallele.
 
-HOST = '127.0.0.1'
+HOST = '192.168.9.30'
 PORT = 50000
 
 
@@ -65,7 +65,7 @@ POSITION = {}
 # Cette initialisation permet d'initialiser les dictionnaire qui contiennent toute les variables
 initialisation()
 
-DIRECTION = {"led1": 0, "led2": 10,"led3": 20,"led4": 30,"led5": 40,"led6": 50,"led7": 60,"led8": 70,"led9": 80,"led10": 90,"led11": 100,"led12": 110,"led13": 120,"led14": 130,"led15": 140,"led16": 150,"led17": 160,"led18": 170,"led19": 180,"led20": 190,"led21": 200,"led22": 210,"led23": 220,"led24": 230,"led25": 240,"led26": 250,"led27": 260,"led28": 270,"led29": 280,"led30": 290,"led31": 300,"led32": 310,"led33": 320,"led34": 330,"led35": 340,"led36": 350}
+DIRECTION = {"led1": 0, "led2": 10,"led3": 20,"led4": 30,"led5": 40,"led6": 50,"led7": 60,"led8": 70,"led9": 80,"led10": 90,"led11": 100,"led12": 110,"led13": 120,"led14": 130,"led15": 140,"led16": 150,"led17": 160,"led18": 170,"led19": 180,"led20": 190,"led21": 200,"led22": 210,"led23": 220,"led24": 230,"led25": 240,"led26": 250,"led27": 260,"led28": 270,"led29": 280,"led30": 290,"led31": 300,"led32": 310,"led33": 320,"led34": 330,"led35": 340,"led36": 350, "ledNULL":360}
 
 
 # Initialisation du serveur - Mise en place du socket :

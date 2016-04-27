@@ -4,7 +4,7 @@
 # Ce client dialogue avec un serveur ad hoc
 
 import socket, sys
-from script.led.SimulLed import SimulLed
+from script.led.Led import Led
 
 
 HOST = '192.168.9.30'
@@ -36,7 +36,7 @@ print(msgServeur)
 
 led = ""
 ledHisto = ""
-sim = SimulLed(NOM)
+sim = Led(NOM)
 
 while 1:
     try:
