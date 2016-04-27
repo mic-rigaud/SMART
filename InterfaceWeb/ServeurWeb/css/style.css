@@ -57,13 +57,31 @@ header
 
 svg
 {
-    display: block;
+    display: inline-block;
+    width: 75%;
     font-family: jsnow;
     font-size: 2em;
     font-weight: bold;
     color: #0195d1;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
     margin-top: 1%;
     border:1px solid #000;
+}
+
+p
+{
+    font-weight: bold;
+}
+
+#liste
+{
+    width : 15%;
+    font-family: jsnow;
+    font-size: 1.5em;
+    color: #0195d1;
+    display: inline-block;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-right: auto;
 }

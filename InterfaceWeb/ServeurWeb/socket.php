@@ -21,4 +21,4 @@ if ($socket === false or $result == 0) {
     //on ferme la socket
     socket_close($socket);
 }
-?>
+?> 

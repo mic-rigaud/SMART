@@ -25,17 +25,17 @@
 	    $x2 = array();
 	    $y2 = array();
 	    $k = 0;
+	    $nom = array();
 
 	    while (!feof($monfichier)) { //on parcourt toutes les lignes
 		$arr1 = str_split($ligne,1);
 		$i = 0;
 		$j = 0;
-		$nom = "";
 		
 		for($i=0;$i<sizeof($arr1);$i++){
 		    if(strcmp($arr1[$i]," ")!=0){
 			if ($j==0){
-			    $nom .= $arr1[$i];
+			    $nom[$k] .= $arr1[$i];
 			}
 			elseif ($j==2){
 			    $x[$k] .= $arr1[$i];
@@ -56,8 +56,8 @@
 		    
 		}
 		if($angle[$k]!=360){
-		    $x2[$k] = $x[$k]+10000*cos(deg2rad(intval($angle[$k]))) ;
-		    $y2[$k] = $y[$k]+10000*sin(deg2rad(intval($angle[$k]))) ;
+		    $x2[$k] = $x[$k]+400*cos(deg2rad(intval($angle[$k]))) ;
+		    $y2[$k] = $y[$k]+400*sin(deg2rad(intval($angle[$k]))) ;
 		}
 		else{
 		    $x2[$k] = $x[$k];
@@ -66,7 +66,7 @@
 	    
 	    ?>
     
-    <text x="<?php echo $x[$k]; ?>" y="<?php echo $y[$k]; ?>"><?php echo $nom; ?></text>
+    <text x="<?php echo $x[$k]; ?>" y="<?php echo $y[$k]; ?>"><?php echo $nom[$k]; ?></text>
     <circle cx="<?php echo $x[$k]; ?>" cy="<?php echo $y[$k]; ?>" r="6" fill="blue" />
     <line x1="<?php echo $x[$k]; ?>" y1="<?php echo $y[$k]; ?>" x2="<?php echo $x2[$k]; ?>" y2="<?php echo $y2[$k]; ?>" stroke="red" /> 
 
@@ -116,9 +116,21 @@
 
 </svg>
 
+<div id = "liste">
+    <p> Liste des Raspberry Pi Connecté </p>
+<?php for($k=0;$k<sizeof($nom);$k++){ ?>
+	<br> <?php echo $nom[$k] ?> 
+<?php } ?>
+</div>
+
+
+
+
 <div id="test"></div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script>
  
- $('#test').load('socket.php');
+ $.post("socket.php", function(data){
+     /* alert(data); */
+    }); 
 </script>
