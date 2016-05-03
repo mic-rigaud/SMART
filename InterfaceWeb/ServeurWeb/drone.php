@@ -1,15 +1,11 @@
 
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width=80% height=80%>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width=80% height=80% >
     <title>Exemple simple de figure SVG</title>
     <desc>
 	Cette figure est constituée d'un rectangle,
 	d'un segment de droite et d'un cercle.
     </desc>
-    
-    <!-- <rect width="100" height="80" x="0" y="70" fill="green" /> -->
-    <!-- <line x1="5" y1="5" x2="250" y2="95" stroke="red" /> -->
-    <!-- <circle cx="90" cy="80" r="50" fill="blue" /> -->
     
 	    <?php
 	    // 1 : on ouvre le fichier
@@ -63,7 +59,7 @@
 		    $x2[$k] = $x[$k];
 		    $y2[$k] = $y[$k];
 		}
-	    
+		
 	    ?>
     
     <text x="<?php echo $x[$k]; ?>" y="<?php echo $y[$k]; ?>"><?php echo $nom[$k]; ?></text>
@@ -94,43 +90,80 @@
 		$A = ($y[$k]-$y2[$k])/($x[$k]-$x2[$k]);
 		$b = $y[$i]-$a*$x[$i];
 		$B = $y[$k]-$A*$x[$k];
-		$x_intersection[$j] = ($b-$B)/($A-$a);
-		$y_intersection[$j] = $A*$x_intersection[$j]+$B;
-		$j = $j+1;
+		if($a!=$A){
+		    $x_intersection[$j] = ($b-$B)/($A-$a);
+		    $y_intersection[$j] = $A*$x_intersection[$j]+$B;
+		    $j = $j+1;
+		}
 	    }
 	}
     }
 
+    $x_sort = $x_intersection;
+    sort($x_sort);
+    $y_sort = $y_intersection;
+    sort($y_sort);
+    $x_mediane = $x_sort[(int)(sizeof($x_sort)/2)];
+    $y_mediane = $y_sort[(int)(sizeof($y_sort)/2)];
+
+    $x_intersectionF =[];
+    $j=0;
     for($i=0;$i<sizeof($x_intersection);$i++){
-	$x_drone = $x_drone + $x_intersection[$i];
-	$y_drone = $y_drone + $y_intersection[$i];	
+	if (sqrt(pow(($x_mediane - $x_intersection[$i]),2)+pow(($y_mediane - $y_intersection[$i]),2))<50){
+	    $x_intersectionF[$j]=$x_intersection[$i];
+	    $y_intersectionF[$j]=$y_intersection[$i];
+	    $j=$j+1;
+	}
     }
-    $x_drone = $x_drone/sizeof($x_intersection);
-    $y_drone = $y_drone/sizeof($y_intersection);
+
+
+    for($i=0;$i<sizeof($x_intersectionF);$i++){
+	$x_drone = $x_drone + $x_intersectionF[$i];
+	$y_drone = $y_drone + $y_intersectionF[$i];	
+    ?>
+	<circle cx="<?php echo $x_intersectionF[$i]; ?>" cy="<?php echo $y_intersectionF[$i]; ?>" r="3" fill="green" />
+	
+    <?php 
+    }
+    $x_drone = $x_drone/sizeof($x_intersectionF);
+    $y_drone = $y_drone/sizeof($y_intersectionF);
+
+
+
 
     ?>
 
     <text x="<?php echo $x_drone; ?>" y="<?php echo $y_drone; ?>">DRONE</text>
     <circle cx="<?php echo $x_drone; ?>" cy="<?php echo $y_drone; ?>" r="6" fill="red" />
 
-
 </svg>
 
 <div id = "liste">
     <p> Liste des Raspberry Pi Connecté </p>
-<?php for($k=0;$k<sizeof($nom);$k++){ ?>
+    <?php 
+    sort($nom,SORT_NATURAL);
+    for($k=0;$k<sizeof($nom);$k++){ ?>
+
 	<br> <?php echo $nom[$k] ?> 
-<?php } ?>
+    <?php } ?>
 </div>
 
+<?php 
+$monfichier = fopen('../Serveur/detection', 'r+');
+fseek($monfichier, 0);
+if(sizeof($x_intersectionF)!=0){
+    $mot = "Drone: " . $x_drone . " " . $y_drone;
+    echo $mot;
+    fputs($monfichier,"                                                                       ");
+    fseek($monfichier, 0);
+    fputs($monfichier,$mot);
+}
+else{
+    fputs($monfichier,"                                                                       ");
+    fseek($monfichier, 0);
+    fputs($monfichier,"0");
+}
+fclose($monfichier);
+?>
 
 
-
-<div id="test"></div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
- 
- $.post("socket.php", function(data){
-     /* alert(data); */
-    }); 
-</script>

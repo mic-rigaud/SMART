@@ -66,6 +66,8 @@ svg
     margin-left: 5%;
     margin-top: 1%;
     border:1px solid #000;
+    background-image: url("./../img/paris.PNG");
+
 }
 
 p

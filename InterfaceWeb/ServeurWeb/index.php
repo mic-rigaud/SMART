@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link href="css/style.css" rel="stylesheet" />     <!-- type="text/css" /> -->
     </head>
-    <body bgcolor=white>
+    <body>
 	
 	<header>
 	    <div id="banniere">
@@ -14,21 +14,21 @@
 	    </div>
 	</header>
 
-	<div id="message"></div>
-
 	
+	
+	<div id="message"></div>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
-	    $(function(){
-	    affiche();
-
-	    function affiche(){
-		$('#message').load('drone.php');
-	    }
-	    
-	    setInterval(affiche,4000);
-	    });
+	 $(function(){
+	     affiche();
+	     
+	     function affiche(){
+		 $('#message').load('drone.php');
+	     }
+	     
+	     setInterval(affiche,1000);
+	 });
 	</script>
 	
     </body>
