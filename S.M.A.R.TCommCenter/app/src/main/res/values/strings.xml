@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">S.M.A.R.T Comm Center</string>
+    <string name="start_button">Demarrer le tracking</string>
+    <string name="exit_button">Quitter l application</string>
+    <string name="stop_button">Arreter le tracking</string>
+    <string name="get_position">Raifrâichir</string>
+</resources>
