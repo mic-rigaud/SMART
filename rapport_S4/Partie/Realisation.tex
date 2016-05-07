@@ -1,5 +1,35 @@
 \chapter{Réalisation}
 
+\section{Radiogoniomètre Doppler}
+
+\section{Application Android : S.M.A.R.T Comm Center}
+
+\subsection{Présentation Générale}
+
+	Le système SMART se base sur un ensemble de capteurs reliés à une station centrale dont les données sont accessibles depuis internet. Cela permet d'accéder aux paramètres du système a distance depuis un autre appareil relié à internet de préférence un ordinateur. Toutefois, le système, étant donné son coût réduit se destine à être utilisé au sein de structures de petites taille ou le personnel en charge de la sécurité du site doit parfois se déplacer en fonction de ses autres obligations et ne peut être constamment en train de surveiller l'état du S.M.A.R.T depuis un ordinateur. 
+	
+	Pour pallier à ce manquement, il semblait intéressant de proposer une solution sur téléphone mobile qui permettrait d'avertir l'utilisateur final où qu'il se trouve. Deux options existent :
+	~\\
+	\begin{itemize}
+	
+	\item Une version mobile de l'interface web
+	\item Une application dédiée	
+		
+	\end{itemize}
+	~\\
+	 Ces deux utiliseraient les APIs des différentes plateformes mobiles existantes (Windows phone, Android, iOS) pour avertir l'utilisateur en utilisant les fonctions vibreur ou la sonnerie du téléphone.
+	 Toutefois, les capacités du site mobile sont assez limités car de nombreux éléments de sécurité peuvent restreindre l'accès à certaines fonctionnalités du téléphone comme l'accès au vibreur ou la possibilité de s'exécuter en tache de fond. De plus ces restrictions varient en fonction de la plateforme mobile visée.
+	
+	 L'application mobile a donc l'avantage d'offrir plus de latitude au développeur et d'implémenter plus facilement différents moyens d'alerte pour l'utilisateur. Il faut cependant garder à l'esprit le fait que ce choix de développement implique de réaliser une application par système d'exploitation mobile existant.
+	~\\
+	Le choix final pour la version actuelle du système S.M.A.R.T à donc été celui de l'application mobile. Compte tenu des équipements dont nous disposions le système sur lequel l'application a été développé est Android. En effet, une grande partie du code source est sous licence GPL et le codage des application se fait en Java dans sa version 1.7. De plus, ce système d'exploitation mobile représente en Janvier 2016 64 du parc mobile français.
+
+\subsection{Fonctionnement de l'application}
+
+	La version actuelle de S.M.A.R.T Comm Center a été développé avec l'API niveau 22 d'Android \footnote{L'API correspond à la version d'Android ciblée et détermine donc les fonctionnalités disponibles pour le développeur. le niveau 22 correspond à Android 5.0.1 Marshmallow.}. Le choix d'un niveau aussi élevé d'API a été déterminé par trois éléments importants : la gestion des "threads", des tâches asynchrones et des socket. En effet depuis l'API 21 Google, qui édite et maintient le code d'Android, a modifié la façon dont les sockets étaient gérés sous Android et le fonctionnement actuel qui sera détaillé par la suite nous convenait mieux. 
+	
+	Il faut cependant noter qu'un tel choix limite le nombre de smartphones qui seront en mesure de lancer l'application. L'API 22 représente seulement 34 du nombre total d'appareils Android activés. Dans un souci de faciliter la réalisation de l'application nous avons maintenu ce choix. Il est néanmoins possible de coder à terme l'ensemble des fonctionnalités de cette application pour un niveau plus faible comme l'API 19 pour toucher un plus grand nombre d'appareils.
+
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../rapport"
