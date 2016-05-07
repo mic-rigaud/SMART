@@ -28,4 +28,12 @@
         android:layout_alignLeft="@+id/buttonStart"
         android:layout_alignStart="@+id/buttonStart" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoSmart"
+        android:src="@drawable/smart"
+        android:layout_alignBottom="@+id/buttonStart"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

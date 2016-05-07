@@ -1,11 +1,28 @@
 package com.example.smart.smartcommcenter;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.Socket;
+import java.io.Reader;
+import java.net.SocketAddress;
 import java.net.UnknownHostException;
 import android.os.AsyncTask;
+import android.widget.TextView;
+import java.io.Writer;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -31,21 +48,37 @@ public class Client extends AsyncTask<Void, Void, Void>  {
     protected Void doInBackground(Void... arg0) {
 
         Socket socket = null;
+        BufferedReader input;
+
 
         try{
 
             socket = new Socket(dstAdress, dstPort);
 
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(1024);
-            byte[] buffer = new byte[1024];
+            System.out.println("Demande de connexion");
+            input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String message_distant = input.readLine();
+            System.out.println(message_distant);
 
-            int bytesRead;
-            InputStream inputStream = socket.getInputStream();
+            input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String message_distant2 = input.readLine();
+            System.out.println(message_distant2);
 
-            while ((bytesRead = inputStream.read(buffer)) != -1) {
-                byteArrayOutputStream.write(buffer, 0, bytesRead);
-                reponse += byteArrayOutputStream.toString("UTF-8");
-            }
+
+
+
+            OutputStream os = socket.getOutputStream();
+            OutputStreamWriter osw = new OutputStreamWriter(os);
+            BufferedWriter bw = new BufferedWriter(osw);
+            System.out.println("Weeeeeee");
+            bw.write("Fin");
+            bw.flush();
+
+
+            input.close();
+            socket.close();
+
+
 
 
         } catch (UnknownHostException e) {
@@ -63,6 +96,14 @@ public class Client extends AsyncTask<Void, Void, Void>  {
                 }
             }
         }
+        /*
+        if (reponse.charAt(0) == '1') {
+            textResponse
+        }
+        */
+       ;
+        //textResponse.setText("Intrusion Drone");
+
 
         return null;
     }
