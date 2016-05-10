@@ -152,8 +152,7 @@
 $monfichier = fopen('../Serveur/detection', 'r+');
 fseek($monfichier, 0);
 if(sizeof($x_intersectionF)!=0){
-    $mot = "Drone: " . $x_drone . " " . $y_drone;
-    echo $mot;
+    $mot = "1 " . $x_drone . " " . $y_drone;
     fputs($monfichier,"                                                                       ");
     fseek($monfichier, 0);
     fputs($monfichier,$mot);

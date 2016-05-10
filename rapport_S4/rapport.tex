@@ -33,10 +33,14 @@
 %\usepackage{fancybox}			% permet de realiser les cadres
 \usepackage{titletoc}			% permet de modifier les titres
 \usepackage{caption}
-%\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 \usepackage{frbib}                      %permet d avoir une biblio francaise
 \usepackage[babel=true]{csquotes}
 \usepackage{eurosym}
+\usepackage{frbib}
+\usepackage[babel=true]{csquotes}
+\usepackage[final]{pdfpages} 
+\usepackage{listings}
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -57,6 +61,46 @@
 
 \newcommand{\attention}[1]{\noindent\fcolorbox{white}{white}{\parbox{\textwidth}{\textcolor{FireBrick}{
 \textbf{Attention !}}\\\textit{#1}\\}}}
+
+
+
+%%%% Boite console:
+
+% Definition de couleur supplementaire
+\definecolor{colString}{rgb}{0.6,0.1,0.1}
+ 
+% Definition du langage
+\lstdefinelanguage{LangageConsole}{%
+    morekeywords={%
+        time% mot-clé ``ligne''
+    },
+    morestring=[b]",
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+}
+ 
+% Definition du style
+\lstdefinestyle{styleLangage}{%
+    language        = LangageConsole,%
+    basicstyle      = \bf\footnotesize\ttfamily\color{white},% ecriture standard
+    identifierstyle = \color{white},%
+    commentstyle    = \color{green},%
+    keywordstyle    = \color{blue},%
+    stringstyle     = \color{colString},%
+    extendedchars   = true,% permet d'avoir des accents dans le code
+    tabsize         = 2,%
+    showspaces      = false,%
+    showstringspaces = false,%
+    numbers=left,%
+    numberstyle=\tiny\ttfamily\color{black},%
+    breaklines=true,%
+    breakautoindent=true,%
+        backgroundcolor=\color{black},%
+}
+ 
+\lstset{%
+    style = styleLangage%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -70,6 +114,7 @@
 \newcommand{\ie}{\latinloc{i.e.}}
 \newcommand{\cad}{c'est-à-dire }
 \newcommand{\st}{\ensuremath{\text{\xspace s.t.\xspace}}}
+\newcommand{\rpi}{Raspberry Pi }
 
 %%%% Definition des couleur %%%%
 
@@ -127,6 +172,8 @@
 
 %%%%%%%%%%%%%%%%% INTRODUCTION
 
+\input{Partie/remerciment}
+
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
@@ -134,8 +181,22 @@
 \newpage	  
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{Partie/Contexte}
-\input{Partie/Ingenieurie_systeme}
+\part{Etat de l'art \\(Semestre 3)}
+
+\input{Partie/S3/Partie_Contexte}
+\input{Partie/S3/Partie_AnalyseFonctionnelle}
+\input{Partie/S3/Partie_Radiogonio}
+\input{Partie/S3/Partie_EtatArt}
+\input{Partie/S3/Partie_Montreal}
+
+%\input{Partie/Contexte}
+%\input{Partie/Ingenieurie_systeme}
+
+\part{Conception de Smart \\(Semestre 4)}
+
+\input{Partie/Choix_technique}
+\input{Partie/Test_unitaire}
+\input{Partie/Logiciel}
 \input{Partie/Realisation}
 
 
@@ -150,6 +211,11 @@
 \part*{Annexe}
 \appendix
 \nocite{*}
+\input{Partie/S3/Annexe_drones}
+\input{Partie/S3/Partie_Organisation}
+\input{Partie/S3/Correspondance}
+
+
 \input{Partie/Annexe_rpi}
 \input{Partie/Annexe_raspbian}
 \newpage
