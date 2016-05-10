@@ -47,8 +47,104 @@ Le diagrammes de classe de la figure \ref{fig:class}, montre ce fonctionnement.
 
 \subsection{Client-Serveur}
 
+Pour commencer nous avons cherché a 
 
 \subsection{Web}
+
+
+\subsection{Treillis de détection}
+
+Pour répondre au besoin de détection et s’assurer d’un correct positionnement de la cible, la mise en
+place d’une couverture de détection répondant à nos besoins était nécessaire. Les critères retenus
+pour cette dernière sont les suivants :
+
+\begin{itemize}
+\item A l’intérieur de la zone de détection, la cible doit être en permanence sous la couverture de détection de 4 radiogoniomètres
+\item Tenter une optimisation de la couverture afin d’éviter l’installation d’un trop grand
+nombre de radiogoniomètre
+\end{itemize}
+
+Très peu de sujets similaires ont pu être trouvé bien que le problème soit récurrent dans de
+nombreux projets.
+
+Cependant, après plusieurs essais, le choix de treillis fut le suivant :
+
+\begin{minipage}{0.45\linewidth}
+
+  \centering
+  \includegraphics[width=\textwidth]{treillis_explication}
+  \caption{Cercle de détection}
+  ~\\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{itemize}
+  \item Dans les deux cas, les distances d et d’ représente la distance de couverture maximale d’une antenne pour une configuration de treillis particulière, distance au-delà de laquelle nous ne sommes pas sûr d’assurer la détection d’un drone.
+  \item Chaque croix noire représente une antenne. Ces dernières formes ainsi la zone de détection, zone à l’intérieure de laquelle, le drone se doit d’être repéré.
+  \end{itemize}
+\end{minipage}
+
+
+Initialement, nous avions prévu que les antennes radiogoniométrique assureraient la détection
+jusqu’à son plus proche voisin. Cependant, cette configuration ne permet pas d’assurer qu’un drone
+traversant la zone soit sous la couverture d’au moins quatre antennes en tout temps. Nous avons
+donc choisi la configuration représentée par le cercle rouge, c’est-à-dire en rapprochant les antennes
+les unes des autres. On obtient ainsi la couverture suivante :
+~\\
+
+\begin{minipage}{0.45\linewidth}
+  \centering
+  \includegraphics[width=\textwidth]{cercle}
+  \caption{Maillage de détection}
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  Dans cette configuration, les zones de plus faible couverture
+sont situées sur les antennes elles même. En effet, au-dessus
+de chaque antenne, la couverture n’est assurée que par
+quatre d’entre elles. En dehors de celle-ci, la couverture est
+assurée par cinq à six antennes.
+\end{minipage}
+
+
+\subsection{Triangulation}
+
+Les différents radiogoniomètres nous donnant un gisement de la détection, nous pouvons donc
+réaliser une triangulation de la position du drone lorsqu’un nombre suffisant d’antenne détecte le
+drone. Bien qu’une première estimation de la position peut-être obtenu à partir de deux drones,
+nous considérons que le drone doit être détecté par au moins quatre senseurs pour que la position
+soit acceptable.
+~\\
+
+Cependant, avant de pouvoir réaliser toute triangulation, l’acquisition des points d’intersection entre
+les droites de détection issue du gisement fourni par les différents radiogoniomètres est nécessaire.
+Pour se faire, à partir des angles, nous formulons une équation de droite plan, passant par les
+radiogoniomètres respectifs, et tentons de trouver une solution à chaque système composé de deux
+droites.
+~\\
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+
+  \includegraphics[width=0.5\textwidth]{triangulation1}
+  \caption{triangulation}
+\end{wrapfigure}
+
+  Suite à la résolution de ces différents systèmes, nous
+obtenons une liste de différentes solutions, solutions ici
+schématisé avec des points de couleur grise. Nous observons
+que, du fait de la portée de détection, ainsi que la géométrie
+de notre treillis, certains points sont incohérents ou très
+imprécis.
+
+~\\
+Notre première approche fut donc de positionner le drone à
+la moyenne de l’ensemble des positions solutions d’un des
+systèmes précédent. Cependant, après simulation, il s’est
+avéré que, de par l’imprécision relative des
+radiogoniomètres (les angles sont donnée à 5\up{o} près), la moyenne de donnait qu’une idée toute relative de la position du drone et souvent loin de la vérité, et
+cela à cause d’intersections multiples entre les droites de détection.
+Pour corriger cela nous avons fait le choix d’utiliser la médiane afin de supprimer tous les résultats
+incohérents. A partir de la médiane des résultats, nous appliquons un gabarit circulaire et retenons
+tous les points d’intersection compris dans ce gabarit. Une moyenne est alors appliquée à l’ensemble
+de ces résultats nous permettant d’obtenir un résultat plus cohérent et moins sensible aux erreurs.
 
 
 
