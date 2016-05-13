@@ -47,12 +47,14 @@ Le diagrammes de classe de la figure \ref{fig:class}, montre ce fonctionnement.
 
 \subsection{Client-Serveur}
 
-Pour commencer nous avons cherché à donner une interface à nos \rpi pour communiquer, c'est l'interface Client/Serveur.
+Pour commencer nous avons cherché à donner une interface à nos \rpi pour communiquer avec l'ordinateur central, c'est l'interface Client/Serveur.
 ~\\
 
-Cette interface a été codé en python. Nous avons choisi le python car c'est un langage souple et rapide. Nous avons réalisé la connection à l'aide d'un socket TCP/IP. De plus, le serveur se base sur du multi thread pour accepter plusieurs client. Le client se connecte donne son identifiant puis sa communication est placé dans un thread. Ainsi, on a un serveur qui peut accepter une infinité de client.
+Cette interface a été codé en python. Nous avons choisi le python car c'est un langage souple et rapide. Nous avons réalisé la connection à l'aide d'un socket TCP/IP. De plus, le serveur se base sur du multi thread pour accepter plusieurs client. Le client se connecte donne, son identifiant puis sa communication est placé dans un thread. Ainsi, on a un serveur qui peut accepter une infinité de client.
 ~\\
 
+Pour lancer le serveur il faut lancer le programme \textit{serveur.py} qui se met en écoute de client. Pour lancer le client il faut lancer le programme \textit{client.py}. Une illustration du terminal lors de l'exécution de ces commandes est donnée ci-dessous.
+~\\
 
 \begin{minipage}[h]{0.45\linewidth}
 
@@ -81,11 +83,14 @@ Connexion interrompue.
 
 \end{minipage}
 
+~\\
 
+On peut constater que la seule donnée que le \rpi envoie en continue est le numéro de la led qui s'est allumé. En effet, le modèle du Montréal 3v2 affiche le gisement sur un cadrant de 36 led. Dans notre solution nous avons décidé de garder ce cadrant et de placer le \rpi en parallèle du circuit pour détecter laquelle led s'est allumé. De plus, nous avons décidé de réaliser la conversion led/gisement au niveau du serveur pour des questions de modularités. 
 
+~\\
 
+Une foi les données reçut par le serveur, celui-ci les écrit dans un fichier qui s'appelle \textit{position}.
 
-\subsection{Web}
 
 
 \subsection{Treillis de détection}
@@ -140,9 +145,24 @@ quatre d’entre elles. En dehors de celle-ci, la couverture est
 assurée par cinq à six antennes.
 \end{minipage}
 
+\subsection{Web}
+
+Ensuite, nous nous sommes penché sur notre page web. Cette page web doit permettre à notre utilisateur de visualiser en temps réel la position du drone dans notre maillage. Pour cela nous avons fait le choix d'utiliser des solutions dynamiques tel que PHP, Javascript et JQuery.
+~\\
+
+Pour nous faciliter dans la réalisation du schéma modélisant notre treillis, nous avons choisi SVG. En effet, SVG nous permet de réaliser notre schéma de manière vectorielle. C'est-à-dire que l'on peut donner avec précision la position des capteurs ainsi que de leur droite de détection, mais surtout on peut rendre cela dynamique.
+~\\
+
+Le script ouvre le fichier \textit{position} qui a été précédemment rempli, et ajoute les points qui sont inscrit dans le fichier avec leur droite de détection. Mais cela ne suffit pas. En effet, si l'on s'arrête là on n'a qu'une position visible par un être humain il reste encore à la positionner. Pour cela nous utiliserons la triangulation (voir à la page \ref{sec:trian}).
+~\\
+
+Enfin, nous affichons de manière classé l'ensemble des \rpi qui été présent dans le fichier position à la droite de l'écran.
+
+
+
 
 \subsection{Triangulation}
-
+\label{sec:trian}
 Les différents radiogoniomètres nous donnant un gisement de la détection, nous pouvons donc
 réaliser une triangulation de la position du drone lorsqu’un nombre suffisant d’antenne détecte le
 drone. Bien qu’une première estimation de la position peut-être obtenu à partir de deux drones,
@@ -183,6 +203,9 @@ tous les points d’intersection compris dans ce gabarit. Une moyenne est alors 
 de ces résultats nous permettant d’obtenir un résultat plus cohérent et moins sensible aux erreurs.
 
 
+~\\
+\newpage
+Au final, nous obtenons la page web suivante:
 
 \begin{figure}[!h]
   \centering
@@ -190,6 +213,9 @@ de ces résultats nous permettant d’obtenir un résultat plus cohérent et moi
   \caption{Interface Web}
   \label{fig:interface}
 \end{figure}
+
+
+
 
 
 %%% Local Variables: 

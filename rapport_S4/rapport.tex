@@ -41,6 +41,9 @@
 \usepackage[babel=true]{csquotes}
 \usepackage[final]{pdfpages} 
 \usepackage{listings}
+\usepackage{accsupp}                    % Ces deux lignes permettent de copier le codes sans les lignes
+\newcommand*{\noaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+
 
 \usepackage{graphicx}
 \RequirePackage{pageGardeEnsta}	% permet d avoir la page de garde ensta
@@ -92,7 +95,7 @@
     showspaces      = false,%
     showstringspaces = false,%
     numbers=left,%
-    numberstyle=\tiny\ttfamily\color{black},%
+    numberstyle=\tiny\ttfamily\color{black}\noaccsupp,%
     breaklines=true,%
     breakautoindent=true,%
         backgroundcolor=\color{black},%
@@ -102,11 +105,7 @@
 {
     numbers=left,
     numbersep=1em,
-    numberstyle=\tiny\color{red}\noaccsupp,
-    frame=single,
-    framesep=\fboxsep,
-    framerule=\fboxrule,
-    rulecolor=\color{red},
+    numberstyle=\tiny\ttfamily\color{black}\noaccsupp,
     xleftmargin=\dimexpr\fboxsep+\fboxrule\relax,
     xrightmargin=\dimexpr\fboxsep+\fboxrule\relax,
     breaklines=true,
@@ -119,6 +118,7 @@
     style=shared,
     language={Python},
     %alsolanguage={[Sharp]C},
+    identifierstyle = \color{black},%
     basicstyle=\small\tt\color{black},
     keywordstyle=\color{blue},
     commentstyle=\color[rgb]{0.13,0.54,0.13},
@@ -248,6 +248,8 @@
 
 \part{Organisation d'équipe}
 
+\input{Partie/Organisation}
+\input{Partie/Difficulte}
 
 
 %%%% CONCLUSION %%%%%%%%%
@@ -261,13 +263,16 @@
 \part*{Annexe}
 \appendix
 \nocite{*}
-\input{Partie/S3/Annexe_drones}
-\input{Partie/S3/Partie_Organisation}
-\input{Partie/S3/Correspondance}
+%\input{Partie/S3/Annexe_drones}
+%\input{Partie/S3/Partie_Organisation}
+%\input{Partie/S3/Correspondance}
 
 
 \input{Partie/Annexe_rpi}
 \input{Partie/Annexe_raspbian}
+
+\input{Partie/Annexe_client}
+\input{Partie/Annexe_serveur}
 \newpage
  \listoffigures
  \printindex
