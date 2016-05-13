@@ -7,7 +7,7 @@ import socket, sys
 from script.led.SimulLed import SimulLed
 
 
-HOST = '192.168.9.30'
+HOST = '127.0.0.1'
 PORT = 50000
 NOM = "RP1"
 

@@ -3,7 +3,7 @@
 # Definition d'un serveur reseau gerant un systeme de CHAT simplifie.
 # Utilise les threads pour gerer les connexions clientes en parallele.
 
-HOST = '192.168.9.30'
+HOST = '127.0.0.1'
 PORT = 50000
 
 

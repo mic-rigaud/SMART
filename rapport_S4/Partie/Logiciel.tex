@@ -2,12 +2,12 @@
 \chapter{Interface Web}
 \label{Logiciel}
 
-Pour délivrer à l'utilisateur une interface agréable et lisible, nous avons décidé de réaliser dans un premier temps une interface web.
+Une foi le capteur terminé nous nous sommes penchés sur l'interface Homme/Machine. Dans une volonté de délivrer à l'utilisateur une interface agréable et lisible, nous avons décidé de proposer dans un premier temps une interface web.
 
 \section{Analyse}
 \label{sec:uml}
 
-Pour réaliser au mieux cette interface nous avons au préalablement réaliser une phase d'analyse.
+Dans un premier temps nous nous sommes penché sur une  phase d'analyse.
 
 Dans la phase d’analyse, on cherche d’abord à bien comprendre et à décrire de façon précise les besoins des utilisateurs ou des clients concernant cette interface. Que souhaitent-ils faire avec le logiciel ? Quelles fonctionnalités veulent-ils ? Pour quel usage ? Comment l’action devrait-elle fonctionner ? C’est ce qu’on appelle \og l’analyse des besoins\fg{}. Après validation de notre compréhension du besoin, nous imaginons la solution. C’est la partie analyse de la solution.
 
@@ -47,7 +47,43 @@ Le diagrammes de classe de la figure \ref{fig:class}, montre ce fonctionnement.
 
 \subsection{Client-Serveur}
 
-Pour commencer nous avons cherché a 
+Pour commencer nous avons cherché à donner une interface à nos \rpi pour communiquer, c'est l'interface Client/Serveur.
+~\\
+
+Cette interface a été codé en python. Nous avons choisi le python car c'est un langage souple et rapide. Nous avons réalisé la connection à l'aide d'un socket TCP/IP. De plus, le serveur se base sur du multi thread pour accepter plusieurs client. Le client se connecte donne son identifiant puis sa communication est placé dans un thread. Ainsi, on a un serveur qui peut accepter une infinité de client.
+~\\
+
+
+\begin{minipage}[h]{0.45\linewidth}
+
+\begin{lstlisting}
+./serveur.py
+Serveur pret, en attente de requetes ...
+Client RP1 connecte, adresse IP 127.0.0.1, port 51632.
+RP1> led21
+donc la direction 200
+[...]
+Client RP1 deconnecte.
+[...]
+Fin du serveur
+\end{lstlisting}  
+\end{minipage}\hfill
+\begin{minipage}[h]{0.45\linewidth}
+  
+\begin{lstlisting}
+./client.py
+Connexion etablie avec le serveur.
+Vous etes connecte. Envoyez vos messages.
+la led allume: led21
+[...]
+Connexion interrompue.
+\end{lstlisting}
+
+\end{minipage}
+
+
+
+
 
 \subsection{Web}
 
