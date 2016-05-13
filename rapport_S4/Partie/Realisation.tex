@@ -53,6 +53,7 @@
 	
 \subsubsection{Détails concernant la fenêtre de localisation}
 
+	La fenêtre de localisation comporte une particularité essentielle. En effet, en même temps que celle ci s'affiche, le client web est lancé en arrière plan grâce à une "AsynchTask" (Tâche asynchrone). L'intérêt d'un tel mode de fonctionnement présente l'avantage de ne pas avoir a créer de "Thread" (Fil d'exécution) supplémentaire et de découpler le serveur de l'affichage. Ainsi, en cas d'erreur de connexion ou de problème irrécupérable, l'interface continue de répondre et permet à l'utilisateur de relancer la connexion. Le système Android gèrera en parallèle l'affichage et le serveur, le fonctionnement des AsyncTask permet de s'assurer que tant que la fenêtre de l'application est visible par l'utilisateur le client fonctionnera en arrière plan.
 	
 	 
 
