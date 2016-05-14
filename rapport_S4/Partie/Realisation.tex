@@ -43,36 +43,36 @@
 
 	Les applications Android se basent sur un système d'"activités" et une activité correspond à une fenêtre visible par l'utilisateur. L'application en possède trois : La fenêtre d'accueil, la fenêtre d'affichage des données de localisation du drone et celle des paramètres.
 	
-	\begin{figure}[!h]
-  	\centering
- 	 \includegraphics[width=.4\textwidth]{Ecran_accueil}
- 		 \caption{Écran d'accueil}
- 	 \label{fig:Ecran_accueil}
-	\end{figure}
-	~\\
-	
-	 La fenêtre ou écran d'accueil ne comprends qu'un bouton permettant de lancer l'activité de localisation et donc le client web et un bouton pour quitter l'application, accompagnés du logo du projet. Un menu déroulant a été implémenté de façon a pouvoir accéder aux paramètres.
-	
-	\begin{figure}[!h]
-  	\centering
- 	 \includegraphics[width=.4\textwidth]{Ecran_loc}
- 		 \caption{Écran de localisation}
- 	 \label{fig:Ecran_loc}
-	\end{figure}
-	~\\
-	
-	 La fenêtre ou écran de localisation est un peu plus complexe. Pour l'utilisateur, les trois éléments clef de l'interface sont : les informations concernant l'état du système, le bouton "rafraîchir" et le bouton "retour". Un indicateur visuel est aussi présent en cas de détection d'intrusion.
+	\begin{minipage}{0.45\linewidth}
+ 		\centering
+  		\includegraphics[width=\textwidth]{Ecran_accueil}
+  		\captionof{figure}{Écran d'accueil}
+	\end{minipage}
+	\begin{minipage}{0.45\linewidth}
 
-	\begin{figure}[!h]
-  	\centering
- 	 \includegraphics[width=.4\textwidth]{Ecran_set}
- 		 \caption{Écran de localisation}
- 	 \label{fig:Ecran_set}
-	\end{figure}
+	La fenêtre ou écran d'accueil ne comprends qu'un bouton permettant de lancer l'activité de localisation et donc le client web et un bouton pour quitter l'application, accompagnés du logo du projet. Un menu déroulant a été implémenté de façon a pouvoir accéder aux paramètres.
+	\end{minipage}
 	~\\	
 	
-	 La fenêtre de paramètres permet de modifier les paramètres de connexion du client comme l'adresse et le port du serveur visé.
-		
+	\begin{minipage}{0.45\linewidth}
+ 		\centering
+ 	 \includegraphics[width=\textwidth]{Ecran_loc}
+ 		 \captionof{figure}{Écran de localisation}
+	\end{minipage}
+	\begin{minipage}{0.45\linewidth}
+	 La fenêtre ou écran de localisation est un peu plus complexe. Pour l'utilisateur, les trois éléments clef de l'interface sont : les informations concernant l'état du système, le bouton "rafraîchir" et le bouton "retour". Un indicateur visuel est aussi présent en cas de détection d'intrusion.
+	\end{minipage}
+	~\\
+	
+	\begin{minipage}{0.45\linewidth}
+  	\centering
+ 	 \includegraphics[width=\textwidth]{Ecran_set}
+ 		 \captionof{figure}{Écran de localisation}
+	\end{minipage}
+	\begin{minipage}{0.45\linewidth}
+	La fenêtre de paramètres permet de modifier les paramètres de connexion du client comme l'adresse et le port du serveur visé.
+	\end{minipage}
+	~\\	
 	
 \subsubsection{Détails concernant la fenêtre de localisation}
 
