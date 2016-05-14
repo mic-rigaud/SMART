@@ -13,12 +13,9 @@ Pour réaliser notre projet nous avons été obligé d'adapter notre capteur le 
 \end{wrapfigure}
 
 
-Le radiogoniomètre Montréal 3v2 fonctionne à une fréquence de 500Mhz. Il est donc impossible de l’utilisé entre 2.4Ghz et 2.5 GHz, bande de fréquence qu’utilise les drones que nous souhaitons utiliser. Nous avons donc cherché un moyen d’adapter ce radiogoniomètre aux fréquences souhaitées.
+Le radiogoniomètre Montréal 3v2 fonctionne à une fréquence de 500Mhz. Sans modification il est impossible de l’utiliser entre 2.4Ghz et 2.5 GHz, bande de fréquence utilisée par les drones que nous souhaitons détecter. Nous avons donc cherché un moyen d’adapter ce radio-goniomètre aux fréquences souhaitées.
 
-
-Nous avons trouvé une solution applicable à notre système.
-
-D’abord nous avons utilisé un down-converter. Ce composant reçoit deux entrées, le signal dont on veut changer la fréquence(RF) et un signal de fréquence Df(LO). Le down-converter diminue la fréquence du premier signal de celle du second. La sortie(IF) correspond au signal modifié. Son principe de fonctionnement est illustré à la figure \ref{fig:mix}.
+Une solution applicable à notre système est l'utilisation d'un down-converter. Ce composant reçoit deux entrées, le signal dont on veut changer la fréquence(RF) et un signal de fréquence fixe Df(LO). Le down-converter diminue la fréquence du premier signal de celle du second. La sortie(IF) correspond au signal modifié. Son principe de fonctionnement est illustré à la figure \ref{fig:mix}.
 
 
 
@@ -29,13 +26,13 @@ D’abord nous avons utilisé un down-converter. Ce composant reçoit deux entr�
   \label{fig:mix}
 \end{figure}
 
-Dans ce cadre on utilise le down-converter pour diminuer la fréquence.
-La fréquence du signal Df est donnée par un VCO, le VCO reçoit en entrée une tension et donne en sortie une sinusoïdal de fréquence dépendante de la tension d’entrée. Le VCO étant très sensible, il est nécessaire de stabilisé la tension d’entrée et l’alimentation. On utilise donc un régulateur de tension qui amène une entrée stable. Il en a fallu un second pour alimenter le VCO, toujours dans le but d’obtenir une fréquence stable ne variant pas pendant le processus, 
+On utilisera donc le down-converter pour abaisser la fréquence reçue par les antennes (2.4GHz) à la fréquence de travail du radio-goniomètre.
 
-Il est en effet indispensable que cette fréquence reste fixe pour ne pas parasité l’effet doppler, la combinaison des deux indiquerait une mauvaise position.
-Le régulateur reçoit une tension V, si V est supérieur à la tension Vmax du régulateur, la tension de sortie devient Vmax. 
+La fréquence du signal Df est donnée par un VCO (Voltage Controlled Oscillator ou oscillateur contrôlé en tension), le VCO reçoit en entrée une tension et donne en sortie une sinusoïdal de fréquence dépendante de la tension d’entrée. Le VCO étant très sensible, il est nécessaire de stabiliser la tension d’entrée et l’alimentation. On utilise donc un régulateur de tension qui amène une entrée stable. Le régulateur est un composant qui viendra limiter à une valeur seuil Vmax la tension qu'il reçoit en entrée si celle ci dépasse ce seuil. Dans le cas ou V < Vmax la sortie du régulateur sera égale à l'entrée.
 
-Après il a fallu gérer du signal d’entrée du down-converter et des problèmes de bruit, on a donc placé un filtre devant le down-converter. Ce filtre est un filtre passe bande qui fonctionne autour de 2.4Ghz-2.5Ghz pour ne garder que ce qui nous intéresse.
+Le VCO étant un composant actif et sensible aux variations dans sa tension d'alimentation, un second régulateur a été utilisé pour alimenter le VCO, toujours dans le but d’obtenir une fréquence stable ne variant pas pendant le processus. Il est en effet indispensable que cette fréquence reste fixe pour que l’effet doppler soit toujours visible et exploitable. Des fluctuation incontrôlées de la tension d'alimentation ou de la fréquence pourraient perturber la localisation.
+
+Pour améliorer la mesure, il est utile de filtrer au maximum toutes le fréquences pouvant perturber la mesure et les différents bruits électromagnétiques. Ces phénomènes ont été atténués en positionnant en entrée du down-converter un filtre passe-bande qui permet de conserver uniquement la portion du spectre qui nous intéresse soit la bande située entre 2.4Ghz et 2.5Ghz.
 
 
 \begin{figure}[h]
@@ -45,7 +42,7 @@ Après il a fallu gérer du signal d’entrée du down-converter et des problèm
   \label{fig:down}
 \end{figure}
 
-A l’aide de ce montage on peut abaisser la fréquence du signal d’entrée.
+A l’aide de ce montage on peut améliorer le signal en entrée pour qu'il puisse être traité par le radio-goniomètre.
 
 %%% Local Variables: 
 %%% mode: latex
