@@ -55,9 +55,9 @@ Ces deux PIC ont également été testé avec le même procédé. Nous ne dével
 \label{sec:passe_bande}
 
 
-Pour le filtre passe bande, nous souhaitions un filtre qui couperait tout ce qui se trouve en dehors de notre bande, au final ce filtre réagit plutôt bien quand le montage qui y est lié est adapté, ce qui est le cas, le circuit fonctionne bien a 50 Ohm.
+Pour le filtre passe bande, nous souhaitions un filtre qui couperait tout ce qui se trouve en dehors de notre bande. Les tests ont montrés que ce filtre réagit plutôt bien quand le montage qui y est lié est adapté, ce qui est le cas, le circuit fonctionne bien avec une impédance de 50 Ohm.
 
-Le test unitaire était simple on a branché le filtre sur un analyseur que envoyais un signal et recevait ce même message. Il est alors simple d’obtenir le comportement du filtre. Nous avons obtenu que le filtre diminuait très bien ce que ce trouve avant 2.4GHz mais plutôt mal ce qui vient après. Mais ceci n’est pas gênant car les bande entre 205Ghz et 5 GHz ne sont pas ou peu utilisé en France.
+Le test unitaire était simple on a branché le filtre sur un analyseur que envoyais un signal et recevait ce même message. Il est alors simple d’obtenir le comportement du filtre. Nous avons obtenu que le filtre diminuait très bien ce que ce trouve avant 2.4GHz mais plutôt mal ce qui vient après. Ceci n’est pas gênant car les bande entre 2.5Ghz et 5 GHz sont peu utilisées en France. 
 
 \begin{figure}[h]
   \centering
@@ -68,9 +68,9 @@ Le test unitaire était simple on a branché le filtre sur un analyseur que envo
 
 Sur la photo le curseur sur la courbe est à 2.45Ghz et le plat est un peu plus grand que la bande.
 
-Nous avons mesuré deux paramètres supplémentaires, Le S11 et le S21 qui sont des paramètres permettant de mesurer la perte d’amplitude. Le S11 est le coefficient de réflexion à l'entrée lorsque la sortie est adaptée. Dans l’idéal il vaut 0, il n’y a alors aucune réflexion et tout l’amplitude du signal sort du filtre, on obtient le S11 de la photo suivante.
+Nous avons mesuré deux paramètres supplémentaires, Le S11 et le S21 qui sont des paramètres permettant de mesurer la perte d’amplitude lié au composant. Le S11 est le coefficient de réflexion à l'entrée lorsque la sortie est adaptée. Dans l’idéal il vaut 0, il n’y a alors aucune réflexion et tout l’amplitude du signal sort du filtre, on obtient le S11 de la photo suivante.
 
-On peut voir ici que le log du S11 est très faible entre 2.4 et 2.5 GHz ce qui est bon pour le filtre.
+On peut voir ici que le log du S11 est très faible entre 2.4 et 2.5 GHz ce qui indique un faible taux de réflexion et donc que le signal en entrée sera peu atténué.
 
 \begin{figure}[h]
   \centering
@@ -84,15 +84,16 @@ Les deux plus grands pics vers le bas correspondent aux limites de la bande 2.4-
 
 Le S21 est le coefficient de transmission direct lorsque la sortie est adaptée, pour celui-ci le but est d’avoir ce nombre le plus proche de 1 et donc son logarithme le plus proche de zéro possible.
 
-Lors du test, nous avions une perte d’environ 2dBm dans la bande de fréquence 2.4-2.5GHz, ce qui est peu, le filtre ne risque donc pas d’occulté ce que l’on souhaite voir.
+Lors du test, nous avions une perte d’environ 2dBm dans la bande de fréquence 2.4-2.5GHz, ce qui est relativement faible, le filtre ne risque donc pas d’occulter ce que l’on souhaite voir en atténuant trop fortement le signal utile.
 \newpage
 \section{VCO}
 
 
 
-Le test du VCO est simple mais doit être bien fait car sans lui impossible d’obtenir la bonne fréquence à la fin.
+Le test du VCO est simple mais doit être bien fait car sans lui impossible d’obtenir la bonne fréquence de travail en entrée du radio-goniomètre.
 
-Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO s’il est juste alimenté et que la tension d’entrée est nulle. La fréquence libre qui était de 1.35 GHz était plus grande que la fréquence indiqué par le constructeur (1.31Ghz) ensuite nous avons mesuré la tension pour laquelle nous obtenions 1.9Ghz et nous avons obtenu environ 8V ce qui nous à permit de choisir le bon régulateur de tension pour la suite. Les régulateur sont calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement mais on a pu obtenir un régulateur à 8.1V ce qui après test donnait 1.91GHz. La bande de fréquence a transférer étant de 100 MHz nous n’étions pas à 10 MHz prés et il aurait été difficile et couteux de trouver un meilleur moyen de le faire.
+Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO lorqu'il est alimenté avec une tension nulle en entrée. La fréquence libre mesurée sur notre matériel était de 1.35 GHz donc plus importante que la fréquence indiqué par le constructeur (1.31Ghz). L'étape suivante consistait a mesurer la tension pour laquelle nous obtenions une fréquence de sortie de 1.9Ghz et nous avons obtenu environ 8V ce qui nous à permis de choisir le bon régulateur de tension pour la suite.
+ Les régulateur sont calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement mais nous avons pu obtenir un régulateur à 8.1V qui après test donnait en sortie du VCO une fréquence de 1.91GHz. La bande de fréquence a transférer étant de 100 MHz nous n’étions pas à 10 MHz prés et il aurait été difficile et couteux de trouver un meilleur moyen de le faire.
 
 
 \begin{figure}[h]
@@ -115,7 +116,7 @@ Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréque
 \end{figure}
 
 
-Le test du down converteur a posé certain problème. En effet le seul moyen de le tester est de le tester dans son cas d’utilisation pratique. Il est, en effet, nécessaire de l’alimenter et  ceci ne peut se faire sans le VCO, de même le bruit risque de gêner l’observation, il faut donc utiliser le filtre.
+Le test du down-converter a posé quelques problèmes. En effet le seul moyen de le tester est de le tester dans son cas d’utilisation pratique. Il est, en effet, nécessaire de l’alimenter et  ceci ne peut se faire sans le VCO, de même le bruit risque de gêner l’observation, il faut donc utiliser le filtre.
 
 
 \begin{figure}[h]
@@ -127,13 +128,12 @@ Le test du down converteur a posé certain problème. En effet le seul moyen de 
 
 
 
-Nous avons rencontré des problèmes lors du test, premièrement, des problèmes de communication entre membre de l’équipe ont retardé le test d’une semaine, en effet il a fallu crée un montage avec les deux régulateurs de tension, celui pour l’alimentation et celui pour la tension en entrée. Le premier membre de l’équipe a demandé au second de souder le montage mais n’a pas présenté l’ordre dans lequel il devait être placé ce qui a entrainé une inversion. Ceci a retardé la phase de test
+Nous avons rencontré des problèmes lors du test, premièrement, des problèmes de communication entre membre de l’équipe ont retardé le test d’une semaine, en effet il a fallu crée un montage avec les deux régulateurs de tension, celui pour l’alimentation et celui pour la tension en entrée. Il manquait cependant une information relative à l'orientation d'un composant sur les schémas fourni au membre de l'équipe chargé de la soudure et cela a entrainé une erreur de montage avec une augmentation des délais liés à la réalisation de ces filtres.
 
 Deuxièmement, nous n’avions pas prévue les problèmes dus aux câbles. Il a fallu en effet cherché des câbles en n’étant pas certain que le câblage utilisé ne ferait pas griller le matériel.
 
-Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’a donc pas pu nous aider lorsque des hésitations se sont fait sentir, devant le prix du matériel et la possibilité de le griller, nous n’avons pas pu le faire fonctionner.
+Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’a donc pas pu nous aider lorsque des hésitations se sont fait sentir. Devant le prix du matériel et la possibilité de l'endommager, nous avons choisis d'attendre.
 
-Enfin, par manque de temps, nous n’avons pas eu l’occasion de refaire ce test.
 
 
 
