@@ -1,8 +1,19 @@
 
 \chapter{Radiogoniometre}
 
-Pour réaliser notre projet nous avons été obligé d'adapter notre capteur le radiogoniomètre Montréal 3v2 a nos besoin.
-BlaBla
+ 
+\section{Module Montréal}
+
+Le module Montréal comprends deux cartes électroniques : la carte principale qui est chargée de toutes les tâches relatives au traitement du signal reçu par les antennes et la carte destinée à l'affichage de la direction.
+
+Les supports des cartes sont en résine époxy sur laquelle ont été apposée des pistes en cuivre en configuration mono-couche (les pistes ne sont présentes que sur une face de la plaque). Un étamage par dépôt chimique des piste a été réalisé pour les protéger de l'oxydation. L'ensemble de ces opération ont été effectuées à l'école avec l'aide de Mr. Gallou.
+ 
+Le PIC18F4520 chargé de la majorité des traitements et le PIC12F675 ont été soudés sur la carte principale. Le PIC16F628A, chargé de l'affichage des LEDs a été soudé sur la carte d'affichage de direction. Le montage choisi pour ce dernier PIC permet de le désolidariser de la plaque afin d'effectuer les tests d'allumage des LEDs de direction.
+
+L'ensemble des composants que nous avions a disposition (LEDs, condensateurs et résistances) ont été ensuite soudés sur les deux plaques. 
+
+Par rapport au montage d'origine nous n'utiliseront pas le RS232. Toutefois, lors de la rédaction de ce rapport, il manque deux filtres sur la carte principale qui nous empêchent de valider son fonctionnement.
+
 
 \section{Down converter}
 
