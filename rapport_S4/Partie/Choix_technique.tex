@@ -26,19 +26,77 @@ Suite à notre état de l'art, nous avons décidé de réaliser notre système d
 
 
 \section{Architecture Fonctionnelle}
+En début de projet, suite à l'interview de notre encadrant Mr. Ali Mansour, nous avions réalisé le tableau de exigence (tableau \ref{pdf:tab}).
+
+
+L'ensemble de notre projet c'est donc construit autour de ces premières exigences, qui on ensuite été détaillées en fonctions et contraintes. Très vite, nous avons convenu que l'architecture fonctionnelle de notre système serait telle que décrite dans le diagramme SADT ci dessous.
+
+\begin{figure}[h]
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\textwidth]{SADTA-0}
+    \caption{SADT A-0}
+  \end{minipage}\hfill
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\textwidth]{SADTA0}
+    \caption{SADT A0}
+  \end{minipage}
+\end{figure}
+
+
+
+
+Comme on peut le voir, le fonctionnement de notre système est décrit en trois grandes actions: 
+\begin{itemize}
+\item capter les signaux émis par une source inconnue en restant à l'écoute
+\item analyser les signaux reçus et traiter ces derniers grâce à une succession de filtres
+\item obtenir la position du drone par triangulation grâce aux angles de détection obtenus
+\end{itemize}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{tableauSpe}
+  \caption{Tableau des spécifications}
+  \label{pdf:tab}
+\end{figure}
+
+ 
+
+\newpage
+
 
 \section{Architecture physique}
 \label{sec:phys}
 
+Suite à l'analyse fonctionnelle nous avons avons fait le choix d'une architecture physique.
+Pour cela nous avons découpé notre système en plusieurs sous-systèmes de la façon suivante:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{SSysteme}
+  \caption{sous-système}
+\end{figure}
+
+Tout d'abord, pour le capteur nous avons choisi de nous appuyer sur le Montréal 3v2 que nous avons choisi d'adapter à notre problème. Pour cela nous avons du adapter les antennes a nos fréquences, installer un filtre passe bas et enfin un down converter, mais nous avons garder le goniomètre du Montréal 3v2.
+
+Ensuite, nous avons choisi de placer un petit ordinateur au niveau de chaque capteur qui servira de client TCP/IP transmettant ses informations à un ordinateur central. Pour répondre à ce besoin nous avons choisi d'installer des Raspberry Pi, pour des raisons évidentes de coût et de taille.
+
+Puis nous avons choisi d'installer un ordinateur central (le serveur) rassemblant les données. Au cour de notre projet nous avons utilisé nos ordinateurs personnelles mais à termes nous souhaitons installer le serveur sur un Raspberry Pi.
+
+Enfin, nous avons créé une application android fonctionnant sur nos téléphones personnels.
+
 
 L'architecture physique du système est présenté à la figure \ref{fig:arch_phys}.
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{fonctionnement}
   \caption{Architecture Physique}
   \label{fig:arch_phys}
 \end{figure}
+\newpage
 
 \newpage
 \section{Treillis de détection}

@@ -211,6 +211,7 @@
 
 %%%%%%%%%%%%%%%%% INTRODUCTION
 
+\input{Partie/remerciment}
 \input{Partie/Resumer}
 
 \chapter*{Introduction}
@@ -263,11 +264,19 @@ Ce rapport présentera dans un premier temps un rappel de notre travail d'analys
 
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
+Si le projet SMART n'en est qu'à ses débuts, cette année nous aura permis de poser les bases de son développement futur. En effet, le projet est vaste et ambitieux. Subdivisé en plusieurs sous partie, nous avons logiquement commencé par la détection et la localisation des drones.
+
+Dans un premier temps, l'analyse fonctionnelle, grâce à l'ensemble des outils d'analyse utilisés, nous a permis de cerner plus particulièrement les attentes, mais surtout les fonctions que devait présenter notre système. La précision de la détection, la surface de détection ou encore la radiogoniométrie sont des exemples de paramètres à fort impact déterminés à cette étape de l'étude. Cette dernière a fortement impactée notre évolution tout au long de l'année car elle a mis en valeur les domaines majeurs sur lesquels notre attention devait se porter. Très général, elle aurait cependant pu être approfondit sur certains points techniques, levant ainsi certaines zones d'ombres planant encore à la fin de cette étude. Cependant, la difficulté du domaine étudié et le temps impartit ne nous a pas permit de poursuivre des études complémentaires. Des choix ont donc été réalisé en fonction de l'ensemble de ces paramètres pour pouvoir poursuivre la réalisation et tenir les délais.
+
+La majeur partie de l'attention de l'équipe s'est donc porté sur la réalisation d'un radiogoniomètre afin de pouvoir présenter des résultats réels en fin d'année. Partant de travaux amateurs, nous nous sommes appuyé sur ces derniers et sur les conseils d'un de leur concepteur afin de moderniser un goniomètre Montréal 3v2 et l'adapter à notre gamme de fréquence. L'ensemble de la chaine de détection post-traitement de ce goniomètre devais être adaptée à notre gamme de fréquence. Des solutions technologiques ont été trouvée mais aucun test d'ensemble n'a pu être réalisé afin d'appuyer la théorie. Le senseur comportant de nombreux éléments technologiques complexe, sa réalisation à finalement pris un retard notable nous poussant à abandonner sa réalisation pour réaliser la chaine d'information allant du senseur à l'utilisateur. Cette dernière partie s'est déroulée sans difficultés majeure et est désormais fonctionnelle. Le système présente donc une architecture client/serveur gérant le transfert des informations d'angles de détection des goniomètres au serveur web traitant ces informations et affichant une interface résumant la situation en temps réel à l'utilisateur. Le démonstrateur ne pourra cependant que se reposer sur des données simulées compte tenu des difficultés énoncés précédemment.
+
+Bien que nos attentes aient évoluées, nous sommes cependant fier de vous présenter le résultat de cette année de travail, travail que nous espérons voir poursuivi à l'avenir.
+
 \newpage
 
 %%%% ANNEXE %%%%%%%%%%%%
 
-\input{Partie/remerciment}
+
 
 \part*{Annexe}
 \addcontentsline{toc}{part}{Annexe}
