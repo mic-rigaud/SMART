@@ -1,14 +1,55 @@
 \chapter{Tests Unitaires}
 
 
-\begin{tabular}{|p{0.3\textwidth}  |p{0.3\textwidth}  |p{0.3\textwidth} |}	
+\begin{tabular}{|p{0.3\textwidth}  |m{0.3\textwidth}  |p{0.3\textwidth} |}	
 \hline
-\multicolumn{2}{|c|}{Caractéristiques}\\
+Test & État & Commentaires \\ \hline
+\multicolumn{3}{|c|}{PIC}\\ \hline
+PIC16F628A & Échec & Réaction partielle du PIC aux entrées. Un autre protocole est nécéssaire \\ \hline
+PIC12F675 & Échec & Réaction partielle du PIC aux entrées. Un autre protocole est nécéssaire \\ \hline
+PIC18F4520 & Échec & Réaction partielle du PIC aux entrées. Un autre protocole est nécéssaire \\ 
 \hline
-1 & 2 & 3 \\
+\multicolumn{3}{|c|}{Plaques et pistes}\\ 
 \hline
-\multicolumn{2}{|c|}{Connectiques}\\
+Test des pistes de la carte principale & Réussite & Test au multimètre. Passage courant OK, tension OK et faible résistance des pistes \\ 
 \hline
-4 & 5 & 6 \\ 
+Test des pistes de la carte d'affichage & Réussite & Test au multimètre. Passage courant OK, tension OK et faible résistance des pistes \\
 \hline
+\multicolumn{3}{|c|}{Filtre passe-bande}\\ 
+\hline
+Bande passante & Réussite & Amplitude Max à 2.45GHz, faible atténuation pour f>2.5GHz \\
+\hline
+Coefficient de réflexion & Réussite & S11 faible sur la bande passante \\
+\hline
+Coefficient de transmission & Réussite & log(S21) proche de 2dBm \\
+\hline
+\multicolumn{3}{|c|}{VCO}\\ \hline
+Fréquence libre & Réussite & Mesure à 1.35GHz proche de la valeur constructeur \\ 
+\hline
+Tension efficace & Réussite & Tension idéale : 8V \\
+\hline
+Sortie VCO avec régulateur & Réussite & Fréquence de sortie 1.91GHz \\
+\hline
+\multicolumn{3}{|c|}{Down-converter}\\ \hline
+Fréquence de sortie & Reporté & A reprogrammer \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|p{0.3\textwidth}  |m{0.3\textwidth}  |p{0.3\textwidth} |}	
+\hline
+\multicolumn{3}{|c|}{Raspberry}\\ \hline
+Test d'allumage & Réussite & Fonctionne parfaitement sur alimentation secteur \\
+\hline
+Test Raspbian & Réussite & Installation et test des fonctionnalités python de Raspbian \\ 
+\hline
+Test GPIO & Réussite & Les ports GPIO choisis pour le projet fonctionnent dans les 2 sens \\
+\hline
+Test Client Raspberry & Réussite & Connection et communication avec le serveur (Ordinateur Michael) en local et en externe \\
+\hline
+\multicolumn{3}{|c|}{Application Android}\\ \hline
+Lancement de l'application & Réussite & Testée sur 3 appareils différents \\
+\hline
+Communication avec le serveur & Réussite & Échange de messages simples dans les deux sens \\
+\hline
+
 \end{tabular}
