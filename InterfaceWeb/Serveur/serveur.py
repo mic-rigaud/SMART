@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+################## SERVEUR.py #####################
+# autheur: Equipe Smart
+# date: 5 avril
+#
+# Description: cette application sert de serveur avec multi thread
+###################################################
 
-# Definition d'un serveur reseau gerant un systeme de CHAT simplifie.
-# Utilise les threads pour gerer les connexions clientes en parallele.
-
+# Adresse de connexion
 HOST = '127.0.0.1'
+# Port de Connexion
 PORT = 50000
 
 
@@ -11,12 +16,13 @@ import socket, sys, threading
 import pickle
 
 
+
 class ThreadClient(threading.Thread):
-    '''derivation d'un objet thread pour gerer la connexion avec un client'''
+    '''objet thread servan a gerer les connexions clients'''
     def __init__(self, conn, nom):
         threading.Thread.__init__(self)
-        self.connexion = conn
-        self.name = nom
+        self.connexion = conn # contient le nom de la connexion
+        self.name = nom # le nom du rpi client
         
     def run(self):
         while 1:
@@ -37,7 +43,7 @@ class ThreadClient(threading.Thread):
 
 
 def initialisation():
-    # Initialisation des donnes
+    '''Initialisation des donnes'''
     with open('donnees', 'rb') as fichier:
         mon_depickler = pickle.Unpickler(fichier)
         DIRECTION = mon_depickler.load()
@@ -45,6 +51,7 @@ def initialisation():
 
 
 def lecture():
+    ''' Lecture du fichier position contenant la position de rpi avec leur angle de detection'''
     fichier = open("position", 'r')
     for line in fichier:
         contenue = line.split()
@@ -52,6 +59,7 @@ def lecture():
     fichier.close()
 
 def ecriture():
+    ''' Ecriture dans le fichier position de le position des rpi avec leur angles de detection'''
     fichier = open("position", 'w')
     for clef in POSITION:
         message = "%s : %s %s %s %s\n" %(clef,POSITION[clef][0],POSITION[clef][1],POSITION[clef][2], POSITION[clef][3])
@@ -62,7 +70,7 @@ def ecriture():
 DIRECTION = {}
 POSITION = {}
 
-# Cette initialisation permet d'initialiser les dictionnaire qui contiennent toute les variables
+# Cette initialisation permet d'initialiser le dictionnaire POSITION qui contiennent toute les variables
 initialisation()
 
 DIRECTION = {"led1": 0, "led2": 10,"led3": 20,"led4": 30,"led5": 40,"led6": 50,"led7": 60,"led8": 70,"led9": 80,"led10": 90,"led11": 100,"led12": 110,"led13": 120,"led14": 130,"led15": 140,"led16": 150,"led17": 160,"led18": 170,"led19": 180,"led20": 190,"led21": 200,"led22": 210,"led23": 220,"led24": 230,"led25": 240,"led26": 250,"led27": 260,"led28": 270,"led29": 280,"led30": 290,"led31": 300,"led32": 310,"led33": 320,"led34": 330,"led35": 340,"led36": 350, "ledNULL":360}
@@ -80,20 +88,18 @@ mySocket.listen(5)
 
 
 # Attente et prise en charge des connexions demandees par les clients :
-conn_client = {}                # dictionnaire des connexions clients
+conn_client = {}                # dictionnaire des clients connectes
 while 1:
     try:
         connexion, adresse = mySocket.accept()
-        # Creer un nouvel objet thread pour gerer la connexion :
+        # Identification du client avec d'ouvrir le thread
         nom = bytes.decode(connexion.recv(1024))    
         th = ThreadClient(connexion, nom)
+        # ouverture du thread
         th.start()    
-        # Memoriser la connexion dans le dictionnaire : 
-        #it = th.getName()   
         conn_client[nom] = connexion
         print("Client %s connecte, adresse IP %s, port %s." %\
               (nom, adresse[0], adresse[1]))
-        # Dialogue avec le client :
         connexion.send(b'Vous etes connecte. Envoyez vos messages.')
     except KeyboardInterrupt:
         print("Fin du serveur")

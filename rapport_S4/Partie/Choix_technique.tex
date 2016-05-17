@@ -3,7 +3,14 @@
 \label{chap:choix}
 
 \section{Contexte}
+La première partie du projet nous a permis de redéfinir le sujet et les attentes, mais également de réfléchir aux solutions technologiques que nous pourrions utiliser. Après avoir observé les solutions existantes et compte tenu du budget qui nous est imposé, la solution générale retenue sera donc la suivante: les ondes radio captées par les antennes, seront traitées par un filtre et un down-converter avant de passer par le radiogoniomètre et obtenir une position angulaire qui sera envoyée au serveur puis transmise à l’IHM (voir dans le chapitre \ref{chap:choix} la partie \ref{sec:phys}).
 
+Cependant, de nombreuses zones d’ombres planent encore sur la réalisation technique, notamment car nous ne maitrisons pas le domaine. En effet, nous utiliserons des plans de carte électronique de radiogoniomètre amateur afin de réaliser notre solution technologique, car réaliser un traitement entièrement numérique ne semble pas réalisable dans le temps impartit. 
+
+De plus, actuellement, nous ne nous sommes pas encore réellement penchés sur le traitement des informations ainsi que sur la structure du serveur et de l’IHM. Nous avons seulement convenu que le transfert des informations se fera via Arduino. L’un d’entre eux sera le serveur et dialoguera avec l’ensemble des autres Arduino positionnés sur les antennes.~\\
+
+
+Actuellement, nous ne possédons aucune partie physique du projet et nous réalisons des listes de commandes afin de pouvoir commencer les tests unitaires le plus rapidement possible.
 
 \section{Rappel de notre projet}
 
@@ -21,6 +28,7 @@ Suite à notre état de l'art, nous avons décidé de réaliser notre système d
 \section{Architecture Fonctionnelle}
 
 \section{Architecture physique}
+\label{sec:phys}
 
 
 L'architecture physique du système est présenté à la figure \ref{fig:arch_phys}.
