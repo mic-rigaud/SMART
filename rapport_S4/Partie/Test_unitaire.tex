@@ -92,8 +92,8 @@ Lors du test, nous avions une perte d’environ 2dBm dans la bande de fréquence
 
 Le test du VCO est simple mais doit être bien fait car sans lui impossible d’obtenir la bonne fréquence de travail en entrée du radio-goniomètre.
 
-Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO lorqu'il est alimenté avec une tension nulle en entrée. La fréquence libre mesurée sur notre matériel était de 1.35 GHz donc plus importante que la fréquence indiqué par le constructeur (1.31Ghz). L'étape suivante consistait a mesurer la tension pour laquelle nous obtenions une fréquence de sortie de 1.9Ghz et nous avons obtenu environ 8V ce qui nous à permis de choisir le bon régulateur de tension pour la suite.
- Les régulateur sont calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement mais nous avons pu obtenir un régulateur à 8.1V qui après test donnait en sortie du VCO une fréquence de 1.91GHz. La bande de fréquence a transférer étant de 100 MHz nous n’étions pas à 10 MHz prés et il aurait été difficile et couteux de trouver un meilleur moyen de le faire.
+Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO lorqu'il est alimenté avec une tension nulle en entrée. La fréquence libre mesurée sur notre matériel était de 1.35 GHz donc plus importante que la fréquence indiqué par le constructeur (1.31Ghz). L'étape suivante consistait a mesurer la tension pour laquelle nous obtenions une fréquence de sortie de 1.9Ghz. Nous avons obtenu environ 8V ce qui nous à permis de choisir le bon régulateur de tension pour la suite.
+ Les régulateur sont des composants calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement aux besoins du projet mais nous avons pu obtenir un régulateur à 8.1V qui, après test, permettait d'obtenir en sortie du VCO une fréquence de 1.91GHz. La bande de fréquence a transférer étant de 100 MHz et donc très large par rapport aux 10MHz de décalage observés nous avons conservé ce régulateur.
 
 
 \begin{figure}[h]
@@ -116,7 +116,7 @@ Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréque
 \end{figure}
 
 
-Le test du down-converter a posé quelques problèmes. En effet le seul moyen de le tester est de le tester dans son cas d’utilisation pratique. Il est, en effet, nécessaire de l’alimenter et  ceci ne peut se faire sans le VCO, de même le bruit risque de gêner l’observation, il faut donc utiliser le filtre.
+Le test du down-converter a posé quelques problèmes. Il est nécessaire de l’alimenter comme dans sa configuration opérationnelle et ceci ne peut se faire sans le VCO. De plus le bruit en sortie du VCO risque de gêner l’observation, il est donc obligatoire d'utiliser le filtre.
 
 
 \begin{figure}[h]
@@ -132,10 +132,7 @@ Nous avons rencontré différents des problèmes lors du test. Premièrement, de
 
 Deuxièmement, nous n’avions pas prévue des problèmes dus aux câbles. Nous n'étions pas certain que le câblage utilisé n'endommagerait pas le matériel.
 
-Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’a donc pas pu nous aider lorsque des hésitations se sont fait sentir. Devant le prix du matériel et la possibilité de l'abimer, nous avons choisis d'attendre.
-
-
-
+Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’était donc pas en mesure de nous aider lorsque des hésitations se sont fait sentir. Devant le prix du matériel et la possibilité de l'abimer, nous avons choisis d'attendre.
 
 
 %%% Local Variables: 
