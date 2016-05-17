@@ -5,8 +5,38 @@
 \section{Module Montréal}
 
 Le module Montréal comprend deux cartes électroniques : la carte principale qui est chargée de toutes les tâches relatives au traitement du signal reçu par les antennes et la carte destinée à l'affichage de la direction.
+~\\
+
+\begin{minipage}{0.45\linewidth}
+
+  \centering
+  \includegraphics[width=\textwidth]{plaque1face.jpg}
+  \captionof{figure}{Carte principale}
+  ~\\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+	  \centering
+  \includegraphics[width=\textwidth]{plaque2face.jpg}
+  \captionof{figure}{Carte secondaire}
+  ~\\
+\end{minipage}
+
 
 Les supports des cartes sont en résine époxy sur laquelle ont été apposées des pistes en cuivre en configuration mono-couche (les pistes ne sont présentes que sur une face de la plaque). Un étamage par dépôt chimique des pistes a été réalisé pour les protéger de l'oxydation. L'ensemble de ces opérations ont été effectuées à l'école avec l'aide de Mr. Gallou.
+~\\
+\begin{minipage}{0.45\linewidth}
+
+  \centering
+  \includegraphics[width=0.5\textwidth]{plaque1dos.jpg}
+  \captionof{figure}{Pistes carte principale}
+  ~\\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+	  \centering
+  \includegraphics[width=0.5\textwidth]{plaque2dos.jpg}
+  \captionof{figure}{Pistes carte secondaire}
+  ~\\
+\end{minipage}
  
 Le PIC18F4520 chargé de la majorité des traitements et le PIC12F675 ont été soudés sur la carte principale. Le PIC16F628A, chargé de l'affichage des LEDs a été soudé sur la carte d'affichage de direction. Le montage choisi pour ce dernier PIC permet de le désolidariser de la plaque afin d'effectuer les tests d'allumage des LEDs de direction.
 
