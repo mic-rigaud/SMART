@@ -32,7 +32,7 @@ Ensuite, nous avons cherché à réaliser un diagramme de classe de notre interf
 \item client.py, installé sur chaque radio-goniomètre il envoie les données des capteurs à travers un socket au serveur.
 \end{itemize}
 
-Le diagrammes de classe de la figure \ref{fig:class}, montre ce fonctionnement.
+Le diagramme de classe de la figure \ref{fig:class}, montre ce fonctionnement.
 
 \begin{figure}[!h]
   \centering
@@ -50,7 +50,7 @@ Le diagrammes de classe de la figure \ref{fig:class}, montre ce fonctionnement.
 Pour commencer nous avons cherché à donner une interface à nos \rpi pour communiquer avec l'ordinateur central, c'est l'interface Client/Serveur.
 ~\\
 
-Cette interface a été codé en python. Nous avons choisi le python car c'est un langage souple et rapide. Nous avons réalisé la connection à l'aide d'un socket TCP/IP. De plus, le serveur se base sur du multi thread pour accepter plusieurs client. Le client se connecte donne, son identifiant puis sa communication est placé dans un thread. Ainsi, on a un serveur qui peut accepter une infinité de client.
+Cette interface a été codée en python. Nous avons choisi le python car c'est un langage souple et rapide. Nous avons réalisé la connection à l'aide d'un socket TCP/IP. De plus, le serveur se base sur du multi thread pour accepter plusieurs clients. Le client se connecte, donne son identifiant puis sa communication est placée dans un thread. Ainsi, on a un serveur qui peut accepter une infinité de clients.
 ~\\
 
 Pour lancer le serveur il faut lancer le programme \textit{serveur.py} qui se met en écoute de client. Pour lancer le client il faut lancer le programme \textit{client.py}. Une illustration du terminal lors de l'exécution de ces commandes est donnée ci-dessous.
@@ -85,23 +85,23 @@ Connexion interrompue.
 
 ~\\
 
-On peut constater que la seule donnée que le \rpi envoie en continue est le numéro de la led qui s'est allumé. En effet, le modèle du Montréal 3v2 affiche le gisement sur un cadrant de 36 led. Dans notre solution nous avons décidé de garder ce cadrant et de placer le \rpi en parallèle du circuit pour détecter laquelle led s'est allumé. De plus, nous avons décidé de réaliser la conversion led/gisement au niveau du serveur pour des questions de modularités. 
+On peut constater que la seule donnée que le \rpi envoie en continue est le numéro de la led qui s'est allumée. En effet, le modèle du Montréal 3v2 affiche le gisement sur un cadrant de 36 led. Dans notre solution nous avons décidé de garder ce cadrant et de placer le \rpi en parallèle du circuit pour détecter laquelle led s'est allumée. De plus, nous avons décidé de réaliser la conversion led/gisement au niveau du serveur pour des questions de modularités. 
 
 ~\\
 
-Une foi les données reçut par le serveur, celui-ci les écrit dans un fichier qui s'appelle \textit{position}.
+Une fois les données reçues par le serveur, celui-ci les écrit dans un fichier qui s'appelle \textit{position}.
 
 
 
 \subsection{Web}
 
-Ensuite, nous nous sommes penché sur notre page web. Cette page web doit permettre à notre utilisateur de visualiser en temps réel la position du drone dans notre maillage. Pour cela nous avons fait le choix d'utiliser des solutions dynamiques tel que PHP, Javascript et JQuery.
+Ensuite, nous nous sommes penchés sur notre page web. Cette page web doit permettre à notre utilisateur de visualiser en temps réel la position du drone dans notre maillage. Pour cela nous avons fait le choix d'utiliser des solutions dynamiques tel que PHP, Javascript et JQuery.
 ~\\
 
 Pour nous faciliter dans la réalisation du schéma modélisant notre treillis, nous avons choisi SVG. En effet, SVG nous permet de réaliser notre schéma de manière vectorielle. C'est-à-dire que l'on peut donner avec précision la position des capteurs ainsi que de leur droite de détection, mais surtout on peut rendre cela dynamique.
 ~\\
 
-Le script ouvre le fichier \textit{position} qui a été précédemment rempli, et ajoute les points qui sont inscrit dans le fichier avec leur droite de détection. Mais cela ne suffit pas. En effet, si l'on s'arrête là on n'a qu'une position visible par un être humain il reste encore à la positionner. Pour cela nous utiliserons la triangulation (voir à la page \ref{sec:trian}).
+Le script ouvre le fichier \textit{position} qui a été précédemment rempli, et ajoute les points qui sont inscrits dans le fichier avec leur droite de détection. Mais cela ne suffit pas. En effet, si l'on s'arrête là on n'a qu'une position visible par un être humain il reste encore à la positionner. Pour cela nous utiliserons la triangulation (voir à la page \ref{sec:trian}).
 ~\\
 
 Enfin, nous affichons de manière classé l'ensemble des \rpi qui été présent dans le fichier position à la droite de l'écran.
@@ -111,17 +111,17 @@ Enfin, nous affichons de manière classé l'ensemble des \rpi qui été présent
 
 \subsection{Triangulation}
 \label{sec:trian}
-Les différents radiogoniomètres nous donnant un gisement de la détection, nous pouvons donc
+Les différents radio-goniomètres nous donnent un gisement de la détection, nous pouvons donc
 réaliser une triangulation de la position du drone lorsqu’un nombre suffisant d’antenne détecte le
-drone. Bien qu’une première estimation de la position peut-être obtenu à partir de deux drones,
+drone. Bien qu’une première estimation de la position peut-être obtenue à partir de deux drones,
 nous considérons que le drone doit être détecté par au moins quatre senseurs pour que la position
 soit acceptable.
 ~\\
 
 Cependant, avant de pouvoir réaliser toute triangulation, l’acquisition des points d’intersection entre
-les droites de détection issue du gisement fourni par les différents radiogoniomètres est nécessaire.
+les droites de détection issues du gisement fourni par les différents radio-goniomètres est nécessaire.
 Pour se faire, à partir des angles, nous formulons une équation de droite plan, passant par les
-radiogoniomètres respectifs, et tentons de trouver une solution à chaque système composé de deux
+radio-goniomètres respectifs, et tentons de trouver une solution à chaque système composé de deux
 droites.
 ~\\
 
@@ -132,8 +132,8 @@ droites.
 \end{wrapfigure}
 
   Suite à la résolution de ces différents systèmes, nous
-obtenons une liste de différentes solutions, solutions ici
-schématisé avec des points de couleur grise. Nous observons
+obtenons une liste de différentes solutions, les solutions ici
+schématisées avec des points de couleur grise. Nous observons
 que, du fait de la portée de détection, ainsi que la géométrie
 de notre treillis, certains points sont incohérents ou très
 imprécis.
@@ -141,9 +141,9 @@ imprécis.
 ~\\
 Notre première approche fut donc de positionner le drone à
 la moyenne de l’ensemble des positions solutions d’un des
-systèmes précédent. Cependant, après simulation, il s’est
+systèmes précédents. Cependant, après simulation, il s’est
 avéré que, de par l’imprécision relative des
-radiogoniomètres (les angles sont donnée à 5\up{o} près), la moyenne de donnait qu’une idée toute relative de la position du drone et souvent loin de la vérité, et
+radio-goniomètres (les angles sont données à 5\up{o} près), la moyenne de donner qu’une idée toute relative de la position du drone et souvent loin de la vérité, et
 cela à cause d’intersections multiples entre les droites de détection.
 Pour corriger cela nous avons fait le choix d’utiliser la médiane afin de supprimer tous les résultats
 incohérents. A partir de la médiane des résultats, nous appliquons un gabarit circulaire et retenons
