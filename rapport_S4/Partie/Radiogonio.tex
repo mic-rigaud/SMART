@@ -42,9 +42,9 @@ On utilisera donc le down-converter pour abaisser la fréquence reçue par les a
 
 La fréquence du signal Df est donnée par un VCO (Voltage Controlled Oscillator ou oscillateur contrôlé en tension), le VCO reçoit en entrée une tension et donne en sortie une sinusoïdal de fréquence dépendante de la tension d’entrée. Le VCO étant très sensible, il est nécessaire de stabiliser la tension d’entrée et l’alimentation. On utilise donc un régulateur de tension qui amène une entrée stable. Le régulateur est un composant qui viendra limiter à une valeur seuil Vmax la tension qu'il reçoit en entrée si celle ci dépasse ce seuil. Dans le cas ou V < Vmax la sortie du régulateur sera égale à l'entrée.
 
-Le VCO étant un composant actif et sensible aux variations dans sa tension d'alimentation, un second régulateur a été utilisé pour alimenter le VCO, toujours dans le but d’obtenir une fréquence stable ne variant pas pendant le processus. Il est en effet indispensable que cette fréquence reste fixe pour que l’effet doppler soit toujours visible et exploitable. Des fluctuation incontrôlées de la tension d'alimentation ou de la fréquence pourraient perturber la localisation.
+Le VCO étant un composant actif et sensible aux variations dans sa tension d'alimentation, un second régulateur a été utilisé pour alimenter le VCO, toujours dans le but d’obtenir une fréquence stable ne variant pas pendant le processus. Il est en effet indispensable que cette fréquence reste fixe pour que l’effet doppler soit toujours visible et exploitable. Des fluctuations incontrôlées de la tension d'alimentation ou de la fréquence pourraient perturber la localisation.
 
-Pour améliorer la mesure, il est utile de filtrer au maximum toutes le fréquences pouvant perturber la mesure et les différents bruits électromagnétiques. Ces phénomènes ont été atténués en positionnant en entrée du down-converter un filtre passe-bande qui permet de conserver uniquement la portion du spectre qui nous intéresse soit la bande située entre 2.4Ghz et 2.5Ghz.
+Pour améliorer la mesure, il est utile de filtrer au maximum toutes les fréquences pouvant perturber la mesure et les différents bruits électromagnétiques. Ces phénomènes ont été atténués en positionnant en entrée du down-converter un filtre passe-bande qui permet de conserver uniquement la portion du spectre qui nous intéresse soit la bande située entre 2.4Ghz et 2.5Ghz.
 
 
 \begin{figure}[h]
@@ -54,7 +54,7 @@ Pour améliorer la mesure, il est utile de filtrer au maximum toutes le fréquen
   \label{fig:down}
 \end{figure}
 
-A l’aide de ce montage on peut améliorer le signal en entrée pour qu'il puisse être traité par le radio-goniomètre.
+A l’aide de ce montage on peut améliorer le signal en entrée pour qu'il puisse être traité correctement par le radio-goniomètre.
 
 %%% Local Variables: 
 %%% mode: latex
