@@ -51,7 +51,37 @@ On peut constater que l'expérience est un succès car le raspberry pi nous renv
 
 \section{Android}
 
-Les tests d'intégration de l'application android ont été réalisé au cour de notre projet. Pour cela nous avons envoyé des chaînes de caractères du serveur vers l'application android et nous avons vérifié leur réception.
+Les premiers tests de l'application Android eétaient de simples tentatives de connections avec transmission de messages simples pour vérifier le bon fonctionnement des socket Web. 
+Une fois l'application terminée une série de tests plus complets ont été effectués pour simuler le comportement global de l'application en conditions réelles.
+~\\
+Le premier test d'intégration réalisé simule une succession de quatres instances de communication entre le client Android et le serveur. L'objectif est de simuler la transition d'un état "Rien à Signaler" vers un état "Drone détecté", et de vérifier l'exactitude des informations transmises. Pour visualiser le comportement du téléphone nous avons utilisé l'outil "logcat" du logiciel de programmation Android Studio qui permet de visualiser en temps réel les registres du téléphone. 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=\textwidth]{logcat}  
+  \caption{Premier test : communication}
+\end{figure}
+
+Sur cette image on peut visualiser les trois premiers échanges. Les deux premières requêtes ne donne lieu à aucun changement sur l'application car aucun drone simulé n'a été détecté.
+Le troisième échange résulte de l'entrée d'un drone dans la zone simulée. On d'abord peux visualiser le message brut reçu par l'application puis dans un second temps la chaine de caractères formatée par l'application avant qu'elle soit affichée par l'interface.
+~\\
+Le second test d'intégration lié à l'application avait pour but de vérifier le bon affichage des erreurs de connexion sur l'application Android pour éviter toute ambiguïté. 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=\textwidth]{log_error}  
+  \caption{Second test : erreurs}
+\end{figure}
+
+\newpage %% a virer si ça gène
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+
+  \includegraphics[width=0.25\textwidth]{error_co}
+  \caption{Message d'erreur sur l'application}
+\end{wrapfigure}
+
+En cas d'erreur le message est bien visible dans les logs et L'application ne s'est pas bloquée. Celle-ci sera donc capable de bien différencier une absence de détection d'une erreur de connections tout en restant prête à renvoyer une requête au serveur. De plus, le message d'erreur est bien affiché dans son intégralité sur l'interface de l'application. elle est ici réglée en mode "Debug" pour afficher un maximum d'informations.
 
 
 
