@@ -2,9 +2,9 @@
 
 
 
-\chapter{Application Android : S.M.A.R.T Comm Center}
+\chapter{Application Android}
 
-\section{Présentation Générale}
+\section{Présentation du S.M.A.R.T Comm Center}
 
 	Le système SMART se base sur un ensemble de capteurs reliés à une station centrale dont les données sont accessibles depuis internet. Cela permet d'accéder aux paramètres du système a distance depuis un autre appareil relié à internet de préférence un ordinateur. Toutefois, le système, étant donné son coût réduit se destine à être utilisé au sein de structures de petites taille ou le personnel en charge de la sécurité du site doit parfois se déplacer en fonction de ses autres obligations et ne peut être constamment en train de surveiller l'état du S.M.A.R.T depuis un ordinateur. 
 	
@@ -39,11 +39,21 @@
 	
 	Il faut cependant noter qu'un tel choix limite le nombre de smartphones qui seront en mesure de lancer l'application. L'API 22 par exemple représente seulement 34 \% du nombre total d'appareils Android activés. Dans un souci de faciliter la réalisation de l'application nous avons maintenu ce choix, sachant que l'ensemble des téléphones pouvant exécuter du code écrit avec un niveau d'API de 19 représente en Janvier 2016 75.6\% du nombre total des téléphones Android activés dans le monde. Ce choix n'est donc pas si restrictif au vu du nombre d'appareils touchés (plus d'un milliard).
 
-\subsection{Achitecture du client}
+\subsection{Achitecture détaillée}
 
-	Les applications Android se basent sur un système d'"activités" et une activité correspond à une fenêtre visible par l'utilisateur. L'application en possède trois : La fenêtre d'accueil, la fenêtre d'affichage des données de localisation du drone et celle des paramètres.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{projet_app}
+  \caption{Diagramme de classe de l'application}
+  \label{fig:down}
+\end{figure}
+
+	La structure globale de l'application est visible dans le diagramme ci-dessus. Elle regroupe quatre classe, trois liés aux différents écrans de l'application (XxxActivity)et une pour le client web. À chaque classe liée à un écran est associé un fichier .xml qui définit l'aspect visuel de l'écran présenté et appelé activity_xxxx. Ce fichier est chargé via les méthodes "onCreate()" des différentes classes d'activité.
+
+	Les applications Android se basent sur un système d'"activités" et une activité correspond à une fenêtre visible par l'utilisateur. L'application en possède trois : La fenêtre d'accueil (MainActivity), la fenêtre d'affichage des données de localisation du drone (TrackActivity) et celle des paramètres (ParamsActivity).
 	
-	\begin{minipage}{0.45\linewidth}
+	\begin{minipage}{0.35\linewidth}
  		\centering
   		\includegraphics[width=0.6\textwidth]{Ecran_accueil}
   		\captionof{figure}{Écran d'accueil}
@@ -54,7 +64,7 @@
 	\end{minipage}
 	~\\	
 	
-	\begin{minipage}{0.45\linewidth}
+	\begin{minipage}{0.35\linewidth}
  		\centering
  	 \includegraphics[width=0.6\textwidth]{Ecran_loc}
  		 \captionof{figure}{Écran de localisation}
@@ -64,7 +74,7 @@
 	\end{minipage}
 	~\\
 	
-	\begin{minipage}{0.45\linewidth}
+	\begin{minipage}{0.35\linewidth}
   	\centering
  	 \includegraphics[width=0.6\textwidth]{Ecran_set}
  		 \captionof{figure}{Écran de localisation}
@@ -76,7 +86,7 @@
 	
 \subsection{Détails concernant la fenêtre de localisation}
 
-	La fenêtre de localisation comporte une particularité essentielle. En effet, en même temps que celle ci s'affiche, le client web est lancé en arrière plan grâce à une "AsynchTask" (Tâche asynchrone). L'intérêt d'un tel mode de fonctionnement présente l'avantage de ne pas avoir a créer de "Thread" (Fil d'exécution) supplémentaire et de découpler le serveur de l'affichage. Ainsi, en cas d'erreur de connexion ou de problème irrécupérable, l'interface continue de répondre et permet à l'utilisateur de relancer la connexion. Le système Android gèrera en parallèle l'affichage et le serveur, le fonctionnement des AsyncTask permet de s'assurer que tant que la fenêtre de l'application est visible par l'utilisateur le client fonctionnera en arrière plan.
+	La fenêtre de localisation comporte une particularité essentielle. En effet, en même temps que celle ci s'affiche, le client web (classe Client) est lancé en arrière plan grâce à une "AsynchTask" (Tâche asynchrone). L'intérêt d'un tel mode de fonctionnement présente l'avantage de ne pas avoir a créer de "Thread" (Fil d'exécution) supplémentaire et de découpler le serveur de l'affichage. Ainsi, en cas d'erreur de connexion ou de problème irrécupérable, l'interface continue de répondre et permet à l'utilisateur de relancer la connexion. Le système Android gèrera en parallèle l'affichage et le serveur, le fonctionnement des AsyncTask permet de s'assurer que tant que la fenêtre de l'application est visible par l'utilisateur le client fonctionnera en arrière plan.
 	
 	 
 
