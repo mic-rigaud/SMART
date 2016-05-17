@@ -5,7 +5,7 @@
 \section{Contexte}
 La première partie du projet nous a permis de redéfinir le sujet et les attentes, mais également de réfléchir aux solutions technologiques que nous pourrions utiliser. Après avoir observé les solutions existantes et compte tenu du budget qui nous est imposé, la solution générale retenue sera donc la suivante: les ondes radio captées par les antennes, seront traitées par un filtre et un down-converter avant de passer par le radio-goniomètre et obtenir une position angulaire qui sera envoyée au serveur puis transmise à l’IHM (voir dans le chapitre \ref{chap:choix} la partie \ref{sec:phys}).
 
-Cependant, de nombreuses zones d’ombres planent encore sur la réalisation technique, notamment car nous ne maitrisons pas le domaine. En effet, nous utiliserons des plans de carte électronique de radio-goniomètre amateur afin de réaliser notre solution technologique, car réaliser un traitement entièrement numérique ne semble pas réalisable dans le temps impartit. 
+Cependant, de nombreuses zones d’ombres planent encore sur la réalisation technique, notamment car nous ne maitrisons pas le domaine. En effet, nous utiliserons des plans de carte électronique de radio-goniomètre amateur afin de réaliser notre solution technologique, car réaliser un traitement entièrement numérique ne semble pas réalisable dans le temps imparti. 
 
 De plus, actuellement, nous ne nous sommes pas encore réellement penchés sur le traitement des informations ainsi que sur la structure du serveur et de l’IHM. Nous avons seulement convenu que le transfert des informations se fera via Arduino. L’un d’entre eux sera le serveur et dialoguera avec l’ensemble des autres Arduino positionnés sur les antennes.~\\
 
@@ -114,7 +114,7 @@ pour cette dernière sont les suivants :
 nombre de radio-goniomètre
 \end{itemize}
 
-Très peu de sujets similaires ont pu être trouvé bien que le problème soit récurrent dans de
+Très peu de sujets similaires ont pu être trouvés bien que le problème soit récurrent dans de
 nombreux projets.
 
 Cependant, après plusieurs essais, le choix de treillis fut le suivant :
@@ -128,7 +128,7 @@ Cependant, après plusieurs essais, le choix de treillis fut le suivant :
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
   \begin{itemize}
-  \item Dans les deux cas, les distances d et d’ représente la distance de couverture maximale d’une antenne pour une configuration de treillis particulière, distance au-delà de laquelle nous ne sommes pas sûr d’assurer la détection d’un drone.
+  \item Dans les deux cas, les distances d et d’ représentent la distance de couverture maximale d’une antenne pour une configuration de treillis particulière, distance au-delà de laquelle nous ne sommes pas sûrs d’assurer la détection d’un drone.
   \item Chaque croix noire représente une antenne. Ces dernières formes ainsi la zone de détection, zone à l’intérieure de laquelle, le drone se doit d’être repéré.
   \end{itemize}
 \end{minipage}
