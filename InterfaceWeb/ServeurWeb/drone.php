@@ -1,13 +1,13 @@
 
 
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width=80% height=80% >
-    <title>Exemple simple de figure SVG</title>
+    <title>SMART: champ de capteur</title>
     <desc>
-	Cette figure est constituée d'un rectangle,
-	d'un segment de droite et d'un cercle.
+	Cette figure représente notre champ de capteur avec la detection d'un drone.
     </desc>
     
 	    <?php
+	    //$_POST["lat"]
 	    // 1 : on ouvre le fichier
 	    $monfichier = fopen('../Serveur/position', 'r');
 	    
@@ -62,9 +62,9 @@
 		
 	    ?>
     
-    <text x="<?php echo $x[$k]; ?>" y="<?php echo $y[$k]; ?>"><?php echo $nom[$k]; ?></text>
-    <circle cx="<?php echo $x[$k]; ?>" cy="<?php echo $y[$k]; ?>" r="6" fill="blue" />
-    <line x1="<?php echo $x[$k]; ?>" y1="<?php echo $y[$k]; ?>" x2="<?php echo $x2[$k]; ?>" y2="<?php echo $y2[$k]; ?>" stroke="red" /> 
+    <text x=<?php echo ($x[$k]*100)/1600; ?>% y=<?php echo ($y[$k]*100)/800; ?>%><?php echo $nom[$k]; ?></text>
+    <circle cx=<?php echo ($x[$k]*100)/1600; ?>% cy=<?php echo ($y[$k]*100)/800; ?>% r="6" fill="blue" />
+    <line x1=<?php echo ($x[$k]*100)/1600; ?>% y1=<?php echo ($y[$k]*100)/800; ?>% x2=<?php echo ($x2[$k]*100)/1600; ?>% y2=<?php echo ($y2[$k]*100)/800; ?>% stroke="red" /> 
 
 
 
@@ -121,7 +121,7 @@
 	$x_drone = $x_drone + $x_intersectionF[$i];
 	$y_drone = $y_drone + $y_intersectionF[$i];	
     ?>
-	<circle cx="<?php echo $x_intersectionF[$i]; ?>" cy="<?php echo $y_intersectionF[$i]; ?>" r="3" fill="green" />
+	<circle cx=<?php echo ($x_intersectionF[$i]*100)/1600; ?>% cy=<?php echo ($y_intersectionF[$i]*100)/800; ?>% r="3" fill="green" />
 	
     <?php 
     }
@@ -131,10 +131,11 @@
 
 
 
+
     ?>
 
-    <text x="<?php echo $x_drone; ?>" y="<?php echo $y_drone; ?>">DRONE</text>
-    <circle cx="<?php echo $x_drone; ?>" cy="<?php echo $y_drone; ?>" r="6" fill="red" />
+    <text x=<?php echo ($x_drone*100)/1600; ?>% y=<?php echo ($y_drone*100)/800; ?>%>DRONE</text>
+    <circle cx=<?php echo ($x_drone*100)/1600; ?>% cy=<?php echo ($y_drone*100)/800; ?>% r="6" fill="red" />
 
 </svg>
 

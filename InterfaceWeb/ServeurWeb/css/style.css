@@ -32,19 +32,23 @@ header
     display: block;
     background: repeat-x bottom;
     background: #90b7ff;	/*Mettre la couleur pour les differents boutons*/
+    background-size: cover;
+    height: 15%;
 }
 
 #banniere
 {
     display: block;   
     width: 50%;
-    max-height: 200px;
+
+
     margin-left: auto;
     margin-right: auto;
 }
 
 #logo
 {
+    height: 100%;
     max-height: 200px;
     width: 100%;
 }
@@ -60,14 +64,14 @@ svg
     display: inline-block;
     width: 75%;
     font-family: jsnow;
-    font-size: 2em;
+    font-size: 150%;
     font-weight: bold;
     color: #0195d1;
     margin-left: 5%;
     margin-top: 1%;
     border:1px solid #000;
-    background-image: url("./../img/paris.PNG");
-
+    background: url("./../img/paris.PNG") no-repeat center;
+    background-size: cover;
 }
 
 p
