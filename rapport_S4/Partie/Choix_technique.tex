@@ -3,9 +3,9 @@
 \label{chap:choix}
 
 \section{Contexte}
-La première partie du projet nous a permis de redéfinir le sujet et les attentes, mais également de réfléchir aux solutions technologiques que nous pourrions utiliser. Après avoir observé les solutions existantes et compte tenu du budget qui nous est imposé, la solution générale retenue sera donc la suivante: les ondes radio captées par les antennes, seront traitées par un filtre et un down-converter avant de passer par le radiogoniomètre et obtenir une position angulaire qui sera envoyée au serveur puis transmise à l’IHM (voir dans le chapitre \ref{chap:choix} la partie \ref{sec:phys}).
+La première partie du projet nous a permis de redéfinir le sujet et les attentes, mais également de réfléchir aux solutions technologiques que nous pourrions utiliser. Après avoir observé les solutions existantes et compte tenu du budget qui nous est imposé, la solution générale retenue sera donc la suivante: les ondes radio captées par les antennes, seront traitées par un filtre et un down-converter avant de passer par le radio-goniomètre et obtenir une position angulaire qui sera envoyée au serveur puis transmise à l’IHM (voir dans le chapitre \ref{chap:choix} la partie \ref{sec:phys}).
 
-Cependant, de nombreuses zones d’ombres planent encore sur la réalisation technique, notamment car nous ne maitrisons pas le domaine. En effet, nous utiliserons des plans de carte électronique de radiogoniomètre amateur afin de réaliser notre solution technologique, car réaliser un traitement entièrement numérique ne semble pas réalisable dans le temps impartit. 
+Cependant, de nombreuses zones d’ombres planent encore sur la réalisation technique, notamment car nous ne maitrisons pas le domaine. En effet, nous utiliserons des plans de carte électronique de radio-goniomètre amateur afin de réaliser notre solution technologique, car réaliser un traitement entièrement numérique ne semble pas réalisable dans le temps impartit. 
 
 De plus, actuellement, nous ne nous sommes pas encore réellement penchés sur le traitement des informations ainsi que sur la structure du serveur et de l’IHM. Nous avons seulement convenu que le transfert des informations se fera via Arduino. L’un d’entre eux sera le serveur et dialoguera avec l’ensemble des autres Arduino positionnés sur les antennes.~\\
 
@@ -26,10 +26,10 @@ Suite à notre état de l'art, nous avons décidé de réaliser notre système d
 
 
 \section{Architecture Fonctionnelle}
-En début de projet, suite à l'interview de notre encadrant Mr. Ali Mansour, nous avions réalisé le tableau de exigence (tableau \ref{pdf:tab}).
+En début de projet, suite à l'interview de notre encadrant Mr. Ali Mansour, nous avions réalisé le tableau des exigences (tableau \ref{pdf:tab}).
 
 
-L'ensemble de notre projet c'est donc construit autour de ces premières exigences, qui on ensuite été détaillées en fonctions et contraintes. Très vite, nous avons convenu que l'architecture fonctionnelle de notre système serait telle que décrite dans le diagramme SADT ci dessous.
+L'ensemble de notre projet c'est donc construit autour de ces premières exigences, qui ont ensuite été détaillées en fonctions et contraintes. Très vite, nous avons convenu que l'architecture fonctionnelle de notre système serait telle que décrite dans le diagramme SADT ci dessous.
 
 \begin{figure}[h]
 
@@ -82,16 +82,16 @@ Pour cela nous avons découpé notre système en plusieurs sous-systèmes de la 
   \caption{sous-système}
 \end{figure}
 
-Tout d'abord, pour le capteur nous avons choisi de nous appuyer sur le Montréal 3v2 que nous avons choisi d'adapter à notre problème. Pour cela nous avons du adapter les antennes a nos fréquences, installer un filtre passe bas et enfin un down converter, mais nous avons garder le goniomètre du Montréal 3v2.
+Tout d'abord, pour le capteur nous avons choisi de nous appuyer sur le Montréal 3v2 que nous avons choisi d'adapter à notre problème. Pour cela nous avons dû adapter les antennes à nos fréquences, installer un filtre passe bas et enfin un down converter, mais nous avons gardé le goniomètre du Montréal 3v2.
 
 Ensuite, nous avons choisi de placer un petit ordinateur au niveau de chaque capteur qui servira de client TCP/IP transmettant ses informations à un ordinateur central. Pour répondre à ce besoin nous avons choisi d'installer des Raspberry Pi, pour des raisons évidentes de coût et de taille.
 
-Puis nous avons choisi d'installer un ordinateur central (le serveur) rassemblant les données. Au cour de notre projet nous avons utilisé nos ordinateurs personnelles mais à termes nous souhaitons installer le serveur sur un Raspberry Pi.
+Puis nous avons choisi d'installer un ordinateur central (le serveur) rassemblant les données. Au cours de notre projet nous avons utilisé nos ordinateurs personnelles mais à termes nous souhaitons installer le serveur sur un Raspberry Pi.
 
 Enfin, nous avons créé une application android fonctionnant sur nos téléphones personnels.
 
 
-L'architecture physique du système est présenté à la figure \ref{fig:arch_phys}.
+L'architecture physique du système est présentée à la figure \ref{fig:arch_phys}.
 
 \begin{figure}[h]
   \centering
@@ -109,9 +109,9 @@ place d’une couverture de détection répondant à nos besoins était nécessa
 pour cette dernière sont les suivants :
 
 \begin{itemize}
-\item A l’intérieur de la zone de détection, la cible doit être en permanence sous la couverture de détection de 4 radiogoniomètres
+\item A l’intérieur de la zone de détection, la cible doit être en permanence sous la couverture de détection de 4 radio-goniomètres
 \item Tenter une optimisation de la couverture afin d’éviter l’installation d’un trop grand
-nombre de radiogoniomètre
+nombre de radio-goniomètre
 \end{itemize}
 
 Très peu de sujets similaires ont pu être trouvé bien que le problème soit récurrent dans de
@@ -134,7 +134,7 @@ Cependant, après plusieurs essais, le choix de treillis fut le suivant :
 \end{minipage}
 
 
-Initialement, nous avions prévu que les antennes radiogoniométrique assureraient la détection
+Initialement, nous avions prévu que les antennes radio-goniométrique assureraient la détection
 jusqu’à son plus proche voisin. Cependant, cette configuration ne permet pas d’assurer qu’un drone
 traversant la zone soit sous la couverture d’au moins quatre antennes en tout temps. Nous avons
 donc choisi la configuration représentée par le cercle rouge, c’est-à-dire en rapprochant les antennes
