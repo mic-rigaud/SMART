@@ -40,7 +40,7 @@ Dans notre projet le Raspberry Pi sera placé entre le radio-goniomètre à effe
   \label{figure:test}
 \end{figure}
 
-La sortie du Montréal 3v2 est décrite à la figure \ref{figure:ledMontreal}. On constate que le pic qui permet l'affichage a 12 sortie lui permettant de gérer au total 24 LEDs. Pour savoir quelle LED est allumée, il faut savoir laquelle des entrées A1,A0,B7,B6,B5,B4 voit un front montant en signal d'entrée et laquelle des entrées B0,B1,B2,B3,A3,A2 voit un front descendant.
+La sortie du Montréal 3v2 est décrite à la figure \ref{figure:ledMontreal}. On constate que le pic qui permet l'affichage a 12 sortie lui permettant de gérer au total 24 LED. Pour savoir quelle LED est allumée, il faut savoir laquelle des entrées A1,A0,B7,B6,B5,B4 voit un front montant en signal d'entrée et laquelle des entrées B0,B1,B2,B3,A3,A2 voit un front descendant.
 
 Pour modéliser une LED en entrée du Raspberry Pi, nous avons positionné 2 boutons poussoirs (voir figure \ref{figure:test}). Le premier permet de simuler un front montant et le second un front descendant. Ainsi en positionnant ces boutons au bon endroit par rapport au ports GPIO du raspberry il est possible de connaître quelle LED on a simulé.
 
