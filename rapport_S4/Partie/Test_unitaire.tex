@@ -1,6 +1,6 @@
 \chapter{Tests unitaires}
 
-Suite au choix que nous avons réalisé dans la partie précédente, nous avons commandé notre matériel. Dès la réception de celui-ci nous avons effectué des tests unitaires pour vérifier leur bon fonctionnement. Voici la liste de l'ensemble des tests que nous avons réalisé.
+Suite au choix que nous avons réalisé dans la partie précédente, nous avons commandé notre matériel. Dès la réception de celui-ci nous avons effectué des tests unitaires pour vérifier leur bon fonctionnement. Voici la liste de l'ensemble des tests que nous avons réalisés.
 
 
 
@@ -19,12 +19,12 @@ Dans le schéma du Montréal 3v2 nous avons pu constater qu'il y avait 3 PIC pro
   \label{fig:pic}
 \end{figure}
 
-Nous avons ensuite imaginé et réalisé des tests unitaires sur chacun des PIC pour vérifier qu'ils ont bien été programmés et qu'aucune erreur n'est apparu sur ce système de décision critique pour le système.
+Nous avons ensuite imaginé et réalisé des tests unitaires sur chacun des PIC pour vérifier qu'ils ont bien été programmés et qu'aucune erreur n'est apparue sur ce système de décision critique pour le système.
 
 \subsection{PIC16F628A}
 \label{sec:picled}
 
-Ce PIC sert à réaliser l'affichage sur les LED. Pour tester ce PIC, nous avons réaliser le montage de la figure \ref{fig:picled}. On peut voir à la figure \ref{fig:schemapic} le schéma de montage du PIC sur le Montréal 3v2.
+Ce PIC sert à réaliser l'affichage sur les LED. Pour tester ce PIC, nous avons réalisé le montage de la figure \ref{fig:picled}. On peut voir à la figure \ref{fig:schemapic} le schéma de montage du PIC sur le Montréal 3v2.
 
 \begin{figure}[!h]
   \centering
@@ -34,7 +34,7 @@ Ce PIC sert à réaliser l'affichage sur les LED. Pour tester ce PIC, nous avons
 \end{figure}
 
 
-Pour tester ce composant, nous avons donc choisi de monter une partie des LED situés en sorti, de configurer le \og clock\fg{} sur un signal carré de fréquence 1 MHz, et de faire varier la fréquence de l'entrée \og data\fg{}.
+Pour tester ce composant, nous avons donc choisi de monter une partie des LED situés en sortie, de configurer le \og clock\fg{} sur un signal carré de fréquence 1 MHz, et de faire varier la fréquence de l'entrée \og data\fg{}.
 
 Malheureusement nous n'avons pas pu observer de LED s'allumer pendant notre expérience.
 
@@ -49,7 +49,7 @@ Malheureusement nous n'avons pas pu observer de LED s'allumer pendant notre exp�
 \label{sec:picclock}
 
 
-Ces deux PIC ont également été testé avec le même procédé. Nous ne développerons pas plus ces tests car ils nous ont donné les même résultats.
+Ces deux PIC ont également été testés avec le même procédé. Nous ne développerons pas plus ces tests car ils nous ont donné les même résultats.
 
 \section{Filtre passe bande}
 \label{sec:passe_bande}
@@ -57,7 +57,7 @@ Ces deux PIC ont également été testé avec le même procédé. Nous ne dével
 
 Pour le filtre passe bande, nous souhaitions un filtre qui couperait tout ce qui se trouve en dehors de notre bande. Les tests ont montrés que ce filtre réagit plutôt bien quand le montage qui y est lié est adapté, ce qui est le cas, le circuit fonctionne bien avec une impédance de 50 Ohm.
 
-Le test unitaire était simple on a branché le filtre sur un analyseur que envoyais un signal et recevait ce même message. Il est alors simple d’obtenir le comportement du filtre. Nous avons obtenu que le filtre diminuait très bien ce que ce trouve avant 2.4GHz mais plutôt mal ce qui vient après. Ceci n’est pas gênant car les bande entre 2.5Ghz et 5 GHz sont peu utilisées en France. 
+Le test unitaire était simple on a branché le filtre sur un analyseur qui envoyait et recevait un même signal. Il est alors simple d’obtenir le comportement du filtre en observant le signal retour. Nous avons observés que le filtre atténuait très bien ce qui se trouve avant 2.4GHz mais plutôt mal ce qui vient après 2.5GHz. Ceci n’est pas gênant car les bande entre 2.5Ghz et 5 GHz sont peu utilisées en France. 
 
 \begin{figure}[h]
   \centering
@@ -92,8 +92,8 @@ Lors du test, nous avions une perte d’environ 2dBm dans la bande de fréquence
 
 Le test du VCO est simple mais doit être bien fait car sans lui impossible d’obtenir la bonne fréquence de travail en entrée du radio-goniomètre.
 
-Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO lorqu'il est alimenté avec une tension nulle en entrée. La fréquence libre mesurée sur notre matériel était de 1.35 GHz donc plus importante que la fréquence indiqué par le constructeur (1.31Ghz). L'étape suivante consistait a mesurer la tension pour laquelle nous obtenions une fréquence de sortie de 1.9Ghz et nous avons obtenu environ 8V ce qui nous à permis de choisir le bon régulateur de tension pour la suite.
- Les régulateur sont calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement mais nous avons pu obtenir un régulateur à 8.1V qui après test donnait en sortie du VCO une fréquence de 1.91GHz. La bande de fréquence a transférer étant de 100 MHz nous n’étions pas à 10 MHz prés et il aurait été difficile et couteux de trouver un meilleur moyen de le faire.
+Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréquence renvoyée par le VCO lorqu'il est alimenté avec une tension nulle en entrée. La fréquence libre mesurée sur notre matériel était de 1.35 GHz donc plus importante que la fréquence indiqué par le constructeur (1.31Ghz). L'étape suivante consistait a mesurer la tension pour laquelle nous obtenions une fréquence de sortie de 1.9Ghz. Nous avons obtenu environ 8V ce qui nous à permis de choisir le bon régulateur de tension pour la suite.
+ Les régulateur sont des composants calibrés, il est donc difficile d’en trouver un qui corresponde parfaitement aux besoins du projet mais nous avons pu obtenir un régulateur à 8.1V qui, après test, permettait d'obtenir en sortie du VCO une fréquence de 1.91GHz. La bande de fréquence a transférer étant de 100 MHz et donc très large par rapport aux 10MHz de décalage observés nous avons conservé ce régulateur.
 
 
 \begin{figure}[h]
@@ -116,7 +116,7 @@ Nous avons commencé par mesurer la fréquence libre, c’est-à-dire la fréque
 \end{figure}
 
 
-Le test du down-converter a posé quelques problèmes. En effet le seul moyen de le tester est de le tester dans son cas d’utilisation pratique. Il est, en effet, nécessaire de l’alimenter et  ceci ne peut se faire sans le VCO, de même le bruit risque de gêner l’observation, il faut donc utiliser le filtre.
+Le test du down-converter a posé quelques problèmes. Il est nécessaire de l’alimenter comme dans sa configuration opérationnelle et ceci ne peut se faire sans le VCO. De plus le bruit en sortie du VCO risque de gêner l’observation, il est donc obligatoire d'utiliser le filtre.
 
 
 \begin{figure}[h]
@@ -128,14 +128,11 @@ Le test du down-converter a posé quelques problèmes. En effet le seul moyen de
 
 
 
-Nous avons rencontré des problèmes lors du test, premièrement, des problèmes de communication entre membre de l’équipe ont retardé le test d’une semaine, en effet il a fallu crée un montage avec les deux régulateurs de tension, celui pour l’alimentation et celui pour la tension en entrée. Il manquait cependant une information relative à l'orientation d'un composant sur les schémas fourni au membre de l'équipe chargé de la soudure et cela a entrainé une erreur de montage avec une augmentation des délais liés à la réalisation de ces filtres.
+Nous avons rencontré différents des problèmes lors du test. Premièrement, des problèmes de communication entre membre de l’équipe ont retardé le test d’une semaine, en effet il a fallu crée un montage avec les deux régulateurs de tension, celui pour l’alimentation et celui pour la tension en entrée. Il manquait cependant une information relative à l'orientation d'un composant sur les schémas fourni au membre de l'équipe chargé de la soudure. Cela a entrainé une erreur de montage avec une augmentation des délais liés à la réalisation de ces filtres.
 
-Deuxièmement, nous n’avions pas prévue les problèmes dus aux câbles. Il a fallu en effet cherché des câbles en n’étant pas certain que le câblage utilisé ne ferait pas griller le matériel.
+Deuxièmement, nous n’avions pas prévue des problèmes dus aux câbles. Nous n'étions pas certain que le câblage utilisé n'endommagerait pas le matériel.
 
-Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’a donc pas pu nous aider lorsque des hésitations se sont fait sentir. Devant le prix du matériel et la possibilité de l'endommager, nous avons choisis d'attendre.
-
-
-
+Troisièmement, le professeur nous ayant aidé lors de la conception théorique du montage était en déplacement, il n’était donc pas en mesure de nous aider lorsque des hésitations se sont fait sentir. Devant le prix du matériel et la possibilité de l'abimer, nous avons choisis d'attendre.
 
 
 %%% Local Variables: 
