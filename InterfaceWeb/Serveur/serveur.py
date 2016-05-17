@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ################## SERVEUR.py #####################
-# autheur: Equipe Smart
+# auteur: Equipe Smart
 # date: 5 avril
 #
 # Description: cette application sert de serveur avec multi thread
