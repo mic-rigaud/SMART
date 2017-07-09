@@ -1,8 +1,4 @@
-=================================
-Dépôt dédié au projet SMART
-================================
-
-
+# Dépôt dédié au projet SMART
 
 Auteurs
 ---------
